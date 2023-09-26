@@ -1,0 +1,96 @@
+$main-color: #008592;
+$second-color: #F7941D;
+$text-color: #343230;
+.span{
+    &_white { 
+        color: #fff;
+    }
+    &_orange {
+        color: $second-color;
+    }
+    &_blue {
+        color: #008592;
+    } 
+    &_blue-bold {
+        color: #008592;
+        font-size: 24px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 28px; 
+    }
+    &_black-bold {
+        color: #343230;
+        font-size: 24px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 28px;
+    }
+}
+
+
+.title {
+    color: $main-color;
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 130%;
+    text-transform: uppercase;
+}
+.subtitle {
+    color:  #008592;
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 130%;
+    letter-spacing: 0.3px;
+}
+.blue-wrapper {
+    position: relative;
+    border-radius: 40px;
+    padding: 60px;
+    background: linear-gradient(90deg, #007B79 1.12%, #03A7AE 95.67%);
+}
+.gray-wrapper {
+    position: relative;
+    padding: 60px 50px;
+    border-radius: 20px;
+    background:  #EFF1F1;
+}
+
+.light-wrapper {
+    border-radius: 20px;
+    border: 2px solid #D4EFF1;
+    background: #EFFEFF;
+    padding: 60px 50px;
+}
+.white-wrapper {
+    padding: 60px 50px;
+    border-radius: 20px;
+    border: 2px solid #01C8C8;
+    background:#FFF;
+}
+.listOfLiterature {
+    color: $text-color;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 130%;
+    ol {
+        padding-left: 0;
+        margin-bottom: 0;
+        li {
+            padding-left: 3px;
+        }
+    }
+    &_popUpVersion {
+        padding: 120px 0 200px 0;
+        background: #EFFEFF;
+        .title {
+            font-size: 24px;
+            margin-bottom: 30px;
+            ol {
+                padding-left: 26px;
+            }
+        }
+    }
+}

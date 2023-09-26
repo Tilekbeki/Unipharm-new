@@ -1,0 +1,85 @@
+.trends {
+    padding: 60px 0 45px 0;
+    position: relative;
+    &__wrapper {
+        display: flex;
+        position: relative;
+        justify-content: space-between;
+        gap: 6%;
+    }
+    &__bg {
+        position: absolute;
+        z-index: -1;
+        top: -60px;
+        img {
+            width: 1281px;
+            height: 771px;
+        }
+    }
+    &__title-block {
+        width: 64%;
+        z-index: 1;
+        &__title {
+            h1 {
+                color: $main-color;
+                font-size: 64px;
+                font-style: normal;
+                font-weight: 700;
+                margin-bottom: 60px;
+            }
+        }
+    }
+    &__text-block {
+        z-index: 2;
+        width: 73%;
+        &__phares {
+            margin-bottom: 30px;
+            width: 615px;
+            display: flex;
+            align-items: flex-start;
+            justify-content: space-between;
+            &-text {
+                color: $main-color;
+                font-size: 18px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: 130%;
+                width: 86%;
+            }
+            &-quote{
+                color: $second-color;
+                font-size: 64px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: 72px;
+                &:nth-child(1) {
+                    align-self: self-start;
+                    height: 42px;
+                    display: flex;
+                    align-items: center;
+                }
+                &:nth-child(3) {
+                    align-self: self-end;
+                }
+            }
+        }
+        &__person {
+            display: flex;
+            gap: 30px;
+            align-items:center;
+            padding: 0 8% 0 8%;
+            &-img {
+                width: 100px;
+                height: 100px;
+            }
+            &-text {
+                width: 63%;
+                color: $text-color;
+                font-size: 12px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: 130%;
+            }
+        }
+    }
+}

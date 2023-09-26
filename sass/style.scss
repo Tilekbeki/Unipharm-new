@@ -1,0 +1,40 @@
+*{
+   
+    // border: 1px solid #f00; 
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Gilroy;
+    // border: 1px solid red;
+}
+main {
+    position: relative;
+}
+body {
+    position: relative;
+}
+
+@import 'base/variables';
+@import 'blocks/buttons';
+@import 'blocks/menu';
+@import 'blocks/trends';
+@import 'blocks/whatIs';
+@import 'blocks/keyMechanisms';
+@import 'blocks/whatFamous';
+@import 'blocks/goalsPrescription';
+@import 'blocks/baseDirections';
+@import 'blocks/specialVitamin';
+@import 'blocks/methabolismRole';
+@import 'blocks/perspectives';
+@import 'blocks/dailyDose';
+@import 'blocks/videoCasts';
+@import 'blocks/helpfullArticles';
+@import 'blocks/footer';
+@import 'blocks/pop-up-layer';
+@import 'blocks/promo';
+@import 'blocks/mechanism';
+@import 'blocks/recomendWhy';
+@import 'blocks/aboutCapsule';
+@import 'blocks/scheme';
+@import 'blocks/pop-articles';
+@import 'media';

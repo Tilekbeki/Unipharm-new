@@ -1,0 +1,78 @@
+.mechanism {
+    overflow: hidden;
+    .blue-wrapper {
+        border-radius: 0;
+        min-height: 876px;
+    }
+    .title {
+        margin-bottom: 60px;
+    }
+    .white-wrapper {
+        z-index: 3;
+    }
+    &-wrapper {
+        position: relative;
+        display: flex;
+        justify-content: space-between;
+    }
+    &__item {
+        &-header {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+            &__title {
+                color:  #F7941D;
+                font-size: 24px;
+                font-style: normal;
+                font-weight: 700;
+                line-height: 130%; /* 31.2px */
+                width: 266px;
+                margin-bottom: 30px;
+            }
+            &__list {
+                width: 319px;
+                ul {
+                    display: flex;
+                    flex-direction: column;
+                    gap: 15px;
+                    padding: 0;
+                    margin: 0;
+                    li {
+                        display: flex;
+                        justify-content: flex-start;
+                        gap: 10px;
+                        padding: 0;
+                        margin: 0;
+                        img {
+                            width: 40px;
+
+                            height: 40px;
+                        }
+                        p {
+                            padding: 0;
+                            margin: 0;
+                            padding-top: 10px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    &-button {
+        color: #FFF;
+        font-size: 24px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 130%; /* 31.2px */
+        text-transform: uppercase;
+        width: 764px;
+        padding: 30px;
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        border: none;
+        border-radius: 8px;
+        background: #F7941D;
+        box-shadow: 0px 10px 41px 0px rgba(131, 52, 2, 0.39);
+    }
+}

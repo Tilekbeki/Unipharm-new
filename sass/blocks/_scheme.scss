@@ -1,0 +1,35 @@
+.scheme {
+    .blue-wrapper {
+        border-radius: 0;
+        padding-bottom: 90px;
+        .dailyDose-cabbages {
+            top: 143px;
+        }
+    }
+    .title {
+        margin-bottom: 60px;
+    }
+    &-wrapper {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    &-item {
+        display: flex;
+        gap: 30px;
+        align-items: center;
+        width: 46%;
+        margin-bottom: 30px;
+        &:nth-child(3),&:nth-child(4) {
+            margin-bottom: 0;
+        }
+        p {
+            color: #F7941D;
+            font-size: 30px;
+            font-style: normal;
+            font-weight: 700;
+            line-height: 130%; /* 39px */
+            letter-spacing: 0.3px;
+        }
+    }
+}

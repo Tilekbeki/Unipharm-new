@@ -1,0 +1,95 @@
+.perspectives {
+    padding: 45px 0;
+    .title {
+        margin-bottom: 60px;
+    }
+    &__wrapper {
+        display: flex;
+        justify-content: space-between;
+    }
+    &__block {
+        &-first {
+            ul {
+                margin-bottom: 0;
+                padding-left: 0;
+                display: flex;
+                flex-direction: column;
+                gap: 30px;
+            }
+            &__item {
+                display: flex;
+                gap: 30px;
+                &-img {
+                    width: 50px;
+                    height: 50px;
+                    img {
+                        width: 100%;
+                        height: 100%;
+                    }
+                }
+                &-text {
+                    width: 474px;
+                    display: flex;
+                    gap: 15px;
+                    flex-direction: column;
+                    &__title {
+                        color: $main-color;
+                        font-size: 24px;
+                        font-style: normal;
+                        font-weight: 400;
+                        line-height: 130%;
+                    }
+                    &__descr {
+                        color: $text-color;
+                        font-size: 18px;
+                        font-style: normal;
+                        font-weight: 400;
+                        line-height: 130%;
+                    }
+                }
+            }
+        }
+        &-second {
+            ul {
+                display: flex;
+                flex-direction: column;
+                gap: 30px;
+                margin-bottom: 0;
+                padding-left: 0;
+            }
+            &__item {
+                display: flex;
+                gap: 30px;
+                &-img {
+                    width: 50px;
+                    height: 50px;
+                    img {
+                        width: 100%;
+                        height: 100%;
+                    }
+                }
+                &-text {
+                    width: 474px;
+                    display: flex;
+                    gap: 15px;
+                    flex-direction: column;
+                    &__title {
+                        color: $main-color;
+                        font-size: 24px;
+                        font-style: normal;
+                        font-weight: 400;
+                        line-height: 130%;
+                    }
+                    &__descr {
+                        color: $text-color;
+                        font-size: 18px;
+                        font-style: normal;
+                        font-weight: 400;
+                        line-height: 130%;
+                    }
+                }
+            }
+        }
+    }
+    
+}

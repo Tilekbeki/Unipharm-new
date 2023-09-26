@@ -1,0 +1,36 @@
+.recomendWhy {
+    padding: 60px 0 90px 0px;
+    background:  #D4EFF1;
+    .title {
+        padding-left: 50px;
+        margin-bottom: 60px;
+    }
+    &-wrapper {
+        padding-left: 50px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        
+    }
+    &-card {
+        width: 550px;
+        border-radius: 10px;
+        background: #FFF;
+        padding: 15px 30px;
+        display: flex;
+        gap: 30px;
+        align-items: center;
+        margin-bottom: 47px;
+        &:nth-child(3),&:nth-child(4) {
+            margin-bottom: 0;
+        }
+        p {
+            margin-bottom: 0;
+            color:  #343230;
+            font-size: 18px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 130%; /* 23.4px */
+        }
+    }
+}

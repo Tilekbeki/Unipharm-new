@@ -1,0 +1,76 @@
+.aboutCapsule {
+    padding: 90px 0 60px 0;
+    background: #EFFEFF;
+    &-road {
+        position: absolute;
+        bottom: 2px;
+        z-index: 1;
+        left: 10px;
+        width: 720px;
+        height: 93px;
+    }
+    &-wrapper {
+        display: flex;
+        justify-content: space-between;
+        padding-left: 50px;
+    }
+    &-item {
+        width: 15%;
+        img {
+            margin-bottom: 20px;
+        }
+        p {
+            color: #008592;
+            font-size: 24px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 130%; /* 31.2px */
+        }
+    }
+    &-block {
+        display: flex;
+        padding-left: 50px;
+        margin-bottom: 60px;
+        &__text-quantity {
+            border-radius: 6px;
+            border: 2px solid  #F7941D;
+            background:  #F7941D;
+            padding: 5px 15px;
+            font-size: 24px;
+            font-style: normal;
+            font-weight: 700; 
+            color:#fff;  
+        }
+        &__text {
+            position: relative;
+            width: 460px;
+            color:  #008592;
+            font-size: 24px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 130%;
+            
+            &-title {
+                color:  #008592;
+                font-size: 30px;
+                font-weight: 700;
+                letter-spacing: 0.3px;
+            }
+        }
+        &__img {
+            position: relative;
+            &-box {
+                width: 793px;
+                height: 314px;
+            }
+            &-tablets {
+                width: 211px;
+                height: 104px;
+                position: absolute;
+                bottom: -20px;
+                right: 440px;
+                
+            }
+        }
+    }
+}

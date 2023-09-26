@@ -1,0 +1,93 @@
+.videoCasts {
+    padding: 45px 0;
+    .light-wrapper {
+        border-radius: 40px;
+    }
+    .title {
+        margin-bottom: 12px;
+    }
+    &-text {
+        color: $text-color;
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 130%; /* 23.4px */
+        width: 90%;
+        margin-bottom: 30px;
+    }
+    &__person {
+        display: flex;
+        gap: 30px;
+        align-items:center;
+        margin-bottom: 60px;
+        &-img {
+            border-radius: 500px;
+            border: 2px solid  #FFF;
+            background:  #008592;
+            width: 130px;
+            height: 130px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            img {
+                border-radius: 500px;
+            }
+        }
+        &-text {
+            color: $text-color;
+            font-size: 18px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 24px;
+        }
+    }
+    &__item {
+        width: 550px;
+        margin-bottom: 60px;
+        &:nth-child(3),&:nth-child(4) {
+            margin-bottom: 0;
+        }
+        &-video {
+            margin-bottom: 30px;
+        }
+        &-info {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            &__title {
+                color: $second-color;
+                font-size: 24px;
+                font-style: normal;
+                font-weight: 700;
+                height: 24px;
+            }
+            &__theme {
+                color: $text-color;
+                font-size: 18px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: 130%; 
+            }
+            &__speaker {
+                &-title {
+                    color: #027282;
+                    font-size: 24px;
+                    font-style: normal;
+                    font-weight: 700;
+                }
+                &-name {
+                    color: $text-color;
+                    font-size: 18px;
+                    font-style: normal;
+                    font-weight: 400;
+                    line-height: 130%; /* 23.4px */
+                }
+            }
+        }
+    }
+    &__wrapper {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+}

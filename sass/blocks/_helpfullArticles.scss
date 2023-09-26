@@ -1,0 +1,141 @@
+.helpfullArticles {
+    padding: 45px 0;
+    position: relative;
+    overflow: hidden;
+    .title {
+        margin-bottom: 60px;
+    }
+    .cabbages-for-white {
+        position: absolute;
+        z-index: -1;
+        width: 1809.187px;
+        height: 408.065px;
+        left: 50%;
+        transform: translate(-50%);
+        top: 184px;
+    }
+    &__wrapper {
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+    }
+    &__short-block {
+        display: flex;
+        justify-content: space-between;
+        padding: 40px 50px;
+        align-items: center;
+        gap: 30px;
+        align-self: stretch;
+        border-radius: 20px;
+        background: linear-gradient(90deg, #FCC150 1.12%, #F7941D 95.67%);
+        margin-bottom: 30px;
+        &__text {
+            color: #FFF;
+            font-size: 24px;
+            font-style: normal;
+            font-weight: 700;
+            line-height: 32px;
+            letter-spacing: 0.24px;
+        }
+        &__button {
+            border-radius: 8px;
+            border: 3px solid  #FFF;
+            background: #F7941D;
+            padding: 15px 30px;
+            color: #fff;
+            font-size: 24px;
+            font-style: normal;
+            font-weight: 700;
+            line-height: 130%; 
+        }
+    }
+
+    &__card {
+        padding: 0;
+        background: #D4EFF1;
+        border-radius: 0px 0px 40px 40px;
+        &-header {
+            padding: 30px 50px;
+            border-radius: 13px;
+            background: linear-gradient(90deg, #007B79 1.12%, #03A7AE 95.67%);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            &__title {
+                color:  #FFF;
+                font-size: 24px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: 130%; /* 31.2px */
+                padding: 0;
+                margin: 0;
+            }
+            &__arrow {
+                width: 45px;
+                height: 45px;
+            }
+        }
+        &-content {
+            border-radius: 0px 0px 40px 40px;
+            background: #D4EFF1;
+            display: flex;
+            padding: 60px 50px;
+            flex-direction: column;
+            align-items: flex-start;
+            gap: 30px;
+            align-self: stretch;
+            
+            &__item {
+                display: flex;
+                justify-content: space-between;
+                &-img {
+                    border-radius: 97px;
+                    width: 166px;
+                    height: 166px;
+                    background: #008592;
+                    display: flex;
+                    justify-content: center;
+                    overflow: hidden;
+                }
+                &-text {
+                    width: 70%;
+                    &__name {
+                        color: $text-color;
+                        font-size: 24px;
+                        font-style: normal;
+                        font-weight: 400;
+                        line-height: 130%; /* 31.2px */
+                        margin-bottom: 15px;
+                    }
+                    &__descr {
+                        color: $text-color;
+                        font-size: 18px;
+                        font-style: normal;
+                        font-weight: 400;
+                        line-height: 130%; /* 23.4px */
+                        margin-bottom: 30px;
+                    }
+                    
+                }
+                #Drozdov {
+                    padding-top: 12px;
+                }
+                &-button {
+                    border-radius: 8px;
+                    background:#F7941D;
+                    padding: 16px 24px;
+                    color:  #FFF;
+                    font-size: 18px;
+                    font-style: normal;
+                    font-weight: 400;
+                    line-height: 130%; 
+                    border: none;
+                }    
+            }
+        }   
+    }
+    #hlynov {
+        border-radius: 1000px;
+        background: url('img/hlynov.png');
+    }
+}

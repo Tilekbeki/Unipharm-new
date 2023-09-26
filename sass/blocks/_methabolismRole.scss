@@ -1,0 +1,120 @@
+.methabolismRole {
+    padding: 45px 0;
+    .title {
+        padding-left: 50px;
+    }
+    .listOfLiterature {
+        padding-left: 50px;
+        margin-bottom: 60px;
+    }
+    .more {
+        img {
+            translate: 180;
+        }
+    }
+    &__text {
+        color: $text-color;
+        font-size: 24px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 130%; /* 31.2px */
+        padding-left: 50px;
+        width: 93%;
+        margin-bottom: 60px;
+    }
+    &__short-block {
+        border-radius: 20px;
+        border: 2px solid #008592;
+        background: linear-gradient(90deg, #007B79 1.12%, #03A7AE 95.67%);
+        display: flex;
+        min-height: 187px;
+        padding: 60px 120px;
+        justify-content: center;
+        align-items: center;
+        gap: 60px;
+        margin-bottom: 30px;
+        &__button {
+            width: 254px;
+            height: 72px;
+            border-radius: 8px;
+            background: #F7941D;
+            color: var(--Gastrarex_blue, #FFF);
+            text-align: center;
+            font-size: 24px;
+            font-style: normal;
+            font-weight: 700;
+            letter-spacing: 0.24px;
+            text-transform: uppercase;
+            border: none;
+        }
+        &__arrow {
+            width: 122px;
+        }
+        &__formula {
+            display: flex;
+            p {
+                color: #FEC84D;
+                text-align: center;
+                font-size: 24px;
+                font-style: normal;
+                font-weight: 700;
+                line-height: 130%; /* 31.2px */
+            }
+            img {
+                width: 217px;
+                height: 103px;
+            }
+        }
+    }
+    &__wrapper {
+        margin-bottom: 30px;
+        display: flex;
+        gap: 25px;
+    }
+    &__schemes {
+        width: 35px;
+        height: 370px;
+        margin-top: 5px;
+        img {
+            width: 100%;
+            height: 100%;
+        }
+    }
+    &-datas {
+        &__row {
+            display: flex;
+            gap: 90px;
+            margin-bottom: 30px;
+            &:nth-child(4) {
+                margin-bottom: 0;
+            }
+            &-title {
+                width: 250px;
+                color: $main-color;
+                font-size: 18px;
+                font-style: normal;
+                font-weight: 700;
+                line-height: 130%; /* 23.4px */
+                text-transform: uppercase;
+            }
+            &-text {
+                width: 350px;
+                color: $text-color;
+                font-size: 18px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: 130%;
+                span {
+                    color: #F7941D;
+                    &:nth-child(1) {
+                        color: #F7941D;
+                        font-size: 18px;
+                        font-style: normal;
+                        font-weight: 700;
+                        line-height: 130%;
+                    }
+                }
+            }
+        }
+    }
+}

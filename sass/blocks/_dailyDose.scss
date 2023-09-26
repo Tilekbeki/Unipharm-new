@@ -1,0 +1,157 @@
+.dailyDose {
+    overflow: hidden;
+    padding: 45px 0;
+    .title {
+        width: 90%;
+        margin-bottom: 60px;
+    }
+    &-cabbages {
+        position: absolute;
+        width: 1920.002px;
+        height: 389.308px;
+        top: 243px;
+        left: 50%;
+        transform: translateX(-50%);
+        img {
+            width: 100%;
+            height: 100%;
+        }
+    }
+    .shadow-line {
+        display: block;
+        margin: 0 auto;
+        margin-bottom: 30px;
+    }
+    &__short-block {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 15px;
+        &__first-card {
+            display: flex;
+            gap: 30px;
+            &__title {
+                display: flex;
+                width: 284px;
+                gap: 30px;
+                img {
+                    width: 55px;
+                    height: 55px;
+                }
+            }
+            &__number {
+                display: flex;
+                justify-content: flex-end;
+                &-quantity {
+                    color: $second-color;
+                    font-size: 50px;
+                    font-style: normal;
+                    font-weight: 700;
+                    line-height: 105%; /* 52.5px */
+                    letter-spacing: 0.5px;
+                    span {
+                        color: $second-color;
+                        font-size: 24px;
+                        font-style: normal;
+                        font-weight: 400;
+                    }
+                }
+            }
+        }
+        &__second-card {
+            display: flex;
+            gap: 30px;
+            &__title {
+                display: flex;
+                width: 340px;
+                gap: 30px;
+                p {
+                    color: $text-color;
+                    font-size: 18px;
+                    font-style: normal;
+                    font-weight: 400;
+                    line-height: 130%; /* 23.4px */
+                    padding: 0;
+                    margin: 0;
+                }
+                img {
+                    width: 55px;
+                    height: 55px;
+                }
+            }
+            &__number {
+                display: flex;
+                &-quantity {
+                    color:  $second-color;
+                    font-size: 50px;
+                    font-style: normal;
+                    font-weight: 700;
+                    line-height: 105%; /* 52.5px */
+                    letter-spacing: 0.5px;
+                    span {
+                        color: $second-color;
+                        font-size: 24px;
+                        font-style: normal;
+                        font-weight: 400;
+                    }
+                }
+            }
+        }
+    }
+    &-text {
+        color: $main-color;
+        font-size: 24px;
+        font-style: normal;
+        font-weight: 400;
+        margin-bottom: 30px;
+    }
+    &-subtitle {
+        color:$second-color;
+        font-size: 24px;
+        font-style: normal;
+        font-weight: 700;
+        margin-bottom: 30px;
+    }
+    &-list {
+        margin-bottom: 60px;
+        ul {
+            padding: 0;
+            margin: 0;
+            display: flex;
+            justify-content: space-between;
+            li {
+                padding: 0;
+                margin: 0;
+                display: flex;
+                gap: 15px;
+                &:nth-child(1) {
+                    width: 243px;
+                }
+                &:nth-child(2) {
+                    width: 280px;
+                }
+                &:nth-child(3) {
+                    width: 222px;
+                }
+                &:nth-child(4) {
+                    width: 185px;
+                }
+                img {
+                    width: 58px;
+                    height: 58px;
+                    padding: 0;
+                    margin: 0;
+                }
+                p {
+                    padding: 0;
+                    margin: 0;
+                    color: $text-color;
+                    font-size: 18px;
+                    font-style: normal;
+                    font-weight: 400;
+                    line-height: 130%; /* 23.4px */
+                }
+                
+            }
+        }
+    }
+}

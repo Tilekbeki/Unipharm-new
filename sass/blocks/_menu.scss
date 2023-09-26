@@ -1,0 +1,44 @@
+.menu {
+    background: var(--Tiffany_dark, #008592);
+    padding: 24px 0;
+    
+    &__wrapper {
+        display: flex;
+        justify-content: space-between;
+        .button {
+            border-radius: 10px;
+            background: $second-color;
+            padding: 15px;
+            color: var(--White, #FFF);
+            font-family: Gilroy;
+            font-size: 18px;
+            font-style: normal;
+            font-weight: 700;
+            border: none;
+            text-transform: uppercase;
+        }
+        ul {
+            width: 490px;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            justify-content: space-between;
+            color: #fff;
+            text-align: center;
+            align-items: center;
+            font-size: 18px;
+            font-style: normal;
+            font-weight: 700;
+            text-transform: uppercase;
+            text-decoration: none;
+            list-style: none;
+            li{
+                &:hover {
+                    color: #FEC84D;
+                    cursor: pointer;
+                }
+            }
+        }
+    }
+    
+}

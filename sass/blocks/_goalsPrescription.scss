@@ -1,0 +1,111 @@
+.goalsPrescription {
+    padding: 45px 0;
+    position: relative;
+    .title {
+        margin-bottom: 30px;
+    }
+    &__text {
+        color: #fff;
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 130%; 
+        padding: 0;
+        margin-bottom: 60px;
+    }
+    &__wrapper {
+        display: flex;
+        margin-bottom: 30px;
+    }
+    &__list:nth-child(3) {
+        ul li {
+            margin-bottom: 0px;
+        }
+    }
+    &__list {
+        &-title {
+            color: #fff;
+            font-size: 30px;
+            font-style: normal;
+            font-weight: 700;
+            letter-spacing: 0.3px;
+            margin-bottom: 30px;
+        }
+        &__item {
+            &-title {
+                padding-top: 10px;
+                color: #FFF;
+                font-size: 24px;
+                font-style: normal;
+                font-weight: 700;
+                line-height: 130%; 
+            }
+            &-text {
+                color: #FFF;
+                font-size: 18px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: 130%; 
+                margin-bottom: 8px;
+            }
+            &-img {
+                fill: #FFF;
+                filter: drop-shadow(0px 4px 15px #FFF);
+                width: 40px;
+                height: 40px;
+            }
+        }
+        ul {
+            padding: 0;
+            margin-bottom: 0;
+            li {
+                display: flex;
+                justify-content: flex-start;
+                padding: 0;
+                gap: 16px;
+                margin-bottom: 30px;
+            }
+        }
+            
+    }
+    &__scales {
+        width: 100%;
+        height: 561px;
+        img {
+            width: 100%;
+            height: 100%;
+        }
+    }
+    &__small-text {
+        color:  #FFF;
+        font-size: 12px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 130%;
+    }   
+}
+
+.right-cabbages {
+    position: absolute;
+    right: 0;
+    width: 326px;
+    height: 574px;
+    top: 50%;
+    transform: translatey(-50%);
+    img {
+        width: 100%;
+        height: 100%;
+    }
+}
+.left-cabbages {
+    position: absolute;
+    left: 0;
+    width: 326px;
+    height: 574px;
+    top: 50%;
+    transform: translatey(-50%);
+    img {
+        width: 100%;
+        height: 100%;
+    }
+}
