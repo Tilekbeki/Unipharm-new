@@ -1,6 +1,9 @@
 .menu {
-    background: var(--Tiffany_dark, #008592);
+    position: fixed;
+    background: #008592;
+    z-index: 7;
     padding: 24px 0;
+    width: 100%;
     
     &__wrapper {
         display: flex;
@@ -23,7 +26,6 @@
             margin: 0;
             display: flex;
             justify-content: space-between;
-            color: #fff;
             text-align: center;
             align-items: center;
             font-size: 18px;
@@ -32,8 +34,17 @@
             text-transform: uppercase;
             text-decoration: none;
             list-style: none;
+            a {
+            color: #fff;
+            text-decoration: none;
+            }
+            .active {
+                a {
+                    color: #FEC84D;
+                }
+            }
             li{
-                &:hover {
+                :hover {
                     color: #FEC84D;
                     cursor: pointer;
                 }

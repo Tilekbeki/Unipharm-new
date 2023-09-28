@@ -1,8 +1,8 @@
 .promo {
     background: url('../img/promo bg.png') center/cover no-repeat;
     height: 110vh;
-    width: 203.2vh;
-    position: relative;
+    width: 100%;
+    position: absolute;
     overflow: hidden;
     .close-modal {
         z-index: 1000;
@@ -33,7 +33,12 @@
         background: rgba(255, 255, 255, 0.80);
         backdrop-filter: blur(4px);
         width: 100%;
-        svg {
+        height: auto;
+        img.mobile-warning {
+            display: none;
+            width: 100%;
+        }
+        img.laptop-warning {
             width: 100%;
         }
     }

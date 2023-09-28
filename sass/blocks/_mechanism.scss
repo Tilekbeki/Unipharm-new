@@ -1,5 +1,6 @@
 .mechanism {
     overflow: hidden;
+    padding-top: 100vh;
     .blue-wrapper {
         border-radius: 0;
         min-height: 876px;
@@ -74,5 +75,8 @@
         border-radius: 8px;
         background: #F7941D;
         box-shadow: 0px 10px 41px 0px rgba(131, 52, 2, 0.39);
+    }
+    .mobile {
+        display: none;
     }
 }

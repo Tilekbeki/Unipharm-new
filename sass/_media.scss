@@ -1,19 +1,1265 @@
+@media (max-width: 1735px) {
+    .goalsPrescription__wrapper {
+        overflow: hidden;
+
+    }
+    .goalsPrescription {
+        .left-cabbages,.right-cabbages {
+            display: none;
+        }
+    }
+    
+}
+@media (max-width: 1400px) {
+    .methabolismRole__wrapper {
+        overflow: scroll;
+    }
+    .mechanism-button {
+        width: 65%;
+        /* margin-top: 183px; */
+        bottom: -6px;
+        justify-content: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .trends__bg {
+        img {
+            width: 100%;
+        }
+   }
+   .videoCasts__wrapper {
+    flex-direction: column;
+    margin: 0 auto;
+    gap: 30px;
+   }
+   .videoCasts__item {
+    margin: 0 auto;
+   }
+   .recomendWhy-wrapper {
+    flex-direction: column;
+    gap: 30px;
+    .recomendWhy-card {
+        width: 100%;
+        margin-bottom: 0;
+    }
+   }
+}
 @media (max-width: 1200px) {
-   
+    .mechanism-button {
+        width: 65%;
+        /* margin-top: 183px; */
+        bottom:-30px;
+        justify-content: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .aboutCapsule-block{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items:center;
+    }
+    .aboutCapsule-block__img-box {
+        width: 100%;
+    }
+    .pop-up-layer{
+        background: linear-gradient(90deg,#008480 37.12%,#00a2a3 89.67%);
+    }
+    .promo {
+        background-position: right -414px top 144px;
+    }
+   .trends__bg {
+        img {
+            width: 100%;
+        }
+   }
+   .mechanism {
+    padding-top: 110vh;
+   }
+   .trends__title-block {
+    margin: 0 auto;
+   }
+   .trends__text-block {
+    width: 100%;
+   }
+   .trends__wrapper {
+    flex-direction: column;
+    gap: 10px;
+}
+   .trends__text-block__phares {
+    width: 100%;
+   }
+   .whatIs__card-cabbage {
+    height: 100%;
+    img {
+        height: 100%;
+    }
+   }
+   .tablets-left, .tablets-right {
+    display: none;
+   }
+   .methabolismRole__wrapper {
+    overflow: scroll;
+   }
+   .mechanism__item {
+    width: 60%;
+   }
+   .mechanism__item-header__title {
+    width: 85%;
+   }
+   .mechanism__item-header__img {
+    width: 85%;
+   }
+   .mechanism__item-header__list {
+    width: 100%;
+   }
 }
 
 @media (max-width: 991px) {
-    
+    .scheme-wrapper {
+        flex-direction: column;
+        width: 100%;
+        .scheme-item {
+            width: 100%;
+        }
+    }
+    .scheme {
+        .button_over {
+            border-radius: 8px;
+            background: #f7941d;
+            box-shadow: 0 10px 41px 0 rgba(131,52,2,.39);
+            position: absolute;
+            left: 50%;
+            bottom: 14px;
+            width: 67%;
+            transform: translate(-50%);
+        }
+    }
+    .mechanism-wrapper {
+        flex-direction: column;
+        .mechanism__item {
+            width: 100%;
+        }
+    }
+    .mechanism-button {
+        width: 130%;
+        bottom: -105px;
+        left: 50%;
+        transform: translate(-50%);
+        justify-content: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .promo {
+        background: url('../img/promo bg2.jpg') center/cover no-repeat;
+        background-position: right -52px top -1px;
+    }
+    .footer-wrapper {
+        flex-direction: column;
+        justify-content: center;
+        align-items:center;
+    }
+    .specialVitamin__short-block__title {
+        width: 100%;
+    }
+    .specialVitamin__short-block {
+        flex-direction: column;
+        justify-content: center;
+        align-items:center;
+    }
+    .methabolismRole__short-block {
+        flex-direction: column;
+    }
+    .trends__title-block {
+        width: 80%;
+    }
+    .whatIs_wide .whatIs__card {
+        padding: 20px 20px;
+        flex-direction: column;
+        min-height: 260px;
+    }
+    .gray-wrapper {
+        .button_over {
+                bottom: -108px;
+                width: 100%;
+                left: 50%;
+                transform: translate(-50%);
+        }
+    }
 }
     
 
 
 @media (max-width: 767px){
     
+    .aboutCapsule-block__img-box {
+        width: 120%;
+    }
+    .mechanism {
+        .blue-wrapper {
+            padding-bottom: 120px;
+        }
+    }
+    .aboutCapsule-block__text {
+        br {
+            display: none;
+        }
+    }
+    .aboutCapsule-block__img-box {
+        display: none;
+    }
+    .aboutCapsule-block__img-tablets {
+        display: none;
+    }
+    .aboutCapsule-block__img-tablets-mobile {
+        display: block;
+
+    }
+    .aboutCapsule-block__text p {
+        display: none;
+    }
+    .aboutCapsule-block {
+        .mobile {
+            display: block;
+        }
+        .mobile-road {
+            display: block;
+        }
+    }
+    .mechanism-button {
+        width: 120%;
+        bottom: -120px;
+        left: 50%;
+        transform: translate(-50%);
+        justify-content: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .promo {
+        background-position: right -228px top 177px;
+        .warning {
+            height: 16vh;
+            img.mobile-warning {
+                width: 100%;
+                height: 11vh;
+            }
+            img.laptop-warning {
+                width: 100%;
+                height: 13vh;
+            }
+        }
+    }
+    .promo-wrapper {
+        gap: 4px;
+    }
+    .pop-up-layer {
+        background: linear-gradient(90deg,#00a6a6 1.12%,#00a6a6 95.67%);
+    }
+    .menu__wrapper {
+        ul {
+            display: none;
+        }
+    }
+    .trends__title-block__title {
+        h1 {
+            font-size: 46px;
+        }
+    }
+    .keyMechanisms__main-wrapper {
+        flex-direction: column;
+        gap: 30px;
+        img {
+            display: none;
+        }
+    }
+    .keyMechanisms__main__item {
+        width: 100%;
+        &:nth-child(5),&:nth-child(1),&:nth-child(3) {
+            width: 100%;
+        }
+    }
+    .specialVitamin__history-block {
+        flex-direction: column;
+        .shadow-line {
+            display: none;
+        }
+    }
+    .specialVitamin__history-block__first-person {
+        width: 100%;
+    }
+    .specialVitamin__history-block__second-person {
+        width: 100%;
+    }
+    .videoCasts__item {
+        width: 100%;
+    }
+    .videoCasts__item-video {
+        width: 100%;
+        img {
+            width: 100%;
+        }
+    }
+    .whatIs_wide {
+        height: auto;
+    }
+    .whatIs_wide .whatIs__card {
+        height: auto;
+    }
+    .perspectives__wrapper {
+        flex-direction: column;
+        gap: 30px;
+        .shaow-line {
+            display: none;
+        }
+    }
+    .title {
+        font-size: 26px;
+    }
+    .dailyDose {
+        .shadow-line {
+            width: 100%;
+            height: 13px;
+        }
+    }
+    .dailyDose__short-block {
+        flex-direction: column;
+        gap: 30px;
+        
+    }
+    .dailyDose-list ul {
+        flex-direction: column;
+        li:nth-child(1) {
+            width: 100%;
+        }
+        li:nth-child(2) {
+            width: 100%;
+        }
+        li:nth-child(3) {
+            width: 100%;
+        }
+        li:nth-child(4) {
+            width: 100%;
+        }
+    }
+    .helpfullArticles__card-content__item {
+        flex-direction: column;
+        gap: 20px;
+        &-text {
+            width: 100%;
+        }
+    }
 }
      
 
 
 @media (max-width:575px){
+    .promo {
+        background-position: right -192px top 28px;
+        .warning {
+            height: 12vh;
+            img.mobile-warning {
+                width: 100%;
+                height: 8vh;
+                display: block;
+            }
+            img.laptop-warning {
+                width: 100%;
+                height: 13vh;
+                display: none;
+            }
+        }
+        .close-modal {
+            top: 44px;
+            right: 9px;
+            width: 38px;
+            height: 38px;
+            img {
+                width: 38px;
+                height: 38px;
+                padding-top: 6px;
+            }
+        }
+    }
+    .pop-up-layer {
+        background: linear-gradient(90deg,#00a6a6 1.12%,#00a4a4 95.67%);
+    }
+    .mechanism {
+        padding-top: 85vh;
+    }
+    .trends__wrapper {
+        overflow: hidden;
+    }
+    .trends {
+        padding: 150px 0 56px 0;
+        .title {
+            margin-bottom: 32px;
+        }
+    }
+    .trends__title-block {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        .button {
+            width: 100%;
+            padding: 8px 16px;
+            height: 34px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            a {
+                font-size: 14px;
+            }
+        }
+    }
+    .trends__text-block__phares {
+        flex-direction: column;
+        margin-bottom: 0;
+    }
+    .trends__text-block__phares-text {
+        font-size: 14px;
+        width: 100%;
+    }
+    .trends__text-block__phares-quote {
+        font-size: 32px;
+        height: 32px;
+    }
+    .trends__text-block__phares-quote:nth-child(3) {
+        font-size: 32px;
+        height: 32px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .trends__text-block__person {
+        width: 288px;
+        padding: 0;
+        margin: 0 auto;
+        &-text {
+            font-size: 10px;
+        }
+        &-img {
+            width: 60px;
+            height: 60px;
+            img {
+                height: 60px;
+                width: 60px;
+            }
+        }
+    }
+    .menu {
+        padding: 12px 0;
+    }
+    .menu__wrapper {
+        .button {
+            padding: 8px 16px;
+        }
+        button {
+            padding: 8px 16px;
+            a {
+                font-size: 14px;
+            }
+        }
+    }
+    .trends__title-block__title {
+        h1 {
+            font-size: 28px;
+        }
+    }
+    .whatIs__card-title {
+        font-size: 18px;
+    }
+    .whatIs__card-cabbage {
+        display: none;
+    }
+    .whatIs__card-text {
+        font-size: 14px;
+    }
+    .whatIs__card {
+        padding: 32px 16px;
+    }
+    .title {
+        font-size: 22px;
+    }
+    .whatIs_wide .whatIs__card-text {
+        font-size: 18px;
+    }
+    .whatIs_wide .whatIs__card {
+        padding: 32px 16px;
+        flex-direction: column;
+        min-height: 205px;
+    }
+    .whatIs_wide {
+        padding: 32px 16px;
+        height: auto;
+    }
+    .button_center {
+        font-size: 14px;
+        padding: 8px 16px;
+    }
+    .keyMechanisms__main {
+        margin-bottom: 32px;
+    }
+    .keyMechanisms__main__item-text {
+        font-size: 14px;
+        padding-top: 2px;
+        justify-content: flex-start;
+    }
+    .keyMechanisms__main__item-img {
+        width: 20px;
+        height: 20px;
+        svg {
+            width: 20px;
+            height: 20px;
+        }
+    }
+    .keyMechanisms {
+        padding: 32px 0;
+    }
+    .keyMechanisms .title {
+        margin-bottom: 32px;
+    }
+    .more {
+        font-size: 18px;
+        width: 129px;
+        .more__arrow {
+            width: 25px;
+            height: 25px;
+        }
+    }
+    .whatIs {
+        padding: 32px 0;
+    }
+    .whatIsMore {
+        padding: 32px 0;
+    }
+    .whatIs_wide {
+        border-radius: 20px;
+    }
+    .specialVitamin {
+        padding: 32px 0;
+        .title {
+            margin-bottom: 32px;
+        }
+    }
+    .specialVitamin__short-block__title {
+        font-size: 18px;
+    }
+    .gray-wrapper {
+        padding: 16px;
+    }
+    .specialVitamin__short-block__img {
+        width: 256px;
+        height: 109px;
+        img {
+            width: 256px;
+            height: 109px;
+        }
+    }
+    .gray-wrapper .button_over {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items:center;
+        padding: 8px 16px;
+        a {
+            font-size: 14px;
+        }
+    }
+    .specialVitamin__short-block {
+        gap: 30px;
+        margin-bottom: 45px;
+    }
+    .specialVitamin__history-block__first-person {
+        gap: 8px;
+        img {
+            width: 64px;
+            height: 64px;
+        }
+        p {
+            font-size: 14px;
+        }
+    }
+    .specialVitamin__history-block__second-person {
+        gap: 8px;
+        img {
+            width: 64px;
+            height: 64px;
+        }
+        p {
+            font-size: 14px;
+        }
+    }
+    .gray-wrapper .button_over {
+        bottom: -66px;
+    }
+    .methabolismRole {
+        padding-top: 90px;
+        padding-bottom: 32px;
+        .title {
+            padding-left: 10px;
+        }
+        .listOfLiterature {
+            margin-bottom: 32px;
+        }
+    }
+    .methabolismRole__text {
+        font-size: 14px;
+        padding: 0;
+        width: 100%;
+        margin-bottom: 32px;
+    }
+    .listOfLiterature {
+        ol li {
+            font-size: 10px;
+        }
+    }
+    
+    .videoCasts {
+        padding: 32px 0;
+        .light-wrapper {
+            padding: 32px 16px;
+            border-radius: 20px;
+        }
+        &-text {
+            font-size: 14px;
+        }
+        &__item{
+            &-info {
+                &__title,&__speaker-title {
+                    font-size: 16px;
+                }
+                &__theme,&__speaker-name {
+                    font-size: 14px;
+                }
+            }
+            &-video {
+                margin-bottom: 8px;
+            }
+        }
+        &__person {
+            flex-direction: column;
+            margin-bottom: 32px;
+            
+            &-img {
+                width: 64px;
+                height: 64px;
+            }
+            img {
+                width: 64px;
+                height: 64px;
+            }
+            &-text {
+                font-size: 14px;
+            }
+        }
+    }
+    .span {
+        &_blue-bold {
+            font-size: 16px;
+        }
+        &_black-bold {
+            font-size: 16px;
+        }
+    }
+    .helpfullArticles__short-block__button a {
+        font-size: 14px;
+    }
+    .helpfullArticles__short-block {
+        flex-direction: column;
+        padding: 24px 16px;
+        justify-content: flex-start;
+        align-items: baseline;
+        gap: 16px;
+        &__text {
+            font-size: 16px;
+            width: 65%;
+        }
+        &__button {
+            padding: 0px 16px;
+            a {
+                font-style: 14px;
+            }
+        }
+    }
+    .helpfullArticles__card {
+        border-radius: 0 0 20px 20px;
+        .helpfullArticles__card-header {
+            padding: 30px 16px;
+            p {
+                font-size: 14px;
+                width: 189px;
+            }
+            img {
+                width: 45px;
+                height: 45px;
+            }
+        }
+    }
+    .helpfullArticles__card-content {
+        padding: 32px 16px;
+        .helpfullArticles__card-content__item {
+            gap: 8px;
+            .helpfullArticles__card-content__item-text__name {
+                font-size: 16px;
+                margin-bottom: 8px;
+            }
+            .helpfullArticles__card-content__item-text__descr {
+                font-size: 14px;
+                
+            }
+        }
+        .helpfullArticles__card-content__item-button {
+            padding: 8px 16px;
+            display: flex;
+            justify-content: center;
+            font-size: 14px;
+            border-radius: 8px;
+        }
+        .helpfullArticles__card-content__item-img {
+            width: 72px;
+            height: 72px;
+            img {
+                width: 72px;
+                height: 72px;
+            }
+        }
+    }
+    .helpfullArticles__card-content__item #Drozdov {
+        padding-top: 5px;
+    }
+    .helpfullArticles {
+        padding: 32px 0;
+    } 
+    .footer-wrapper {
+        align-items: baseline;
+        p {
+            font-size: 14px;
+        }
+        .footer-info {
+            width: 100%;
+            br:nth-child(1) {
+                display: inline;
+            }
+        }
+    }
+    .footer-info br:nth-child(1) {
+        display: inline;
+    }
+    .trends__bg {
+        display: none;
+    }
+    .trends__bg-second {
+        display: block;
+        position: absolute;
+        z-index: -1;
+        top: 74px;
+        right: -424px;
+        img {
+            width: 790px;
+            height: 450px;
+        }
+    }
+    .goalsPrescription__list-title {
+        font-size: 18px;
+        margin-bottom: 16px;
+        width: 170px;
+    }
+    .goalsPrescription__scales {
+        width: 256px;
+        height: 261px;
+        img {
+            width: 256px;
+            height: 261px;
+        }
+    }
+    .goalsPrescription__list__item-text {
+        font-size: 14px;
+    }
+    .goalsPrescription .title {
+        margin-bottom: 12px;
+    }
+    .blue-wrapper {
+        padding: 32px 16px;
+    }
+    .goalsPrescription__text {
+        font-size: 14px;
+        margin-bottom: 32px;
+    }
+    .goalsPrescription__list {
+        
+        ul li {
+            gap: 8px;
+            margin-bottom: 16px;
+            .goalsPrescription__list__item-img {
+                width: 20px;
+                height: 20px;
+                svg {
+                    width: 20px;
+                    height: 20px;
+                }
+            }
+            .goalsPrescription__list__item-title {
+                font-size: 14px;
+            }
+        }
+    }
+    .perspectives {
+        .shadow-line {
+            display: none;
+        }
+    }
+    .light-wrapper {
+        padding: 32px 16px;
+        .title {
+            margin-bottom: 32px;
+        }
+        
+    }
+    .perspectives__block-first__item {
+        gap: 8px;
+        flex-direction: column;
+    }
+    .perspectives__block-first__item-img {
+        width: 32px;
+        height: 32px;
+        img {
+            width: 32px;
+            height: 32px;
+        }
+    }
+    .perspectives__block-first__item-text {
+        gap: 8px;
+        width: 100%;
+        .perspectives__block-first__item-text__title {
+            font-size: 16px;
+        }
+        .perspectives__block-first__item-text__descr {
+            font-size: 14px;
+        }
+        .perspectives__block-first__item-text__descr {
+            br {
+                display: none;
+            }
+        }
+    }
+    .perspectives__block-second__item {
+        gap: 8px;
+        flex-direction: column;
+    }
+    .perspectives__block-second__item-text {
+        gap: 8px;
+        width: 100%;
+        .perspectives__block-second__item-text__title {
+            font-size: 16px;
+        }
+        .perspectives__block-second__item-text__descr {
+            font-size: 14px;
+        }
+        .perspectives__block-second__item-text__descr {
+            br {
+                display: none;
+            }
+        }
+    }
+    .blue-wrapper {
+        border-radius: 20px;
+    }
+    .white-wrapper {
+        padding: 32px 16px;
+    }
+    .dailyDose .title {
+        margin-bottom: 32px;
+    }
+    .dailyDose__short-block {
+        gap: 24px;
+    }
+    .dailyDose__short-block__first-card {
+        display: flex;
+        gap: 8px;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .dailyDose__short-block__first-card__title {
+        img {
+            width: 42px;
+            height: 42px;
+        }
+        p {
+            font-size: 14px;
+            margin-bottom: 0;
+            padding: 0;
+        }
+    }
+    .dailyDose__short-block__first-card__number {
+        .dailyDose__short-block__first-card__number-quantity {
+            font-size: 22px;
+            span {
+                font-size: 16px;
+            }
+        }
+    }
+    .dailyDose__short-block__second-card {
+        display: flex;
+        gap: 8px;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .dailyDose__short-block__second-card__title {
+        img {
+            width: 42px;
+            height: 42px;
+        }
+        p {
+            font-size: 14px;
+            margin-bottom: 0;
+            padding: 0;
+        }
+    }
+    .dailyDose__short-block__second-card__number {
+        .dailyDose__short-block__second-card__number-quantity {
+            font-size: 22px;
+            span {
+                font-size: 16px;
+            }
+        }
+    }
+    .dailyDose-text {
+        font-size: 16px;
+        margin-bottom: 16px;
+    }
+    .dailyDose .shadow-line {
+        height: 4px;
+        margin-bottom: 16px;
+    }
+    .dailyDose-subtitle {
+        font-size: 16px;
+        margin-bottom: 30px;
+    }
+    .dailyDose-list {
+        margin-bottom: 32px;
+        ul li {
+            gap: 15px;
+            img {
+                width: 32px;
+                height: 32px;
+            }
+            p {
+                font-size: 14px;
+            }
+        }
+    }
+    .methabolismRole {
+        padding-left: 16px;
+        padding-right: 16px;
+    }
+    .methabolismRole__short-block {
+        padding: 32px 16px;
+        gap: 8px;
+        align-items: center;
+        justify-content: center;
+    }
+    .methabolismRole__short-block__button {
+        padding: 8px 16px;
+        font-size: 14px;
+        display: flex;
+        align-items:center;
+        justify-content: center;
+        width: auto;
+        height: auto;
+    }
+    .methabolismRole__short-block__formula {
+        flex-direction: column;
+        text-align: center;
+        gap: 8px;
+        p {
+            margin: 0;
+            padding: 0;
+            font-size: 16px;
+        }
+    }
+    .methabolismRole__short-block__arrow {
+        img:nth-child(1) {
+            display: none;
+        }
+    }
+    .methabolismRole__short-block__arrow {
+        text-align: center;
+    }
+    .footer-wrapper {
+        gap: 32px;
+    }
+    .footer {
+        padding: 32px 0;
+    }
+    .footer-address__links {
+        flex-direction: column;
+        gap: 0;
+    }
+    .helpfullArticles__card-content__item-text__descr {
+        margin-bottom: 0px;
+    }
+    .promo-wrapper {
+        gap: 16px;
+        padding-top: 52px;
+        width: 288px;
+        margin: 0 auto;
+        h2 {
+            font-size: 22px;
+        }
+        p {
+            font-size: 14px;
+        }
+        a {
+            font-size: 16px;
+        }
+        button {
+            padding: 8px 16px;
+            font-size: 14px;
+        }
+    }
+    .whatIs {
+        padding: 32px 16px;
+    }
+    
+    .mechanism {
+        .white-wrapper {
+            margin-bottom: 32px;
+        }
+        .title {
+            margin-bottom: 32px;
+        }
+        &-wrapper {
+            flex-direction: column;
+            gap: 24px;
+        }
+        &__item{
+            &-header {
+                flex-direction: row;
+                gap: 16px;
+                &__list {
+                    width: 100%;
+                    ul {
+                        gap: 16px;
+                        li {
+                            gap: 8px;
+                            p {
+                                font-size: 14px;
+                                padding: 0;
+                            }
+                            img {
+                                width: 20px;
+                                height: 20px;
+                            }
+                        }
+                    }
+                }
+                gap: 24px;
+                &__title {
+                    margin-bottom: 30px;
+                }
+                &__img {
+                    width: 36px;
+                    height: 42px;
+                    img {
+                        width: 36px;
+                        height: 42px;
+                    }
+                }
+            }
+            
+        }
+        &-button {
+            padding: 8px 16px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 14px;
+            width: auto;
+            display: none;
+        }
+        .mobile {
+            display: inline;
+            width: 90%;
+            position: absolute;
+            left: 50%;
+            transform: translate(-50%);
+            bottom: 32px;
+        }
+        .blue-wrapper {
+            padding-bottom: 116px;
+        }
+    }
+    .recomendWhy {
+        padding: 32px 16px;
+        .title {
+            padding: 0;
+            margin-bottom: 24px;
+        }
+        &-wrapper {
+            padding: 0;
+            gap: 16px;
+        }
+        &-card {
+            padding: 32px 16px;
+            gap: 16px;
+            flex-direction: column;
+            justify-content: baseline;
+            align-items: baseline;
+            margin: 0;
+            img {
+                width: 50px;
+                height: 50px;
+            }
+            p {
+                font-size: 14px;
+            }
+        }
+    }
+    .aboutCapsule {
+        background: #d4eff1;
+        margin-bottom: 0;
+        padding: 0px 16px;
+        padding-bottom: 32px;
+        .light-wrapper {
+            display: block;
+            border-radius: 0 0 20px 20px;
+            border: none;
+            .aboutCapsule-wrapper {
+                flex-direction: column;
+                gap: 16px;
+                padding-left: 0;
+                padding-bottom: 0px;
+                
+                .aboutCapsule-item {
+                    width: 55%;
+                    display: flex;
+                    flex-direction: row;
+                    gap: 15px;
+                    align-items:center;
+                    img {
+                        width: 40px;
+                        height: 44px;
+                    }
+                    p {
+                        font-size: 16px;
+                    }
+                }
+            }
+        }
+        .mobile-road {
+            display: block;
+            width: 100%;
+            position: absolute;
+            bottom: 10px;
+        }
+        &-block {
+            gap: 32px;
+            margin-bottom: 0;
+            
+            border-radius: 0;
+            .mobile {
+                font-size: 14px;
+                padding: 0;
+                margin: 0;
+                p {
+                    display: block;
+                    font-size: 14px;
+                }
+            }
+            border-radius:  20px 20px 0 0;
+            border: 2px solid #D4EFF1;
+            background: #EFFEFF;
+            padding: 32px 16px;
+            flex-direction: column;
+            border: none;
+            &__text{
+                p {
+                    display: none;
+                }
+                br {
+                    display: none;
+                }
+                width: 100%;
+                &-quantity {
+                    font-size: 16px;
+                }
+                &-title {
+                    font-size: 18px;
+                    
+                }
+            }
+        }
+    }
+    .aboutCapsule-block__img-box {
+        display: none;
+    }
+    .aboutCapsule-block__img-tablets {
+        display: none;
+    }
+    .aboutCapsule-block__img-tablets-mobile {
+        display: block;
 
+    }
+    .scheme {
+        .blue-wrapper {
+        padding: 32px 16px;
+        }
+        .title {
+            margin-bottom: 32px;
+        }
+        .scheme-wrapper {
+            flex-direction: column;
+            gap: 16px;
+        }
+        .scheme-item {
+            gap: 16px;
+            width: 90%;
+            margin: 0;
+            img {
+                width: 75px;
+                height: 61px;
+            }
+            p {
+                font-size: 18px;
+                margin: 0;
+                padding: 0;
+            }
+        }
+        .button_over {
+            display: none;
+        }
+    }
+    .aboutCapsule .button_over-mobile {
+        font-size: 14px;
+        display: flex;
+        justify-content: center;
+        align-items:center;
+        padding: 8px 16px;
+        width: 100%;
+    }
+    .listOfLiterature_popUpVersion {
+        padding: 32px 16px 102px 16px;
+        .title {
+            font-size: 22px;
+            padding-left: 0;
+        }
+    }
+    
+}
+
+@media (max-width: 424px) {
+    .promo {
+        /* background: url(../img/фон капуста с упаковкой 1.png) center/cover no-repeat; */
+        background-position: right -126px top 99px;
+        background-size: 269% 77%;
+    }
+    
 }

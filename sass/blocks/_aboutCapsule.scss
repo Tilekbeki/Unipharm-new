@@ -69,8 +69,19 @@
                 position: absolute;
                 bottom: -20px;
                 right: 440px;
-                
+                &-mobile {
+                    display: none;
+                    width: 100%;
+                }
             }
         }
     }
+    .aboutCapsule-road {
+        display: none;
+    }
+    .light-wrapper {display: none;}
+    .mobile-road {
+        display: none;
+    }
+    .button_over-mobile {display: none;}
 }

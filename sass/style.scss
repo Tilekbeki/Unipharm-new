@@ -5,15 +5,22 @@
     margin: 0;
     box-sizing: border-box;
     font-family: Gilroy;
-    // border: 1px solid red;
+    border: 1px solid red;
+}
+html {
+    scroll-behavior: smooth;
 }
 main {
     position: relative;
+    overflow: hidden;
 }
 body {
     position: relative;
+    
 }
-
+.trends__bg-second {
+    display: none;
+}
 @import 'base/variables';
 @import 'blocks/buttons';
 @import 'blocks/menu';

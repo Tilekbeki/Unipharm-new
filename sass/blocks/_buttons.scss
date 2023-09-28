@@ -1,17 +1,23 @@
 .active {
-    color: #FEC84D;
+    a {
+        color: #FEC84D;
+    }
 }
 .button {
     border-radius: 8px;
     background: $second-color;
     background: var(--Orange_gradient, linear-gradient(90deg, #FCC150 1.12%, #F7941D 95.67%));
-    color:#fff;
     font-size: 24px;
     font-style: normal;
     padding: 30px;
     font-weight: 700;
     text-transform: uppercase;
     border: none;
+    color:#fff;
+    a {
+        color:#fff;
+        text-decoration: none;
+    }
     &_center {
         background:  $second-color;
         display: block;
@@ -47,4 +53,8 @@
         width: 46px;
         height: 46px;
     }
+}
+
+.rotaten {
+    transform: rotate(180deg);
 }

@@ -10,6 +10,9 @@
   <link rel="stylesheet" href="css/style.min.css">
   <link rel="stylesheet" href="fonts/fonts.css">
   <link rel="stylesheet" href="css/animate.min.css">
+  <link href="css/video-js.css" rel="stylesheet" />
+  <link rel="stylesheet" href="css/videojs-seek-buttons.css">
+  <link href="https://vjs.zencdn.net/8.5.2/video-js.css" rel="stylesheet" />
   <title>Гастрарекс Unipharm</title>
 </head>
 
@@ -19,18 +22,20 @@
       <div class="container">
         <div class="row">
           <div class="menu__wrapper">
-            <button class="button">СОВРЕМЕННЫЕ ТРЕНДЫ ГАСТРОПРОТЕКЦИИ</button>
+            <button class="button"><a href="#modern">СОВРЕМЕННЫЕ ТРЕНДЫ ГАСТРОПРОТЕКЦИИ</a></button>
             <ul>
-              <li class="active">UНИКАЛЬНЫЙ ВИТАМИН</li>
-              <li>ВИДЕОПОДКАСТЫ</li>
-              <li>СТАТЬИ</li>
+              <li><a href="#identity">UНИКАЛЬНЫЙ ВИТАМИН</a></li>
+              <li><a href="#videoCasts">ВИДЕОПОДКАСТЫ</a></li>
+              <li><a href="#articles">СТАТЬИ</a></li>
             </ul>
           </div>
         </div>
       </div>
     </nav>
-    <section class="trends">
-
+    
+    <div class="trends__bg-second"><img src="img/lines bg.png" alt="фон"></div>
+    <section class="trends" id="modern">
+      
       <div class="container">
         <div class="row">
           <div class="trends__wrapper">
@@ -39,7 +44,7 @@
               <div class="trends__title-block__title">
                 <h1><span class="span_orange">СОВРЕМЕННЫЕ ТРЕНДЫ</span><br>ГАСТРОПРОТЕКЦИИ</h1>
               </div>
-              <button class="button">НОВЫЕ КЛИНИЧЕСКИЕ РЕКОМЕДАЦИИ</button>
+              <button class="button"><a href="pdf/1.pdf" download>НОВЫЕ КЛИНИЧЕСКИЕ РЕКОМЕДАЦИИ</a></button>
             </div>
             <div class="trends__text-block">
               <div class="trends__text-block__phares">
@@ -152,7 +157,7 @@
                 </div>
               </div>
 
-              <img src="icons/shadow.png" alt="линия">
+              <img src="icons/shadow.png" alt="линия" class="shadow-line">
               <div class="keyMechanisms__main__item">
                 <div class="keyMechanisms__main__item-img">
                   <svg xmlns="http://www.w3.org/2000/svg" width="49" height="49" viewBox="0 0 49 49" fill="none">
@@ -179,7 +184,7 @@
                 </div>
               </div>
 
-              <img src="icons/shadow.png" alt="линия">
+              <img src="icons/shadow.png" alt="линия" class="shadow-line">
               <div class="keyMechanisms__main__item">
                 <div class="keyMechanisms__main__item-img">
                   <svg xmlns="http://www.w3.org/2000/svg" width="49" height="49" viewBox="0 0 49 49" fill="none">
@@ -210,18 +215,19 @@
           </div>
           <div class="more">
             <p class="more__text">Подробнее</p>
-            <img src="icons/arrow.png" alt="кнопка" class="more__arrow">
+            <img src="icons/arrow.png" alt="кнопка" class="more__arrow rotaten">
           </div>
 
         </div>
       </div>
     </section>
-    <section class="whatFamous">
+    <div class="tablets-right">
+      <img src="icons/right-tablets.png" alt="картинка таблеток">
+    </div>
+    <section class="whatFamous" style="display: none;">
       <div class="container">
         <div class="row">
-          <div class="tablets-right">
-            <img src="icons/right-tablets.png" alt="картинка таблеток">
-          </div>
+          
           <div class="keyMechanisms__main">
             <h2 class="title">Какие известны <span class="span_orange">гастропротекторы</span>?</h2>
             <div class="keyMechanisms__main-wrapper">
@@ -251,7 +257,7 @@
                 </div>
               </div>
 
-              <img src="icons/shadow.png" alt="линия">
+              <img src="icons/shadow.png" alt="линия" class="shadow-line">
               <div class="keyMechanisms__main__item">
                 <div class="keyMechanisms__main__item-img">
                   <svg xmlns="http://www.w3.org/2000/svg" width="49" height="49" viewBox="0 0 49 49" fill="none">
@@ -278,7 +284,7 @@
                 </div>
               </div>
 
-              <img src="icons/shadow.png" alt="линия">
+              <img src="icons/shadow.png" alt="линия" class="shadow-line">
               <div class="keyMechanisms__main__item">
                 <div class="keyMechanisms__main__item-img">
                   <svg xmlns="http://www.w3.org/2000/svg" width="49" height="49" viewBox="0 0 49 49" fill="none">
@@ -309,7 +315,7 @@
         </div>
       </div>
     </section>
-    <section class="goalsPrescription">
+    <section class="goalsPrescription" style="display: block;">
       <div class="blue-wrapper">
         <div class="left-cabbages"><img src="img/left-cabbages.png" alt="капусты слева"></div>
         <div class="right-cabbages"><img src="img/right-cabbages.png" alt="капусты справа"></div>
@@ -320,148 +326,152 @@
             <p class="goalsPrescription__text">привести «Весы Шея» к равновесию, т.е. повысить защиту желудка для
               противостояния факторам агрессии</p>
             <div class="goalsPrescription__wrapper">
-              <div class="goalsPrescription__list">
-                <div class="goalsPrescription__list-title">Факторы агрессии</div>
-                <ul>
-                  <li>
-                    <div class="goalsPrescription__list__item-img">
-                      <svg xmlns="http://www.w3.org/2000/svg" width="49" height="50" viewBox="0 0 49 50" fill="none">
-                        <g filter="url(#filter0_d_717_97)">
-                          <circle cx="24.5" cy="20.6733" r="9.5" fill="white" />
-                        </g>
-                        <defs>
-                          <filter id="filter0_d_717_97" x="0" y="0.17334" width="49" height="49"
-                            filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
-                            <feFlood flood-opacity="0" result="BackgroundImageFix" />
-                            <feColorMatrix in="SourceAlpha" type="matrix"
-                              values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha" />
-                            <feOffset dy="4" />
-                            <feGaussianBlur stdDeviation="7.5" />
-                            <feComposite in2="hardAlpha" operator="out" />
-                            <feColorMatrix type="matrix" values="0 0 0 0 1 0 0 0 0 1 0 0 0 0 1 0 0 0 1 0" />
-                            <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_717_97" />
-                            <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_717_97" result="shape" />
-                          </filter>
-                    </div>
-                    <div class="goalsPrescription__list-title__item">
-                      <div class="goalsPrescription__list__item-title">Эндогенные:</div>
-                      <div class="goalsPrescription__list__item-text">соляная кислота, пепсин, желчь, панкреатические
-                        ферменты.</div>
-                    </div>
-                  </li>
-                  <li>
-                    <div class="goalsPrescription__list__item-img">
-                      <svg xmlns="http://www.w3.org/2000/svg" width="49" height="50" viewBox="0 0 49 50" fill="none">
-                        <g filter="url(#filter0_d_717_97)">
-                          <circle cx="24.5" cy="20.6733" r="9.5" fill="white" />
-                        </g>
-                        <defs>
-                          <filter id="filter0_d_717_97" x="0" y="0.17334" width="49" height="49"
-                            filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
-                            <feFlood flood-opacity="0" result="BackgroundImageFix" />
-                            <feColorMatrix in="SourceAlpha" type="matrix"
-                              values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha" />
-                            <feOffset dy="4" />
-                            <feGaussianBlur stdDeviation="7.5" />
-                            <feComposite in2="hardAlpha" operator="out" />
-                            <feColorMatrix type="matrix" values="0 0 0 0 1 0 0 0 0 1 0 0 0 0 1 0 0 0 1 0" />
-                            <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_717_97" />
-                            <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_717_97" result="shape" />
-                          </filter>
-                    </div>
-                    <div class="goalsPrescription__list-title__item">
-                      <div class="goalsPrescription__list__item-title">Экзогенные:</div>
-                      <div class="goalsPrescription__list__item-text">Бактерии, вирусы, алкоголь, лекарства,
-                        раздражающие компоненты пищи.</div>
-                    </div>
-                  </li>
-                </ul>
-              </div>
-              <div class="goalsPrescription__scales">
-                <img src="img/scales.png" alt="весы">
-              </div>
-              <div class="goalsPrescription__list">
-                <div class="goalsPrescription__list-title">Факторы защиты</div>
-                <ul>
-                  <li>
-                    <div class="goalsPrescription__list__item-img">
-                      <svg xmlns="http://www.w3.org/2000/svg" width="49" height="50" viewBox="0 0 49 50" fill="none">
-                        <g filter="url(#filter0_d_717_97)">
-                          <circle cx="24.5" cy="20.6733" r="9.5" fill="white" />
-                        </g>
-                        <defs>
-                          <filter id="filter0_d_717_97" x="0" y="0.17334" width="49" height="49"
-                            filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
-                            <feFlood flood-opacity="0" result="BackgroundImageFix" />
-                            <feColorMatrix in="SourceAlpha" type="matrix"
-                              values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha" />
-                            <feOffset dy="4" />
-                            <feGaussianBlur stdDeviation="7.5" />
-                            <feComposite in2="hardAlpha" operator="out" />
-                            <feColorMatrix type="matrix" values="0 0 0 0 1 0 0 0 0 1 0 0 0 0 1 0 0 0 1 0" />
-                            <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_717_97" />
-                            <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_717_97" result="shape" />
-                          </filter>
-                    </div>
-                    <div class="goalsPrescription__list-title__item">
-                      <div class="goalsPrescription__list__item-title">Преэпителиальные:</div>
-                      <div class="goalsPrescription__list__item-text">слизь, муцины.</div>
-                    </div>
-                  </li>
-                  <li>
-                    <div class="goalsPrescription__list__item-img">
-                      <svg xmlns="http://www.w3.org/2000/svg" width="49" height="50" viewBox="0 0 49 50" fill="none">
-                        <g filter="url(#filter0_d_717_97)">
-                          <circle cx="24.5" cy="20.6733" r="9.5" fill="white" />
-                        </g>
-                        <defs>
-                          <filter id="filter0_d_717_97" x="0" y="0.17334" width="49" height="49"
-                            filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
-                            <feFlood flood-opacity="0" result="BackgroundImageFix" />
-                            <feColorMatrix in="SourceAlpha" type="matrix"
-                              values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha" />
-                            <feOffset dy="4" />
-                            <feGaussianBlur stdDeviation="7.5" />
-                            <feComposite in2="hardAlpha" operator="out" />
-                            <feColorMatrix type="matrix" values="0 0 0 0 1 0 0 0 0 1 0 0 0 0 1 0 0 0 1 0" />
-                            <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_717_97" />
-                            <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_717_97" result="shape" />
-                          </filter>
-                    </div>
-                    <div class="goalsPrescription__list-title__item">
-                      <div class="goalsPrescription__list__item-title">Эпителиальные:</div>
-                      <div class="goalsPrescription__list__item-text">обновление клеток, факторы роста, простагландины.
+              <div class="inner">
+                <div class="goalsPrescription__list">
+                  <div class="goalsPrescription__list-title">Факторы агрессии</div>
+                  <ul>
+                    <li>
+                      <div class="goalsPrescription__list__item-img">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="49" height="50" viewBox="0 0 49 50" fill="none">
+                          <g filter="url(#filter0_d_717_97)">
+                            <circle cx="24.5" cy="20.6733" r="9.5" fill="white" />
+                          </g>
+                          <defs>
+                            <filter id="filter0_d_717_97" x="0" y="0.17334" width="49" height="49"
+                              filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                              <feFlood flood-opacity="0" result="BackgroundImageFix" />
+                              <feColorMatrix in="SourceAlpha" type="matrix"
+                                values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha" />
+                              <feOffset dy="4" />
+                              <feGaussianBlur stdDeviation="7.5" />
+                              <feComposite in2="hardAlpha" operator="out" />
+                              <feColorMatrix type="matrix" values="0 0 0 0 1 0 0 0 0 1 0 0 0 0 1 0 0 0 1 0" />
+                              <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_717_97" />
+                              <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_717_97" result="shape" />
+                            </filter>
                       </div>
-                    </div>
-                  </li>
-                  <li>
-                    <div class="goalsPrescription__list__item-img">
-                      <svg xmlns="http://www.w3.org/2000/svg" width="49" height="50" viewBox="0 0 49 50" fill="none">
-                        <g filter="url(#filter0_d_717_97)">
-                          <circle cx="24.5" cy="20.6733" r="9.5" fill="white" />
-                        </g>
-                        <defs>
-                          <filter id="filter0_d_717_97" x="0" y="0.17334" width="49" height="49"
-                            filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
-                            <feFlood flood-opacity="0" result="BackgroundImageFix" />
-                            <feColorMatrix in="SourceAlpha" type="matrix"
-                              values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha" />
-                            <feOffset dy="4" />
-                            <feGaussianBlur stdDeviation="7.5" />
-                            <feComposite in2="hardAlpha" operator="out" />
-                            <feColorMatrix type="matrix" values="0 0 0 0 1 0 0 0 0 1 0 0 0 0 1 0 0 0 1 0" />
-                            <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_717_97" />
-                            <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_717_97" result="shape" />
-                          </filter>
-                    </div>
-                    <div class="goalsPrescription__list-title__item">
-                      <div class="goalsPrescription__list__item-title">Постэпителиальные:</div>
-                      <div class="goalsPrescription__list__item-text">кровоток</div>
-                    </div>
-                  </li>
-                </ul>
+                      <div class="goalsPrescription__list-title__item">
+                        <div class="goalsPrescription__list__item-title">Эндогенные:</div>
+                        <div class="goalsPrescription__list__item-text">соляная кислота, пепсин, желчь, панкреатические
+                          ферменты.</div>
+                      </div>
+                    </li>
+                    <li>
+                      <div class="goalsPrescription__list__item-img">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="49" height="50" viewBox="0 0 49 50" fill="none">
+                          <g filter="url(#filter0_d_717_97)">
+                            <circle cx="24.5" cy="20.6733" r="9.5" fill="white" />
+                          </g>
+                          <defs>
+                            <filter id="filter0_d_717_97" x="0" y="0.17334" width="49" height="49"
+                              filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                              <feFlood flood-opacity="0" result="BackgroundImageFix" />
+                              <feColorMatrix in="SourceAlpha" type="matrix"
+                                values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha" />
+                              <feOffset dy="4" />
+                              <feGaussianBlur stdDeviation="7.5" />
+                              <feComposite in2="hardAlpha" operator="out" />
+                              <feColorMatrix type="matrix" values="0 0 0 0 1 0 0 0 0 1 0 0 0 0 1 0 0 0 1 0" />
+                              <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_717_97" />
+                              <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_717_97" result="shape" />
+                            </filter>
+                      </div>
+                      <div class="goalsPrescription__list-title__item">
+                        <div class="goalsPrescription__list__item-title">Экзогенные:</div>
+                        <div class="goalsPrescription__list__item-text">Бактерии, вирусы, алкоголь, лекарства,
+                          раздражающие компоненты пищи.</div>
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+                <div class="goalsPrescription__scales">
+                  <img src="img/scales.png" alt="весы">
+                </div>
+                <div class="goalsPrescription__list">
+                  <div class="goalsPrescription__list-title">Факторы защиты</div>
+                  <ul>
+                    <li>
+                      <div class="goalsPrescription__list__item-img">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="49" height="50" viewBox="0 0 49 50" fill="none">
+                          <g filter="url(#filter0_d_717_97)">
+                            <circle cx="24.5" cy="20.6733" r="9.5" fill="white" />
+                          </g>
+                          <defs>
+                            <filter id="filter0_d_717_97" x="0" y="0.17334" width="49" height="49"
+                              filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                              <feFlood flood-opacity="0" result="BackgroundImageFix" />
+                              <feColorMatrix in="SourceAlpha" type="matrix"
+                                values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha" />
+                              <feOffset dy="4" />
+                              <feGaussianBlur stdDeviation="7.5" />
+                              <feComposite in2="hardAlpha" operator="out" />
+                              <feColorMatrix type="matrix" values="0 0 0 0 1 0 0 0 0 1 0 0 0 0 1 0 0 0 1 0" />
+                              <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_717_97" />
+                              <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_717_97" result="shape" />
+                            </filter>
+                      </div>
+                      <div class="goalsPrescription__list-title__item">
+                        <div class="goalsPrescription__list__item-title">Преэпителиальные:</div>
+                        <div class="goalsPrescription__list__item-text">слизь, муцины.</div>
+                      </div>
+                    </li>
+                    <li>
+                      <div class="goalsPrescription__list__item-img">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="49" height="50" viewBox="0 0 49 50" fill="none">
+                          <g filter="url(#filter0_d_717_97)">
+                            <circle cx="24.5" cy="20.6733" r="9.5" fill="white" />
+                          </g>
+                          <defs>
+                            <filter id="filter0_d_717_97" x="0" y="0.17334" width="49" height="49"
+                              filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                              <feFlood flood-opacity="0" result="BackgroundImageFix" />
+                              <feColorMatrix in="SourceAlpha" type="matrix"
+                                values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha" />
+                              <feOffset dy="4" />
+                              <feGaussianBlur stdDeviation="7.5" />
+                              <feComposite in2="hardAlpha" operator="out" />
+                              <feColorMatrix type="matrix" values="0 0 0 0 1 0 0 0 0 1 0 0 0 0 1 0 0 0 1 0" />
+                              <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_717_97" />
+                              <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_717_97" result="shape" />
+                            </filter>
+                      </div>
+                      <div class="goalsPrescription__list-title__item">
+                        <div class="goalsPrescription__list__item-title">Эпителиальные:</div>
+                        <div class="goalsPrescription__list__item-text">обновление клеток, факторы роста, простагландины.
+                        </div>
+                      </div>
+                    </li>
+                    <li>
+                      <div class="goalsPrescription__list__item-img">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="49" height="50" viewBox="0 0 49 50" fill="none">
+                          <g filter="url(#filter0_d_717_97)">
+                            <circle cx="24.5" cy="20.6733" r="9.5" fill="white" />
+                          </g>
+                          <defs>
+                            <filter id="filter0_d_717_97" x="0" y="0.17334" width="49" height="49"
+                              filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                              <feFlood flood-opacity="0" result="BackgroundImageFix" />
+                              <feColorMatrix in="SourceAlpha" type="matrix"
+                                values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha" />
+                              <feOffset dy="4" />
+                              <feGaussianBlur stdDeviation="7.5" />
+                              <feComposite in2="hardAlpha" operator="out" />
+                              <feColorMatrix type="matrix" values="0 0 0 0 1 0 0 0 0 1 0 0 0 0 1 0 0 0 1 0" />
+                              <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_717_97" />
+                              <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_717_97" result="shape" />
+                            </filter>
+                      </div>
+                      <div class="goalsPrescription__list-title__item">
+                        <div class="goalsPrescription__list__item-title">Постэпителиальные:</div>
+                        <div class="goalsPrescription__list__item-text">кровоток</div>
+                      </div>
+                    </li>
+                  </ul>
+                </div>
               </div>
+              
             </div>
+            <input type="range" min="0" max="100" value="0" class="slider-line">
             <div class="goalsPrescription__small-text">
               *ВЕСЫ ШЕЯ - схематичное изображение соотношения факторов защиты и факторов агрессии, определяющих
               возможность язвообразования
@@ -469,7 +479,7 @@
           </div>
         </div>
     </section>
-    <section class="baseDirections">
+    <section class="baseDirections" style="display: none;">
       <div class="container">
         <div class="row">
           <div class="tablets-left">
@@ -538,7 +548,7 @@
         </div>
       </div>
     </section>
-    <section class="specialVitamin">
+    <section class="specialVitamin" id="identity">
       <div class="container">
         <div class="row">
           <h2 class="title"><span class="span_orange">U</span>никальный витамин </h2>
@@ -557,7 +567,7 @@
                   желудка,<br>
                   в связи с чем вещество и получило свое название витамин U (от лат. ulcus – язва).</p>
               </div>
-              <img src="icons/shadow.png" alt="линия">
+              <img src="icons/shadow.png" alt="линия" class="shadow-line">
               <div class="specialVitamin__history-block__second-person">
                 <img src="img/Bukin.png" alt="ученный Букин">
                 <p>В СССР в 1968 г. были начаты разработки для промышленного синтеза S-метилметионина, который
@@ -568,7 +578,7 @@
                   производство S-метилметионина.</p>
               </div>
             </div>
-            <button class="button button_over" id="knowMore">УЗНАЙТЕ о новом гастропротекторе</button>
+            <button class="button button_over" id="knowMore"><a href="#popup">УЗНАЙТЕ о новом гастропротекторе</a></button>
           </div>
         </div>
       </div>
@@ -584,7 +594,10 @@
           </div>
           <div class="methabolismRole__short-block">
             <button class="methabolismRole__short-block__button">МЕТИОНИН</button>
-            <div class="methabolismRole__short-block__arrow"><img src="icons/Arrow.svg" alt="стрелка"></div>
+            <div class="methabolismRole__short-block__arrow">
+              <img src="icons/Arrow.svg" alt="стрелка">
+              <img src="icons/white arrow.svg" alt="стрелка">
+            </div>
             <div class="methabolismRole__short-block__formula">
               <p>S-MM <br>(S-метилметионин)</p>
               <img src="img/formula 1.png" alt="формула">
@@ -655,12 +668,12 @@
         </div>
         <div class="more">
           <p class="more__text">Подробнее</p>
-          <img src="icons/arrow.png" alt="кнопка" class="more__arrow">
+          <img src="icons/arrow.png" alt="кнопка" class="more__arrow rotaten">
         </div>
       </div>
       </div>
     </section>
-    <section class="perspectives">
+    <section class="perspectives" style="display: none;">
       <div class="container">
         <div class="row">
           <div class="light-wrapper">
@@ -698,7 +711,7 @@
                   </li>
                 </ul>
               </div>
-              <img src="icons/shadow.png" alt="линия">
+              <img src="icons/shadow.png" alt="линия" class="shadow-line">
               <div class="perspectives__block-second">
                 <ul>
                   <li class="perspectives__block-second__item">
@@ -741,7 +754,7 @@
         </div>
       </div>
     </section>
-    <section class="dailyDose">
+    <section class="dailyDose" style="display: none;">
       <div class="blue-wrapper">
         <div class="dailyDose-cabbages"><img src="icons/cabbages.png" alt="капусты для фона"></div>
         <div class="container">
@@ -793,13 +806,13 @@
                   </li>
                 </ul>
               </div>
-              <button class="button button_center">УЗНАЙТЕ, ГДЕ СОДЕРЖИТСЯ 300 МГ ВИТАМИНА U</button>
+              <button class="button button_center" id="knowMore"><a href="#popup">УЗНАЙТЕ, ГДЕ СОДЕРЖИТСЯ 300 МГ ВИТАМИНА U</a></button>
             </div>
           </div>
         </div>
       </div>
     </section>
-    <section class="videoCasts">
+    <section class="videoCasts" id="videoCasts">
       <div class="light-wrapper">
         <div class="container">
           <div class="row">
@@ -821,7 +834,9 @@
             </div>
             <div class="videoCasts__wrapper">
               <div class="videoCasts__item">
-                <div class="videoCasts__item-video"><img src="img/Ролик с Козловым.jpg" alt="обложка"></div>
+                <div class="videoCasts__item-video">
+                  <img src="img/Ролик с Козловым.jpg" alt="обложка">
+              </div>
                 <div class="videoCasts__item-info">
                   <div class="videoCasts__item-info__title">Тема:</div>
                   <div class="videoCasts__item-info__theme">Гастропротекторы - современный инструмент для лечения
@@ -873,7 +888,7 @@
         </div>
       </div>
     </section>
-    <section class="helpfullArticles">
+    <section class="helpfullArticles" id="articles">
       <div class="pop-articles" id="Shylpekova" style="display: none;">
         <div class="close-modal">
           <img src="icons/Close.svg" alt="закрыть символ">
@@ -881,108 +896,7 @@
         <div class="skroll-wrapper">
           <div class="pop-articles__wrapper">
             <div class="warning">
-              <svg xmlns="http://www.w3.org/2000/svg" width="1862" height="108" viewBox="0 0 1862 108" fill="none">
-                <path
-                  d="M17.7079 42.4014C24.8079 42.4014 30.1329 43.777 33.6829 46.5282C37.3216 49.2795 39.141 54.3826 39.141 61.8376V72.7539C39.141 79.5876 37.6322 84.9126 34.6147 88.7289C31.5972 92.5451 26.4941 94.4532 19.3054 94.4532H0.401611V1.26572H36.0791V2.59697H1.73286V42.4014H17.7079ZM19.3054 93.122C26.1391 93.122 30.9316 91.347 33.6829 87.797C36.4341 84.1582 37.8097 79.1439 37.8097 72.7539V61.8376C37.8097 58.2876 37.366 55.3589 36.4785 53.0514C35.6797 50.6551 34.4372 48.7914 32.751 47.4601C31.1535 46.0401 29.0679 45.0639 26.4941 44.5314C24.0091 43.9989 21.0804 43.7326 17.7079 43.7326H1.73286V93.122H19.3054Z"
-                  fill="#343230" />
-                <path
-                  d="M55.5278 71.822L49.8035 94.4532H48.4722L72.0354 1.1326H73.8991L97.9947 94.4532H96.6635L90.806 71.822H55.5278ZM55.9272 70.4907H90.4066L72.9672 2.86323L55.9272 70.4907Z"
-                  fill="#343230" />
-                <path
-                  d="M160.583 107.633V94.4532H108.664V107.633H107.333V93.122H114.123C116.341 90.9032 117.673 88.3739 118.116 85.5339C118.649 82.6939 119.004 79.7207 119.181 76.6145L123.175 1.26572H153.395V93.122H161.915V107.633H160.583ZM120.513 76.7476C120.335 79.7651 120.024 82.6939 119.581 85.5339C119.226 88.2851 118.028 90.8145 115.986 93.122H152.063V2.59697H124.506L120.513 76.7476Z"
-                  fill="#343230" />
-                <path d="M172.596 84.0695V94.4532H171.264V84.0695H172.596Z" fill="#343230" />
-                <path
-                  d="M202.564 48.5251V94.4532H201.233V1.26572H202.564V47.1939H238.508V1.26572H239.839V94.4532H238.508V48.5251H202.564Z"
-                  fill="#343230" />
-                <path
-                  d="M278.861 46.5282V47.8595H250.505V93.122H284.053V94.4532H249.174V1.26572H284.053V2.59697H250.505V46.5282H278.861Z"
-                  fill="#343230" />
-                <path
-                  d="M338.643 50.7882C335.448 50.7882 332.475 51.0545 329.724 51.587C327.061 52.1195 324.754 53.0514 322.801 54.3826C320.849 55.7139 319.34 57.5776 318.275 59.9739C317.21 62.2814 316.678 65.2101 316.678 68.7601V83.4039C316.678 85.1789 316.5 87.087 316.145 89.1282C315.879 91.1695 315.258 92.9445 314.281 94.4532H312.684C313.838 93.0332 314.548 91.3026 314.814 89.2614C315.169 87.1314 315.346 85.1789 315.346 83.4039V68.7601C315.346 63.5239 316.589 59.3082 319.074 56.1132C321.559 52.9182 325.508 50.9657 330.922 50.2557C325.508 49.457 321.559 47.4601 319.074 44.2651C316.589 40.9814 315.346 36.4107 315.346 30.5532V22.1664C315.346 15.8651 316.766 10.8064 319.606 6.9901C322.535 3.17385 327.416 1.26572 334.25 1.26572H352.222V94.4532H350.891V50.7882H338.643ZM334.25 2.59697C327.771 2.59697 323.201 4.37197 320.538 7.92197C317.964 11.3832 316.678 16.1314 316.678 22.1664V30.5532C316.678 34.4582 317.166 37.6532 318.142 40.1382C319.118 42.5345 320.538 44.4426 322.402 45.8626C324.354 47.1939 326.662 48.1257 329.324 48.6582C332.076 49.1907 335.182 49.457 338.643 49.457H350.891V2.59697H334.25Z"
-                  fill="#343230" />
-                <path
-                  d="M379.773 1.26572C386.429 1.26572 390.999 2.9076 393.484 6.19135C395.969 9.4751 397.212 14.1789 397.212 20.3026V26.6926C397.212 31.9289 396.28 36.1001 394.416 39.2064C392.553 42.3126 388.869 44.1764 383.367 44.7976C389.136 45.5076 393.174 47.6376 395.481 51.1876C397.878 54.7376 399.076 59.2639 399.076 64.7664V73.1532C399.076 79.7207 397.611 84.9126 394.683 88.7289C391.754 92.5451 386.784 94.4532 379.773 94.4532H361.534V1.26572H379.773ZM375.779 44.132C379.24 44.132 382.213 43.9101 384.698 43.4664C387.272 42.9339 389.358 42.0464 390.955 40.8039C392.641 39.5614 393.884 37.8307 394.683 35.612C395.481 33.3045 395.881 30.3314 395.881 26.6926V20.3026C395.881 17.3739 395.614 14.8445 395.082 12.7145C394.638 10.4957 393.795 8.63197 392.553 7.12323C391.31 5.61447 389.624 4.5051 387.494 3.7951C385.453 2.99635 382.879 2.59697 379.773 2.59697H362.866V44.132H375.779ZM379.773 93.122C386.34 93.122 390.955 91.347 393.618 87.797C396.369 84.247 397.744 79.3657 397.744 73.1532V64.7664C397.744 57.6664 396.014 52.6964 392.553 49.8564C389.18 46.9276 384.077 45.4632 377.243 45.4632H362.866V93.122H379.773Z"
-                  fill="#343230" />
-                <path
-                  d="M425.608 2.59697L422.679 72.0882C422.502 74.662 422.324 77.2801 422.147 79.9426C421.969 82.5164 421.437 84.8682 420.549 86.9982C419.751 89.1282 418.464 90.9032 416.689 92.3232C414.914 93.7432 412.384 94.4976 409.101 94.5864H408.435V93.2551C411.63 93.2551 414.071 92.5895 415.757 91.2582C417.532 89.927 418.819 88.2407 419.617 86.1995C420.416 84.1582 420.86 81.8951 420.949 79.4101C421.126 76.8364 421.259 74.3514 421.348 71.9551L424.277 1.26572H455.295V94.4532H453.964V2.59697H425.608Z"
-                  fill="#343230" />
-                <path
-                  d="M490.525 50.7882C487.33 50.7882 484.357 51.0545 481.606 51.587C478.943 52.1195 476.636 53.0514 474.683 54.3826C472.731 55.7139 471.222 57.5776 470.157 59.9739C469.092 62.2814 468.56 65.2101 468.56 68.7601V83.4039C468.56 85.1789 468.382 87.087 468.027 89.1282C467.761 91.1695 467.14 92.9445 466.163 94.4532H464.566C465.72 93.0332 466.43 91.3026 466.696 89.2614C467.051 87.1314 467.228 85.1789 467.228 83.4039V68.7601C467.228 63.5239 468.471 59.3082 470.956 56.1132C473.441 52.9182 477.39 50.9657 482.804 50.2557C477.39 49.457 473.441 47.4601 470.956 44.2651C468.471 40.9814 467.228 36.4107 467.228 30.5532V22.1664C467.228 15.8651 468.648 10.8064 471.488 6.9901C474.417 3.17385 479.298 1.26572 486.132 1.26572H504.104V94.4532H502.773V50.7882H490.525ZM486.132 2.59697C479.653 2.59697 475.083 4.37197 472.42 7.92197C469.846 11.3832 468.56 16.1314 468.56 22.1664V30.5532C468.56 34.4582 469.048 37.6532 470.024 40.1382C471 42.5345 472.42 44.4426 474.284 45.8626C476.237 47.1939 478.544 48.1257 481.207 48.6582C483.958 49.1907 487.064 49.457 490.525 49.457H502.773V2.59697H486.132Z"
-                  fill="#343230" />
-                <path
-                  d="M543.103 46.5282V47.8595H514.748V93.122H548.295V94.4532H513.417V1.26572H548.295V2.59697H514.748V46.5282H543.103Z"
-                  fill="#343230" />
-                <path d="M578.621 94.4532V2.59697H557.587V1.26572H600.986V2.59697H579.952V94.4532H578.621Z" fill="#343230" />
-                <path
-                  d="M629.508 0.600098C633.058 0.600098 636.031 1.26572 638.427 2.59697C640.912 3.83947 642.909 5.5701 644.418 7.78885C645.927 9.91885 646.992 12.4038 647.613 15.2439C648.323 18.0839 648.678 21.057 648.678 24.1632V31.2189H647.346V24.1632C647.346 21.2345 647.036 18.4389 646.415 15.7764C645.793 13.0251 644.773 10.6288 643.353 8.5876C642.022 6.54635 640.202 4.94885 637.895 3.7951C635.587 2.5526 632.792 1.93135 629.508 1.93135C626.135 1.93135 623.295 2.5526 620.988 3.7951C618.769 4.94885 616.95 6.54635 615.53 8.5876C614.198 10.6288 613.222 13.0251 612.601 15.7764C611.98 18.4389 611.669 21.2345 611.669 24.1632V71.5557C611.669 74.4845 611.98 77.3245 612.601 80.0757C613.222 82.7382 614.198 85.0901 615.53 87.1314C616.95 89.1726 618.769 90.8145 620.988 92.057C623.295 93.2107 626.135 93.7876 629.508 93.7876C632.792 93.7876 635.587 93.2107 637.895 92.057C640.202 90.8145 642.022 89.1726 643.353 87.1314C644.773 85.0901 645.793 82.7382 646.415 80.0757C647.036 77.3245 647.346 74.4845 647.346 71.5557V61.7045H648.678V71.5557C648.678 74.662 648.323 77.6351 647.613 80.4751C646.992 83.3151 645.927 85.8445 644.418 88.0632C642.909 90.1932 640.912 91.9239 638.427 93.2551C636.031 94.4976 633.058 95.1189 629.508 95.1189C625.958 95.1189 622.94 94.4976 620.455 93.2551C618.059 91.9239 616.107 90.1932 614.598 88.0632C613.089 85.8445 611.98 83.3151 611.27 80.4751C610.648 77.6351 610.338 74.662 610.338 71.5557V24.1632C610.338 21.057 610.648 18.0839 611.27 15.2439C611.98 12.4038 613.089 9.91885 614.598 7.78885C616.107 5.5701 618.059 3.83947 620.455 2.59697C622.94 1.26572 625.958 0.600098 629.508 0.600098Z"
-                  fill="#343230" />
-                <path
-                  d="M683.978 50.7882C680.783 50.7882 677.81 51.0545 675.058 51.587C672.396 52.1195 670.088 53.0514 668.136 54.3826C666.183 55.7139 664.675 57.5776 663.61 59.9739C662.545 62.2814 662.012 65.2101 662.012 68.7601V83.4039C662.012 85.1789 661.835 87.087 661.48 89.1282C661.213 91.1695 660.592 92.9445 659.616 94.4532H658.018C659.172 93.0332 659.882 91.3026 660.148 89.2614C660.503 87.1314 660.681 85.1789 660.681 83.4039V68.7601C660.681 63.5239 661.923 59.3082 664.408 56.1132C666.893 52.9182 670.843 50.9657 676.256 50.2557C670.843 49.457 666.893 47.4601 664.408 44.2651C661.923 40.9814 660.681 36.4107 660.681 30.5532V22.1664C660.681 15.8651 662.101 10.8064 664.941 6.9901C667.87 3.17385 672.751 1.26572 679.585 1.26572H697.557V94.4532H696.225V50.7882H683.978ZM679.585 2.59697C673.106 2.59697 668.535 4.37197 665.873 7.92197C663.299 11.3832 662.012 16.1314 662.012 22.1664V30.5532C662.012 34.4582 662.5 37.6532 663.477 40.1382C664.453 42.5345 665.873 44.4426 667.737 45.8626C669.689 47.1939 671.997 48.1257 674.659 48.6582C677.41 49.1907 680.516 49.457 683.978 49.457H696.225V2.59697H679.585Z"
-                  fill="#343230" />
-                <path
-                  d="M743.382 2.59697L740.453 72.0882C740.275 74.662 740.098 77.2801 739.92 79.9426C739.743 82.5164 739.21 84.8682 738.323 86.9982C737.524 89.1282 736.237 90.9032 734.462 92.3232C732.687 93.7432 730.158 94.4976 726.874 94.5864H726.209V93.2551C729.404 93.2551 731.844 92.5895 733.53 91.2582C735.305 89.927 736.592 88.2407 737.391 86.1995C738.19 84.1582 738.634 81.8951 738.722 79.4101C738.9 76.8364 739.033 74.3514 739.122 71.9551L742.05 1.26572H773.069V94.4532H771.737V2.59697H743.382Z"
-                  fill="#343230" />
-                <path
-                  d="M812.026 46.5282V47.8595H783.671V93.122H817.218V94.4532H782.339V1.26572H817.218V2.59697H783.671V46.5282H812.026Z"
-                  fill="#343230" />
-                <path
-                  d="M835.296 46.9276L827.841 57.8439V94.4532H826.51V1.26572H827.841V55.4476L864.584 1.26572H866.181L836.095 45.7295L868.977 94.4532H867.379L835.296 46.9276Z"
-                  fill="#343230" />
-                <path
-                  d="M885.406 71.822L879.682 94.4532H878.351L901.914 1.1326H903.778L927.873 94.4532H926.542L920.684 71.822H885.406ZM885.806 70.4907H920.285L902.846 2.86323L885.806 70.4907Z"
-                  fill="#343230" />
-                <path
-                  d="M955.184 1.26572C958.734 1.26572 961.707 1.8426 964.103 2.99635C966.588 4.1501 968.54 5.7476 969.96 7.78885C971.469 9.74135 972.534 12.0932 973.155 14.8445C973.777 17.507 974.087 20.4357 974.087 23.6307V32.6832C974.087 40.0495 972.401 45.5076 969.029 49.0576C965.656 52.5189 960.198 54.2495 952.654 54.2495H938.543V94.4532H937.212V1.26572H955.184ZM952.654 52.9182C959.843 52.9182 964.99 51.3207 968.097 48.1257C971.203 44.842 972.756 39.6945 972.756 32.6832V23.6307C972.756 20.6132 972.445 17.8176 971.824 15.2439C971.292 12.6701 970.36 10.4514 969.029 8.5876C967.697 6.72385 965.878 5.25948 963.57 4.19447C961.352 3.12947 958.556 2.59697 955.184 2.59697H938.543V52.9182H952.654Z"
-                  fill="#343230" />
-                <path
-                  d="M1002.63 0.600098C1006.18 0.600098 1009.16 1.26572 1011.55 2.59697C1014.04 3.83947 1016.03 5.5701 1017.54 7.78885C1019.05 9.91885 1020.12 12.4038 1020.74 15.2439C1021.45 18.0839 1021.8 21.057 1021.8 24.1632V31.2189H1020.47V24.1632C1020.47 21.2345 1020.16 18.4389 1019.54 15.7764C1018.92 13.0251 1017.9 10.6288 1016.48 8.5876C1015.15 6.54635 1013.33 4.94885 1011.02 3.7951C1008.71 2.5526 1005.92 1.93135 1002.63 1.93135C999.26 1.93135 996.42 2.5526 994.112 3.7951C991.893 4.94885 990.074 6.54635 988.654 8.5876C987.323 10.6288 986.347 13.0251 985.725 15.7764C985.104 18.4389 984.793 21.2345 984.793 24.1632V71.5557C984.793 74.4845 985.104 77.3245 985.725 80.0757C986.347 82.7382 987.323 85.0901 988.654 87.1314C990.074 89.1726 991.893 90.8145 994.112 92.057C996.42 93.2107 999.26 93.7876 1002.63 93.7876C1005.92 93.7876 1008.71 93.2107 1011.02 92.057C1013.33 90.8145 1015.15 89.1726 1016.48 87.1314C1017.9 85.0901 1018.92 82.7382 1019.54 80.0757C1020.16 77.3245 1020.47 74.4845 1020.47 71.5557V61.7045H1021.8V71.5557C1021.8 74.662 1021.45 77.6351 1020.74 80.4751C1020.12 83.3151 1019.05 85.8445 1017.54 88.0632C1016.03 90.1932 1014.04 91.9239 1011.55 93.2551C1009.16 94.4976 1006.18 95.1189 1002.63 95.1189C999.082 95.1189 996.065 94.4976 993.58 93.2551C991.183 91.9239 989.231 90.1932 987.722 88.0632C986.214 85.8445 985.104 83.3151 984.394 80.4751C983.773 77.6351 983.462 74.662 983.462 71.5557V24.1632C983.462 21.057 983.773 18.0839 984.394 15.2439C985.104 12.4038 986.214 9.91885 987.722 7.78885C989.231 5.5701 991.183 3.83947 993.58 2.59697C996.065 1.26572 999.082 0.600098 1002.63 0.600098Z"
-                  fill="#343230" />
-                <path d="M1052.18 94.4532V2.59697H1031.14V1.26572H1074.54V2.59697H1053.51V94.4532H1052.18Z" fill="#343230" />
-                <path
-                  d="M1102.13 1.26572C1108.79 1.26572 1113.36 2.9076 1115.84 6.19135C1118.33 9.4751 1119.57 14.1789 1119.57 20.3026V26.6926C1119.57 31.9289 1118.64 36.1001 1116.78 39.2064C1114.91 42.3126 1111.23 44.1764 1105.73 44.7976C1111.49 45.5076 1115.53 47.6376 1117.84 51.1876C1120.24 54.7376 1121.43 59.2639 1121.43 64.7664V73.1532C1121.43 79.7207 1119.97 84.9126 1117.04 88.7289C1114.11 92.5451 1109.14 94.4532 1102.13 94.4532H1083.89V1.26572H1102.13ZM1098.14 44.132C1101.6 44.132 1104.57 43.9101 1107.06 43.4664C1109.63 42.9339 1111.72 42.0464 1113.31 40.8039C1115 39.5614 1116.24 37.8307 1117.04 35.612C1117.84 33.3045 1118.24 30.3314 1118.24 26.6926V20.3026C1118.24 17.3739 1117.97 14.8445 1117.44 12.7145C1117 10.4957 1116.15 8.63197 1114.91 7.12323C1113.67 5.61447 1111.98 4.5051 1109.85 3.7951C1107.81 2.99635 1105.24 2.59697 1102.13 2.59697H1085.22V44.132H1098.14ZM1102.13 93.122C1108.7 93.122 1113.31 91.347 1115.98 87.797C1118.73 84.247 1120.1 79.3657 1120.1 73.1532V64.7664C1120.1 57.6664 1118.37 52.6964 1114.91 49.8564C1111.54 46.9276 1106.44 45.4632 1099.6 45.4632H1085.22V93.122H1102.13Z"
-                  fill="#343230" />
-                <path
-                  d="M1160.48 46.5282V47.8595H1132.13V93.122H1165.67V94.4532H1130.79V1.26572H1165.67V2.59697H1132.13V46.5282H1160.48Z"
-                  fill="#343230" />
-                <path
-                  d="M1176.3 48.5251V94.4532H1174.96V1.26572H1176.3V47.1939H1212.24V1.26572H1213.57V94.4532H1212.24V48.5251H1176.3Z"
-                  fill="#343230" />
-                <path
-                  d="M1224.24 48.5251V94.4532H1222.91V1.26572H1224.24V47.1939H1260.18V1.26572H1261.51V94.4532H1260.18V48.5251H1224.24Z"
-                  fill="#343230" />
-                <path
-                  d="M1286.16 41.4695C1293.7 41.4695 1299.16 43.2445 1302.53 46.7945C1305.99 50.2557 1307.72 55.6695 1307.72 63.0357V72.0882C1307.72 75.2832 1307.41 78.2564 1306.79 81.0076C1306.17 83.7589 1305.1 86.1551 1303.59 88.1964C1302.09 90.1489 1300.09 91.702 1297.6 92.8557C1295.21 93.9207 1292.23 94.4532 1288.68 94.4532H1270.85V1.26572H1272.18V41.4695H1286.16ZM1318.11 1.26572V94.4532H1316.77V1.26572H1318.11ZM1288.68 93.122C1292.06 93.122 1294.85 92.5895 1297.07 91.5245C1299.38 90.4595 1301.2 88.9951 1302.53 87.1314C1303.95 85.2676 1304.93 83.0489 1305.46 80.4751C1306.08 77.9014 1306.39 75.1057 1306.39 72.0882V63.0357C1306.39 56.0245 1304.79 50.9214 1301.6 47.7264C1298.49 44.4426 1293.34 42.8007 1286.16 42.8007H1272.18V93.122H1288.68Z"
-                  fill="#343230" />
-                <path
-                  d="M1355.19 94.187H1353.33L1328.7 2.59697V94.4532H1327.37V1.26572H1329.76L1354.26 92.7226L1379.02 1.26572H1381.28V94.4532H1379.95V2.59697L1355.19 94.187Z"
-                  fill="#343230" />
-                <path
-                  d="M1429.16 0.600098C1432.71 0.600098 1435.68 1.26572 1438.08 2.59697C1440.56 3.83947 1442.56 5.5701 1444.07 7.78885C1445.58 9.91885 1446.64 12.4038 1447.26 15.2439C1447.97 18.0839 1448.33 21.057 1448.33 24.1632V31.2189H1447V24.1632C1447 21.2345 1446.69 18.4389 1446.06 15.7764C1445.44 13.0251 1444.42 10.6288 1443 8.5876C1441.67 6.54635 1439.85 4.94885 1437.54 3.7951C1435.24 2.5526 1432.44 1.93135 1429.16 1.93135C1425.79 1.93135 1422.95 2.5526 1420.64 3.7951C1418.42 4.94885 1416.6 6.54635 1415.18 8.5876C1413.85 10.6288 1412.87 13.0251 1412.25 15.7764C1411.63 18.4389 1411.32 21.2345 1411.32 24.1632V71.5557C1411.32 74.4845 1411.63 77.3245 1412.25 80.0757C1412.87 82.7382 1413.85 85.0901 1415.18 87.1314C1416.6 89.1726 1418.42 90.8145 1420.64 92.057C1422.95 93.2107 1425.79 93.7876 1429.16 93.7876C1432.44 93.7876 1435.24 93.2107 1437.54 92.057C1439.85 90.8145 1441.67 89.1726 1443 87.1314C1444.42 85.0901 1445.44 82.7382 1446.06 80.0757C1446.69 77.3245 1447 74.4845 1447 71.5557V61.7045H1448.33V71.5557C1448.33 74.662 1447.97 77.6351 1447.26 80.4751C1446.64 83.3151 1445.58 85.8445 1444.07 88.0632C1442.56 90.1932 1440.56 91.9239 1438.08 93.2551C1435.68 94.4976 1432.71 95.1189 1429.16 95.1189C1425.61 95.1189 1422.59 94.4976 1420.11 93.2551C1417.71 91.9239 1415.76 90.1932 1414.25 88.0632C1412.74 85.8445 1411.63 83.3151 1410.92 80.4751C1410.3 77.6351 1409.99 74.662 1409.99 71.5557V24.1632C1409.99 21.057 1410.3 18.0839 1410.92 15.2439C1411.63 12.4038 1412.74 9.91885 1414.25 7.78885C1415.76 5.5701 1417.71 3.83947 1420.11 2.59697C1422.59 1.26572 1425.61 0.600098 1429.16 0.600098Z"
-                  fill="#343230" />
-                <path
-                  d="M1475.64 1.26572C1479.19 1.26572 1482.16 1.8426 1484.56 2.99635C1487.04 4.1501 1489 5.7476 1490.42 7.78885C1491.93 9.74135 1492.99 12.0932 1493.61 14.8445C1494.23 17.507 1494.54 20.4357 1494.54 23.6307V32.6832C1494.54 40.0495 1492.86 45.5076 1489.48 49.0576C1486.11 52.5189 1480.65 54.2495 1473.11 54.2495H1459V94.4532H1457.67V1.26572H1475.64ZM1473.11 52.9182C1480.3 52.9182 1485.45 51.3207 1488.55 48.1257C1491.66 44.842 1493.21 39.6945 1493.21 32.6832V23.6307C1493.21 20.6132 1492.9 17.8176 1492.28 15.2439C1491.75 12.6701 1490.82 10.4514 1489.48 8.5876C1488.15 6.72385 1486.33 5.25948 1484.03 4.19447C1481.81 3.12947 1479.01 2.59697 1475.64 2.59697H1459V52.9182H1473.11Z"
-                  fill="#343230" />
-                <path
-                  d="M1533.61 46.5282V47.8595H1505.25V93.122H1538.8V94.4532H1503.92V1.26572H1538.8V2.59697H1505.25V46.5282H1533.61Z"
-                  fill="#343230" />
-                <path
-                  d="M1601.34 107.633V94.4532H1549.42V107.633H1548.09V93.122H1554.88C1557.1 90.9032 1558.43 88.3739 1558.87 85.5339C1559.4 82.6939 1559.76 79.7207 1559.94 76.6145L1563.93 1.26572H1594.15V93.122H1602.67V107.633H1601.34ZM1561.27 76.7476C1561.09 79.7651 1560.78 82.6939 1560.34 85.5339C1559.98 88.2851 1558.78 90.8145 1556.74 93.122H1592.82V2.59697H1565.26L1561.27 76.7476Z"
-                  fill="#343230" />
-                <path
-                  d="M1631.19 0.600098C1634.74 0.600098 1637.71 1.26572 1640.11 2.59697C1642.59 3.83947 1644.59 5.5701 1646.1 7.78885C1647.61 9.91885 1648.67 12.4038 1649.3 15.2439C1650.01 18.0839 1650.36 21.057 1650.36 24.1632V31.2189H1649.03V24.1632C1649.03 21.2345 1648.72 18.4389 1648.1 15.7764C1647.48 13.0251 1646.46 10.6288 1645.04 8.5876C1643.7 6.54635 1641.88 4.94885 1639.58 3.7951C1637.27 2.5526 1634.47 1.93135 1631.19 1.93135C1627.82 1.93135 1624.98 2.5526 1622.67 3.7951C1620.45 4.94885 1618.63 6.54635 1617.21 8.5876C1615.88 10.6288 1614.9 13.0251 1614.28 15.7764C1613.66 18.4389 1613.35 21.2345 1613.35 24.1632V71.5557C1613.35 74.4845 1613.66 77.3245 1614.28 80.0757C1614.9 82.7382 1615.88 85.0901 1617.21 87.1314C1618.63 89.1726 1620.45 90.8145 1622.67 92.057C1624.98 93.2107 1627.82 93.7876 1631.19 93.7876C1634.47 93.7876 1637.27 93.2107 1639.58 92.057C1641.88 90.8145 1643.7 89.1726 1645.04 87.1314C1646.46 85.0901 1647.48 82.7382 1648.1 80.0757C1648.72 77.3245 1649.03 74.4845 1649.03 71.5557V61.7045H1650.36V71.5557C1650.36 74.662 1650.01 77.6351 1649.3 80.4751C1648.67 83.3151 1647.61 85.8445 1646.1 88.0632C1644.59 90.1932 1642.59 91.9239 1640.11 93.2551C1637.71 94.4976 1634.74 95.1189 1631.19 95.1189C1627.64 95.1189 1624.62 94.4976 1622.14 93.2551C1619.74 91.9239 1617.79 90.1932 1616.28 88.0632C1614.77 85.8445 1613.66 83.3151 1612.95 80.4751C1612.33 77.6351 1612.02 74.662 1612.02 71.5557V24.1632C1612.02 21.057 1612.33 18.0839 1612.95 15.2439C1613.66 12.4038 1614.77 9.91885 1616.28 7.78885C1617.79 5.5701 1619.74 3.83947 1622.14 2.59697C1624.62 1.26572 1627.64 0.600098 1631.19 0.600098Z"
-                  fill="#343230" />
-                <path d="M1680.73 94.4532V2.59697H1659.7V1.26572H1703.1V2.59697H1682.07V94.4532H1680.73Z" fill="#343230" />
-                <path
-                  d="M1730.69 1.26572C1737.35 1.26572 1741.92 2.9076 1744.4 6.19135C1746.89 9.4751 1748.13 14.1789 1748.13 20.3026V26.6926C1748.13 31.9289 1747.2 36.1001 1745.33 39.2064C1743.47 42.3126 1739.79 44.1764 1734.28 44.7976C1740.05 45.5076 1744.09 47.6376 1746.4 51.1876C1748.79 54.7376 1749.99 59.2639 1749.99 64.7664V73.1532C1749.99 79.7207 1748.53 84.9126 1745.6 88.7289C1742.67 92.5451 1737.7 94.4532 1730.69 94.4532H1712.45V1.26572H1730.69ZM1726.7 44.132C1730.16 44.132 1733.13 43.9101 1735.62 43.4664C1738.19 42.9339 1740.27 42.0464 1741.87 40.8039C1743.56 39.5614 1744.8 37.8307 1745.6 35.612C1746.4 33.3045 1746.8 30.3314 1746.8 26.6926V20.3026C1746.8 17.3739 1746.53 14.8445 1746 12.7145C1745.56 10.4957 1744.71 8.63197 1743.47 7.12323C1742.23 5.61447 1740.54 4.5051 1738.41 3.7951C1736.37 2.99635 1733.8 2.59697 1730.69 2.59697H1713.78V44.132H1726.7ZM1730.69 93.122C1737.26 93.122 1741.87 91.347 1744.53 87.797C1747.29 84.247 1748.66 79.3657 1748.66 73.1532V64.7664C1748.66 57.6664 1746.93 52.6964 1743.47 49.8564C1740.1 46.9276 1734.99 45.4632 1728.16 45.4632H1713.78V93.122H1730.69Z"
-                  fill="#343230" />
-                <path
-                  d="M1759.35 24.1632C1759.35 20.9682 1759.71 17.9507 1760.42 15.1107C1761.13 12.2707 1762.24 9.78573 1763.75 7.65573C1765.34 5.43697 1767.34 3.70635 1769.74 2.46385C1772.22 1.22135 1775.24 0.600098 1778.79 0.600098C1782.34 0.600098 1785.36 1.22135 1787.84 2.46385C1790.33 3.70635 1792.32 5.43697 1793.83 7.65573C1795.43 9.78573 1796.58 12.2707 1797.29 15.1107C1798 17.9507 1798.36 20.9682 1798.36 24.1632V71.5557C1798.36 74.7507 1798 77.7682 1797.29 80.6082C1796.58 83.4482 1795.43 85.9776 1793.83 88.1964C1792.32 90.3264 1790.33 92.0126 1787.84 93.2551C1785.36 94.4976 1782.34 95.1189 1778.79 95.1189C1775.24 95.1189 1772.22 94.4976 1769.74 93.2551C1767.34 92.0126 1765.34 90.3264 1763.75 88.1964C1762.24 85.9776 1761.13 83.4482 1760.42 80.6082C1759.71 77.7682 1759.35 74.7507 1759.35 71.5557V24.1632ZM1760.68 71.5557C1760.68 74.5732 1760.99 77.4576 1761.62 80.2089C1762.24 82.8714 1763.26 85.2232 1764.68 87.2645C1766.1 89.217 1767.96 90.8145 1770.27 92.057C1772.58 93.2107 1775.42 93.7876 1778.79 93.7876C1782.16 93.7876 1785 93.2107 1787.31 92.057C1789.62 90.8145 1791.48 89.217 1792.9 87.2645C1794.41 85.2232 1795.47 82.8714 1796.09 80.2089C1796.72 77.4576 1797.03 74.5732 1797.03 71.5557V24.1632C1797.03 21.1457 1796.72 18.3057 1796.09 15.6432C1795.47 12.9807 1794.41 10.6288 1792.9 8.5876C1791.48 6.54635 1789.62 4.94885 1787.31 3.7951C1785 2.5526 1782.16 1.93135 1778.79 1.93135C1775.42 1.93135 1772.58 2.5526 1770.27 3.7951C1767.96 4.94885 1766.1 6.54635 1764.68 8.5876C1763.26 10.6288 1762.24 12.9807 1761.62 15.6432C1760.99 18.3057 1760.68 21.1457 1760.68 24.1632V71.5557Z"
-                  fill="#343230" />
-                <path
-                  d="M1835.51 94.187H1833.64L1809.01 2.59697V94.4532H1807.68V1.26572H1810.08L1834.57 92.7226L1859.34 1.26572H1861.6V94.4532H1860.27V2.59697L1835.51 94.187Z"
-                  fill="#343230" />
-              </svg>
+              /вернуть надо ворнинг/
             </div>
             <div class="pop-articles__white-wrapper"><div class="title"><span class="span_orange">Депрескайбинг против полипрагмазии у пациентов с заболеваниями ЖКТ:</span> возможности гастропротекторов </div>
             <div class="helpfullArticles__card-content__item">
@@ -1445,7 +1359,7 @@
           <h2 class="title"><span class="span_orange">ПОЛЕЗНЫЕ</span> СТАТЬИ</h2>
           <div class="helpfullArticles__short-block">
             <div class="helpfullArticles__short-block__text">НОВЫЕ КЛИНИЧЕСКИЕ РЕКОМЕДАЦИИ</div>
-            <button class="helpfullArticles__short-block__button">Узнать подробнее</button>
+            <button class="helpfullArticles__short-block__button"><a href="pdf/1.pdf" download>Узнать подробнее</a></button>
           </div>
           <div class="helpfullArticles__wrapper">
             <div class="helpfullArticles__card">
@@ -1487,9 +1401,9 @@
                 <p class="helpfullArticles__card-header__title">Депрескайбинг против полипрагмазии у пациентов с
                   заболеваниями ЖКТ:
                   возможности гастропротекторов (к.м.н. Шульпекова Ю.О.)</p>
-                <img src="icons/arrow-blue.svg" alt="стрелка" class="helpfullArticles__card-header__arrow">
+                <img src="icons/arrow-blue.svg" alt="стрелка" class="helpfullArticles__card-header__arrow rotaten">
               </div>
-              <div class="helpfullArticles__card-content">
+              <div class="helpfullArticles__card-content" style="display: none;">
                 <div class="helpfullArticles__card-content__item">
                   <div class="helpfullArticles__card-content__item-img"><img src="img/Shulpekova.png"
                       alt="фото ученного"></div>
@@ -1511,9 +1425,9 @@
               <div class="helpfullArticles__card-header">
                 <p class="helpfullArticles__card-header__title">Современные подходы к лечению заболеваний ЖКТ:
                   возможности применения гастпротектора (д.м.н, профессор Хлынов И.Б.)</p>
-                <img src="icons/arrow-blue.svg" alt="стрелка" class="helpfullArticles__card-header__arrow">
+                <img src="icons/arrow-blue.svg" alt="стрелка" class="helpfullArticles__card-header__arrow rotaten">
               </div>
-              <div class="helpfullArticles__card-content">
+              <div class="helpfullArticles__card-content" style="display: none;">
                 <div class="helpfullArticles__card-content__item">
                   <div class="helpfullArticles__card-content__item-img" id="hlynov"><img src="img/hlynov.png"
                       alt="фото ученного"></div>
@@ -1541,11 +1455,11 @@
           <div class="footer-wrapper">
             <div class="footer-logo"><img src="icons/logo.svg" alt="лого"></div>
             <div class="footer-info">
-              <p>© 2023, ООО «Юнифарм». Все права защищены.<br><br>Свидетельство о государственной регистрации
+              <p>© 2023, ООО «Юнифарм».<br>Все права защищены.<br><br>Свидетельство о государственной регистрации
                 № RU.77.99.11.003.E.006291.05.15</p>
             </div>
             <address class="footer-address">
-              <p>115162 Москва, ул. Шаболовка, д.31, стр. Б, подъезд 5, этаж 3</p><br>
+              <p>115162 Москва, ул. Шаболовка, д.31, стр. Б,<br> подъезд 5, этаж 3</p><br>
               <div class="footer-address__links">
                 <a href="e-mail: info@unipharm.ru">e-mail: info@unipharm.ru</a>
                 <a href="tel:+74959957767">тел. +7 (495) 995-77-67</a>
@@ -1562,108 +1476,8 @@
         <img src="icons/Close.svg" alt="закрыть символ">
       </div>
       <div class="warning">
-        <svg xmlns="http://www.w3.org/2000/svg" width="1862" height="108" viewBox="0 0 1862 108" fill="none">
-          <path
-            d="M17.7079 42.4014C24.8079 42.4014 30.1329 43.777 33.6829 46.5282C37.3216 49.2795 39.141 54.3826 39.141 61.8376V72.7539C39.141 79.5876 37.6322 84.9126 34.6147 88.7289C31.5972 92.5451 26.4941 94.4532 19.3054 94.4532H0.401611V1.26572H36.0791V2.59697H1.73286V42.4014H17.7079ZM19.3054 93.122C26.1391 93.122 30.9316 91.347 33.6829 87.797C36.4341 84.1582 37.8097 79.1439 37.8097 72.7539V61.8376C37.8097 58.2876 37.366 55.3589 36.4785 53.0514C35.6797 50.6551 34.4372 48.7914 32.751 47.4601C31.1535 46.0401 29.0679 45.0639 26.4941 44.5314C24.0091 43.9989 21.0804 43.7326 17.7079 43.7326H1.73286V93.122H19.3054Z"
-            fill="#343230" />
-          <path
-            d="M55.5278 71.822L49.8035 94.4532H48.4722L72.0354 1.1326H73.8991L97.9947 94.4532H96.6635L90.806 71.822H55.5278ZM55.9272 70.4907H90.4066L72.9672 2.86323L55.9272 70.4907Z"
-            fill="#343230" />
-          <path
-            d="M160.583 107.633V94.4532H108.664V107.633H107.333V93.122H114.123C116.341 90.9032 117.673 88.3739 118.116 85.5339C118.649 82.6939 119.004 79.7207 119.181 76.6145L123.175 1.26572H153.395V93.122H161.915V107.633H160.583ZM120.513 76.7476C120.335 79.7651 120.024 82.6939 119.581 85.5339C119.226 88.2851 118.028 90.8145 115.986 93.122H152.063V2.59697H124.506L120.513 76.7476Z"
-            fill="#343230" />
-          <path d="M172.596 84.0695V94.4532H171.264V84.0695H172.596Z" fill="#343230" />
-          <path
-            d="M202.564 48.5251V94.4532H201.233V1.26572H202.564V47.1939H238.508V1.26572H239.839V94.4532H238.508V48.5251H202.564Z"
-            fill="#343230" />
-          <path
-            d="M278.861 46.5282V47.8595H250.505V93.122H284.053V94.4532H249.174V1.26572H284.053V2.59697H250.505V46.5282H278.861Z"
-            fill="#343230" />
-          <path
-            d="M338.643 50.7882C335.448 50.7882 332.475 51.0545 329.724 51.587C327.061 52.1195 324.754 53.0514 322.801 54.3826C320.849 55.7139 319.34 57.5776 318.275 59.9739C317.21 62.2814 316.678 65.2101 316.678 68.7601V83.4039C316.678 85.1789 316.5 87.087 316.145 89.1282C315.879 91.1695 315.258 92.9445 314.281 94.4532H312.684C313.838 93.0332 314.548 91.3026 314.814 89.2614C315.169 87.1314 315.346 85.1789 315.346 83.4039V68.7601C315.346 63.5239 316.589 59.3082 319.074 56.1132C321.559 52.9182 325.508 50.9657 330.922 50.2557C325.508 49.457 321.559 47.4601 319.074 44.2651C316.589 40.9814 315.346 36.4107 315.346 30.5532V22.1664C315.346 15.8651 316.766 10.8064 319.606 6.9901C322.535 3.17385 327.416 1.26572 334.25 1.26572H352.222V94.4532H350.891V50.7882H338.643ZM334.25 2.59697C327.771 2.59697 323.201 4.37197 320.538 7.92197C317.964 11.3832 316.678 16.1314 316.678 22.1664V30.5532C316.678 34.4582 317.166 37.6532 318.142 40.1382C319.118 42.5345 320.538 44.4426 322.402 45.8626C324.354 47.1939 326.662 48.1257 329.324 48.6582C332.076 49.1907 335.182 49.457 338.643 49.457H350.891V2.59697H334.25Z"
-            fill="#343230" />
-          <path
-            d="M379.773 1.26572C386.429 1.26572 390.999 2.9076 393.484 6.19135C395.969 9.4751 397.212 14.1789 397.212 20.3026V26.6926C397.212 31.9289 396.28 36.1001 394.416 39.2064C392.553 42.3126 388.869 44.1764 383.367 44.7976C389.136 45.5076 393.174 47.6376 395.481 51.1876C397.878 54.7376 399.076 59.2639 399.076 64.7664V73.1532C399.076 79.7207 397.611 84.9126 394.683 88.7289C391.754 92.5451 386.784 94.4532 379.773 94.4532H361.534V1.26572H379.773ZM375.779 44.132C379.24 44.132 382.213 43.9101 384.698 43.4664C387.272 42.9339 389.358 42.0464 390.955 40.8039C392.641 39.5614 393.884 37.8307 394.683 35.612C395.481 33.3045 395.881 30.3314 395.881 26.6926V20.3026C395.881 17.3739 395.614 14.8445 395.082 12.7145C394.638 10.4957 393.795 8.63197 392.553 7.12323C391.31 5.61447 389.624 4.5051 387.494 3.7951C385.453 2.99635 382.879 2.59697 379.773 2.59697H362.866V44.132H375.779ZM379.773 93.122C386.34 93.122 390.955 91.347 393.618 87.797C396.369 84.247 397.744 79.3657 397.744 73.1532V64.7664C397.744 57.6664 396.014 52.6964 392.553 49.8564C389.18 46.9276 384.077 45.4632 377.243 45.4632H362.866V93.122H379.773Z"
-            fill="#343230" />
-          <path
-            d="M425.608 2.59697L422.679 72.0882C422.502 74.662 422.324 77.2801 422.147 79.9426C421.969 82.5164 421.437 84.8682 420.549 86.9982C419.751 89.1282 418.464 90.9032 416.689 92.3232C414.914 93.7432 412.384 94.4976 409.101 94.5864H408.435V93.2551C411.63 93.2551 414.071 92.5895 415.757 91.2582C417.532 89.927 418.819 88.2407 419.617 86.1995C420.416 84.1582 420.86 81.8951 420.949 79.4101C421.126 76.8364 421.259 74.3514 421.348 71.9551L424.277 1.26572H455.295V94.4532H453.964V2.59697H425.608Z"
-            fill="#343230" />
-          <path
-            d="M490.525 50.7882C487.33 50.7882 484.357 51.0545 481.606 51.587C478.943 52.1195 476.636 53.0514 474.683 54.3826C472.731 55.7139 471.222 57.5776 470.157 59.9739C469.092 62.2814 468.56 65.2101 468.56 68.7601V83.4039C468.56 85.1789 468.382 87.087 468.027 89.1282C467.761 91.1695 467.14 92.9445 466.163 94.4532H464.566C465.72 93.0332 466.43 91.3026 466.696 89.2614C467.051 87.1314 467.228 85.1789 467.228 83.4039V68.7601C467.228 63.5239 468.471 59.3082 470.956 56.1132C473.441 52.9182 477.39 50.9657 482.804 50.2557C477.39 49.457 473.441 47.4601 470.956 44.2651C468.471 40.9814 467.228 36.4107 467.228 30.5532V22.1664C467.228 15.8651 468.648 10.8064 471.488 6.9901C474.417 3.17385 479.298 1.26572 486.132 1.26572H504.104V94.4532H502.773V50.7882H490.525ZM486.132 2.59697C479.653 2.59697 475.083 4.37197 472.42 7.92197C469.846 11.3832 468.56 16.1314 468.56 22.1664V30.5532C468.56 34.4582 469.048 37.6532 470.024 40.1382C471 42.5345 472.42 44.4426 474.284 45.8626C476.237 47.1939 478.544 48.1257 481.207 48.6582C483.958 49.1907 487.064 49.457 490.525 49.457H502.773V2.59697H486.132Z"
-            fill="#343230" />
-          <path
-            d="M543.103 46.5282V47.8595H514.748V93.122H548.295V94.4532H513.417V1.26572H548.295V2.59697H514.748V46.5282H543.103Z"
-            fill="#343230" />
-          <path d="M578.621 94.4532V2.59697H557.587V1.26572H600.986V2.59697H579.952V94.4532H578.621Z" fill="#343230" />
-          <path
-            d="M629.508 0.600098C633.058 0.600098 636.031 1.26572 638.427 2.59697C640.912 3.83947 642.909 5.5701 644.418 7.78885C645.927 9.91885 646.992 12.4038 647.613 15.2439C648.323 18.0839 648.678 21.057 648.678 24.1632V31.2189H647.346V24.1632C647.346 21.2345 647.036 18.4389 646.415 15.7764C645.793 13.0251 644.773 10.6288 643.353 8.5876C642.022 6.54635 640.202 4.94885 637.895 3.7951C635.587 2.5526 632.792 1.93135 629.508 1.93135C626.135 1.93135 623.295 2.5526 620.988 3.7951C618.769 4.94885 616.95 6.54635 615.53 8.5876C614.198 10.6288 613.222 13.0251 612.601 15.7764C611.98 18.4389 611.669 21.2345 611.669 24.1632V71.5557C611.669 74.4845 611.98 77.3245 612.601 80.0757C613.222 82.7382 614.198 85.0901 615.53 87.1314C616.95 89.1726 618.769 90.8145 620.988 92.057C623.295 93.2107 626.135 93.7876 629.508 93.7876C632.792 93.7876 635.587 93.2107 637.895 92.057C640.202 90.8145 642.022 89.1726 643.353 87.1314C644.773 85.0901 645.793 82.7382 646.415 80.0757C647.036 77.3245 647.346 74.4845 647.346 71.5557V61.7045H648.678V71.5557C648.678 74.662 648.323 77.6351 647.613 80.4751C646.992 83.3151 645.927 85.8445 644.418 88.0632C642.909 90.1932 640.912 91.9239 638.427 93.2551C636.031 94.4976 633.058 95.1189 629.508 95.1189C625.958 95.1189 622.94 94.4976 620.455 93.2551C618.059 91.9239 616.107 90.1932 614.598 88.0632C613.089 85.8445 611.98 83.3151 611.27 80.4751C610.648 77.6351 610.338 74.662 610.338 71.5557V24.1632C610.338 21.057 610.648 18.0839 611.27 15.2439C611.98 12.4038 613.089 9.91885 614.598 7.78885C616.107 5.5701 618.059 3.83947 620.455 2.59697C622.94 1.26572 625.958 0.600098 629.508 0.600098Z"
-            fill="#343230" />
-          <path
-            d="M683.978 50.7882C680.783 50.7882 677.81 51.0545 675.058 51.587C672.396 52.1195 670.088 53.0514 668.136 54.3826C666.183 55.7139 664.675 57.5776 663.61 59.9739C662.545 62.2814 662.012 65.2101 662.012 68.7601V83.4039C662.012 85.1789 661.835 87.087 661.48 89.1282C661.213 91.1695 660.592 92.9445 659.616 94.4532H658.018C659.172 93.0332 659.882 91.3026 660.148 89.2614C660.503 87.1314 660.681 85.1789 660.681 83.4039V68.7601C660.681 63.5239 661.923 59.3082 664.408 56.1132C666.893 52.9182 670.843 50.9657 676.256 50.2557C670.843 49.457 666.893 47.4601 664.408 44.2651C661.923 40.9814 660.681 36.4107 660.681 30.5532V22.1664C660.681 15.8651 662.101 10.8064 664.941 6.9901C667.87 3.17385 672.751 1.26572 679.585 1.26572H697.557V94.4532H696.225V50.7882H683.978ZM679.585 2.59697C673.106 2.59697 668.535 4.37197 665.873 7.92197C663.299 11.3832 662.012 16.1314 662.012 22.1664V30.5532C662.012 34.4582 662.5 37.6532 663.477 40.1382C664.453 42.5345 665.873 44.4426 667.737 45.8626C669.689 47.1939 671.997 48.1257 674.659 48.6582C677.41 49.1907 680.516 49.457 683.978 49.457H696.225V2.59697H679.585Z"
-            fill="#343230" />
-          <path
-            d="M743.382 2.59697L740.453 72.0882C740.275 74.662 740.098 77.2801 739.92 79.9426C739.743 82.5164 739.21 84.8682 738.323 86.9982C737.524 89.1282 736.237 90.9032 734.462 92.3232C732.687 93.7432 730.158 94.4976 726.874 94.5864H726.209V93.2551C729.404 93.2551 731.844 92.5895 733.53 91.2582C735.305 89.927 736.592 88.2407 737.391 86.1995C738.19 84.1582 738.634 81.8951 738.722 79.4101C738.9 76.8364 739.033 74.3514 739.122 71.9551L742.05 1.26572H773.069V94.4532H771.737V2.59697H743.382Z"
-            fill="#343230" />
-          <path
-            d="M812.026 46.5282V47.8595H783.671V93.122H817.218V94.4532H782.339V1.26572H817.218V2.59697H783.671V46.5282H812.026Z"
-            fill="#343230" />
-          <path
-            d="M835.296 46.9276L827.841 57.8439V94.4532H826.51V1.26572H827.841V55.4476L864.584 1.26572H866.181L836.095 45.7295L868.977 94.4532H867.379L835.296 46.9276Z"
-            fill="#343230" />
-          <path
-            d="M885.406 71.822L879.682 94.4532H878.351L901.914 1.1326H903.778L927.873 94.4532H926.542L920.684 71.822H885.406ZM885.806 70.4907H920.285L902.846 2.86323L885.806 70.4907Z"
-            fill="#343230" />
-          <path
-            d="M955.184 1.26572C958.734 1.26572 961.707 1.8426 964.103 2.99635C966.588 4.1501 968.54 5.7476 969.96 7.78885C971.469 9.74135 972.534 12.0932 973.155 14.8445C973.777 17.507 974.087 20.4357 974.087 23.6307V32.6832C974.087 40.0495 972.401 45.5076 969.029 49.0576C965.656 52.5189 960.198 54.2495 952.654 54.2495H938.543V94.4532H937.212V1.26572H955.184ZM952.654 52.9182C959.843 52.9182 964.99 51.3207 968.097 48.1257C971.203 44.842 972.756 39.6945 972.756 32.6832V23.6307C972.756 20.6132 972.445 17.8176 971.824 15.2439C971.292 12.6701 970.36 10.4514 969.029 8.5876C967.697 6.72385 965.878 5.25948 963.57 4.19447C961.352 3.12947 958.556 2.59697 955.184 2.59697H938.543V52.9182H952.654Z"
-            fill="#343230" />
-          <path
-            d="M1002.63 0.600098C1006.18 0.600098 1009.16 1.26572 1011.55 2.59697C1014.04 3.83947 1016.03 5.5701 1017.54 7.78885C1019.05 9.91885 1020.12 12.4038 1020.74 15.2439C1021.45 18.0839 1021.8 21.057 1021.8 24.1632V31.2189H1020.47V24.1632C1020.47 21.2345 1020.16 18.4389 1019.54 15.7764C1018.92 13.0251 1017.9 10.6288 1016.48 8.5876C1015.15 6.54635 1013.33 4.94885 1011.02 3.7951C1008.71 2.5526 1005.92 1.93135 1002.63 1.93135C999.26 1.93135 996.42 2.5526 994.112 3.7951C991.893 4.94885 990.074 6.54635 988.654 8.5876C987.323 10.6288 986.347 13.0251 985.725 15.7764C985.104 18.4389 984.793 21.2345 984.793 24.1632V71.5557C984.793 74.4845 985.104 77.3245 985.725 80.0757C986.347 82.7382 987.323 85.0901 988.654 87.1314C990.074 89.1726 991.893 90.8145 994.112 92.057C996.42 93.2107 999.26 93.7876 1002.63 93.7876C1005.92 93.7876 1008.71 93.2107 1011.02 92.057C1013.33 90.8145 1015.15 89.1726 1016.48 87.1314C1017.9 85.0901 1018.92 82.7382 1019.54 80.0757C1020.16 77.3245 1020.47 74.4845 1020.47 71.5557V61.7045H1021.8V71.5557C1021.8 74.662 1021.45 77.6351 1020.74 80.4751C1020.12 83.3151 1019.05 85.8445 1017.54 88.0632C1016.03 90.1932 1014.04 91.9239 1011.55 93.2551C1009.16 94.4976 1006.18 95.1189 1002.63 95.1189C999.082 95.1189 996.065 94.4976 993.58 93.2551C991.183 91.9239 989.231 90.1932 987.722 88.0632C986.214 85.8445 985.104 83.3151 984.394 80.4751C983.773 77.6351 983.462 74.662 983.462 71.5557V24.1632C983.462 21.057 983.773 18.0839 984.394 15.2439C985.104 12.4038 986.214 9.91885 987.722 7.78885C989.231 5.5701 991.183 3.83947 993.58 2.59697C996.065 1.26572 999.082 0.600098 1002.63 0.600098Z"
-            fill="#343230" />
-          <path d="M1052.18 94.4532V2.59697H1031.14V1.26572H1074.54V2.59697H1053.51V94.4532H1052.18Z" fill="#343230" />
-          <path
-            d="M1102.13 1.26572C1108.79 1.26572 1113.36 2.9076 1115.84 6.19135C1118.33 9.4751 1119.57 14.1789 1119.57 20.3026V26.6926C1119.57 31.9289 1118.64 36.1001 1116.78 39.2064C1114.91 42.3126 1111.23 44.1764 1105.73 44.7976C1111.49 45.5076 1115.53 47.6376 1117.84 51.1876C1120.24 54.7376 1121.43 59.2639 1121.43 64.7664V73.1532C1121.43 79.7207 1119.97 84.9126 1117.04 88.7289C1114.11 92.5451 1109.14 94.4532 1102.13 94.4532H1083.89V1.26572H1102.13ZM1098.14 44.132C1101.6 44.132 1104.57 43.9101 1107.06 43.4664C1109.63 42.9339 1111.72 42.0464 1113.31 40.8039C1115 39.5614 1116.24 37.8307 1117.04 35.612C1117.84 33.3045 1118.24 30.3314 1118.24 26.6926V20.3026C1118.24 17.3739 1117.97 14.8445 1117.44 12.7145C1117 10.4957 1116.15 8.63197 1114.91 7.12323C1113.67 5.61447 1111.98 4.5051 1109.85 3.7951C1107.81 2.99635 1105.24 2.59697 1102.13 2.59697H1085.22V44.132H1098.14ZM1102.13 93.122C1108.7 93.122 1113.31 91.347 1115.98 87.797C1118.73 84.247 1120.1 79.3657 1120.1 73.1532V64.7664C1120.1 57.6664 1118.37 52.6964 1114.91 49.8564C1111.54 46.9276 1106.44 45.4632 1099.6 45.4632H1085.22V93.122H1102.13Z"
-            fill="#343230" />
-          <path
-            d="M1160.48 46.5282V47.8595H1132.13V93.122H1165.67V94.4532H1130.79V1.26572H1165.67V2.59697H1132.13V46.5282H1160.48Z"
-            fill="#343230" />
-          <path
-            d="M1176.3 48.5251V94.4532H1174.96V1.26572H1176.3V47.1939H1212.24V1.26572H1213.57V94.4532H1212.24V48.5251H1176.3Z"
-            fill="#343230" />
-          <path
-            d="M1224.24 48.5251V94.4532H1222.91V1.26572H1224.24V47.1939H1260.18V1.26572H1261.51V94.4532H1260.18V48.5251H1224.24Z"
-            fill="#343230" />
-          <path
-            d="M1286.16 41.4695C1293.7 41.4695 1299.16 43.2445 1302.53 46.7945C1305.99 50.2557 1307.72 55.6695 1307.72 63.0357V72.0882C1307.72 75.2832 1307.41 78.2564 1306.79 81.0076C1306.17 83.7589 1305.1 86.1551 1303.59 88.1964C1302.09 90.1489 1300.09 91.702 1297.6 92.8557C1295.21 93.9207 1292.23 94.4532 1288.68 94.4532H1270.85V1.26572H1272.18V41.4695H1286.16ZM1318.11 1.26572V94.4532H1316.77V1.26572H1318.11ZM1288.68 93.122C1292.06 93.122 1294.85 92.5895 1297.07 91.5245C1299.38 90.4595 1301.2 88.9951 1302.53 87.1314C1303.95 85.2676 1304.93 83.0489 1305.46 80.4751C1306.08 77.9014 1306.39 75.1057 1306.39 72.0882V63.0357C1306.39 56.0245 1304.79 50.9214 1301.6 47.7264C1298.49 44.4426 1293.34 42.8007 1286.16 42.8007H1272.18V93.122H1288.68Z"
-            fill="#343230" />
-          <path
-            d="M1355.19 94.187H1353.33L1328.7 2.59697V94.4532H1327.37V1.26572H1329.76L1354.26 92.7226L1379.02 1.26572H1381.28V94.4532H1379.95V2.59697L1355.19 94.187Z"
-            fill="#343230" />
-          <path
-            d="M1429.16 0.600098C1432.71 0.600098 1435.68 1.26572 1438.08 2.59697C1440.56 3.83947 1442.56 5.5701 1444.07 7.78885C1445.58 9.91885 1446.64 12.4038 1447.26 15.2439C1447.97 18.0839 1448.33 21.057 1448.33 24.1632V31.2189H1447V24.1632C1447 21.2345 1446.69 18.4389 1446.06 15.7764C1445.44 13.0251 1444.42 10.6288 1443 8.5876C1441.67 6.54635 1439.85 4.94885 1437.54 3.7951C1435.24 2.5526 1432.44 1.93135 1429.16 1.93135C1425.79 1.93135 1422.95 2.5526 1420.64 3.7951C1418.42 4.94885 1416.6 6.54635 1415.18 8.5876C1413.85 10.6288 1412.87 13.0251 1412.25 15.7764C1411.63 18.4389 1411.32 21.2345 1411.32 24.1632V71.5557C1411.32 74.4845 1411.63 77.3245 1412.25 80.0757C1412.87 82.7382 1413.85 85.0901 1415.18 87.1314C1416.6 89.1726 1418.42 90.8145 1420.64 92.057C1422.95 93.2107 1425.79 93.7876 1429.16 93.7876C1432.44 93.7876 1435.24 93.2107 1437.54 92.057C1439.85 90.8145 1441.67 89.1726 1443 87.1314C1444.42 85.0901 1445.44 82.7382 1446.06 80.0757C1446.69 77.3245 1447 74.4845 1447 71.5557V61.7045H1448.33V71.5557C1448.33 74.662 1447.97 77.6351 1447.26 80.4751C1446.64 83.3151 1445.58 85.8445 1444.07 88.0632C1442.56 90.1932 1440.56 91.9239 1438.08 93.2551C1435.68 94.4976 1432.71 95.1189 1429.16 95.1189C1425.61 95.1189 1422.59 94.4976 1420.11 93.2551C1417.71 91.9239 1415.76 90.1932 1414.25 88.0632C1412.74 85.8445 1411.63 83.3151 1410.92 80.4751C1410.3 77.6351 1409.99 74.662 1409.99 71.5557V24.1632C1409.99 21.057 1410.3 18.0839 1410.92 15.2439C1411.63 12.4038 1412.74 9.91885 1414.25 7.78885C1415.76 5.5701 1417.71 3.83947 1420.11 2.59697C1422.59 1.26572 1425.61 0.600098 1429.16 0.600098Z"
-            fill="#343230" />
-          <path
-            d="M1475.64 1.26572C1479.19 1.26572 1482.16 1.8426 1484.56 2.99635C1487.04 4.1501 1489 5.7476 1490.42 7.78885C1491.93 9.74135 1492.99 12.0932 1493.61 14.8445C1494.23 17.507 1494.54 20.4357 1494.54 23.6307V32.6832C1494.54 40.0495 1492.86 45.5076 1489.48 49.0576C1486.11 52.5189 1480.65 54.2495 1473.11 54.2495H1459V94.4532H1457.67V1.26572H1475.64ZM1473.11 52.9182C1480.3 52.9182 1485.45 51.3207 1488.55 48.1257C1491.66 44.842 1493.21 39.6945 1493.21 32.6832V23.6307C1493.21 20.6132 1492.9 17.8176 1492.28 15.2439C1491.75 12.6701 1490.82 10.4514 1489.48 8.5876C1488.15 6.72385 1486.33 5.25948 1484.03 4.19447C1481.81 3.12947 1479.01 2.59697 1475.64 2.59697H1459V52.9182H1473.11Z"
-            fill="#343230" />
-          <path
-            d="M1533.61 46.5282V47.8595H1505.25V93.122H1538.8V94.4532H1503.92V1.26572H1538.8V2.59697H1505.25V46.5282H1533.61Z"
-            fill="#343230" />
-          <path
-            d="M1601.34 107.633V94.4532H1549.42V107.633H1548.09V93.122H1554.88C1557.1 90.9032 1558.43 88.3739 1558.87 85.5339C1559.4 82.6939 1559.76 79.7207 1559.94 76.6145L1563.93 1.26572H1594.15V93.122H1602.67V107.633H1601.34ZM1561.27 76.7476C1561.09 79.7651 1560.78 82.6939 1560.34 85.5339C1559.98 88.2851 1558.78 90.8145 1556.74 93.122H1592.82V2.59697H1565.26L1561.27 76.7476Z"
-            fill="#343230" />
-          <path
-            d="M1631.19 0.600098C1634.74 0.600098 1637.71 1.26572 1640.11 2.59697C1642.59 3.83947 1644.59 5.5701 1646.1 7.78885C1647.61 9.91885 1648.67 12.4038 1649.3 15.2439C1650.01 18.0839 1650.36 21.057 1650.36 24.1632V31.2189H1649.03V24.1632C1649.03 21.2345 1648.72 18.4389 1648.1 15.7764C1647.48 13.0251 1646.46 10.6288 1645.04 8.5876C1643.7 6.54635 1641.88 4.94885 1639.58 3.7951C1637.27 2.5526 1634.47 1.93135 1631.19 1.93135C1627.82 1.93135 1624.98 2.5526 1622.67 3.7951C1620.45 4.94885 1618.63 6.54635 1617.21 8.5876C1615.88 10.6288 1614.9 13.0251 1614.28 15.7764C1613.66 18.4389 1613.35 21.2345 1613.35 24.1632V71.5557C1613.35 74.4845 1613.66 77.3245 1614.28 80.0757C1614.9 82.7382 1615.88 85.0901 1617.21 87.1314C1618.63 89.1726 1620.45 90.8145 1622.67 92.057C1624.98 93.2107 1627.82 93.7876 1631.19 93.7876C1634.47 93.7876 1637.27 93.2107 1639.58 92.057C1641.88 90.8145 1643.7 89.1726 1645.04 87.1314C1646.46 85.0901 1647.48 82.7382 1648.1 80.0757C1648.72 77.3245 1649.03 74.4845 1649.03 71.5557V61.7045H1650.36V71.5557C1650.36 74.662 1650.01 77.6351 1649.3 80.4751C1648.67 83.3151 1647.61 85.8445 1646.1 88.0632C1644.59 90.1932 1642.59 91.9239 1640.11 93.2551C1637.71 94.4976 1634.74 95.1189 1631.19 95.1189C1627.64 95.1189 1624.62 94.4976 1622.14 93.2551C1619.74 91.9239 1617.79 90.1932 1616.28 88.0632C1614.77 85.8445 1613.66 83.3151 1612.95 80.4751C1612.33 77.6351 1612.02 74.662 1612.02 71.5557V24.1632C1612.02 21.057 1612.33 18.0839 1612.95 15.2439C1613.66 12.4038 1614.77 9.91885 1616.28 7.78885C1617.79 5.5701 1619.74 3.83947 1622.14 2.59697C1624.62 1.26572 1627.64 0.600098 1631.19 0.600098Z"
-            fill="#343230" />
-          <path d="M1680.73 94.4532V2.59697H1659.7V1.26572H1703.1V2.59697H1682.07V94.4532H1680.73Z" fill="#343230" />
-          <path
-            d="M1730.69 1.26572C1737.35 1.26572 1741.92 2.9076 1744.4 6.19135C1746.89 9.4751 1748.13 14.1789 1748.13 20.3026V26.6926C1748.13 31.9289 1747.2 36.1001 1745.33 39.2064C1743.47 42.3126 1739.79 44.1764 1734.28 44.7976C1740.05 45.5076 1744.09 47.6376 1746.4 51.1876C1748.79 54.7376 1749.99 59.2639 1749.99 64.7664V73.1532C1749.99 79.7207 1748.53 84.9126 1745.6 88.7289C1742.67 92.5451 1737.7 94.4532 1730.69 94.4532H1712.45V1.26572H1730.69ZM1726.7 44.132C1730.16 44.132 1733.13 43.9101 1735.62 43.4664C1738.19 42.9339 1740.27 42.0464 1741.87 40.8039C1743.56 39.5614 1744.8 37.8307 1745.6 35.612C1746.4 33.3045 1746.8 30.3314 1746.8 26.6926V20.3026C1746.8 17.3739 1746.53 14.8445 1746 12.7145C1745.56 10.4957 1744.71 8.63197 1743.47 7.12323C1742.23 5.61447 1740.54 4.5051 1738.41 3.7951C1736.37 2.99635 1733.8 2.59697 1730.69 2.59697H1713.78V44.132H1726.7ZM1730.69 93.122C1737.26 93.122 1741.87 91.347 1744.53 87.797C1747.29 84.247 1748.66 79.3657 1748.66 73.1532V64.7664C1748.66 57.6664 1746.93 52.6964 1743.47 49.8564C1740.1 46.9276 1734.99 45.4632 1728.16 45.4632H1713.78V93.122H1730.69Z"
-            fill="#343230" />
-          <path
-            d="M1759.35 24.1632C1759.35 20.9682 1759.71 17.9507 1760.42 15.1107C1761.13 12.2707 1762.24 9.78573 1763.75 7.65573C1765.34 5.43697 1767.34 3.70635 1769.74 2.46385C1772.22 1.22135 1775.24 0.600098 1778.79 0.600098C1782.34 0.600098 1785.36 1.22135 1787.84 2.46385C1790.33 3.70635 1792.32 5.43697 1793.83 7.65573C1795.43 9.78573 1796.58 12.2707 1797.29 15.1107C1798 17.9507 1798.36 20.9682 1798.36 24.1632V71.5557C1798.36 74.7507 1798 77.7682 1797.29 80.6082C1796.58 83.4482 1795.43 85.9776 1793.83 88.1964C1792.32 90.3264 1790.33 92.0126 1787.84 93.2551C1785.36 94.4976 1782.34 95.1189 1778.79 95.1189C1775.24 95.1189 1772.22 94.4976 1769.74 93.2551C1767.34 92.0126 1765.34 90.3264 1763.75 88.1964C1762.24 85.9776 1761.13 83.4482 1760.42 80.6082C1759.71 77.7682 1759.35 74.7507 1759.35 71.5557V24.1632ZM1760.68 71.5557C1760.68 74.5732 1760.99 77.4576 1761.62 80.2089C1762.24 82.8714 1763.26 85.2232 1764.68 87.2645C1766.1 89.217 1767.96 90.8145 1770.27 92.057C1772.58 93.2107 1775.42 93.7876 1778.79 93.7876C1782.16 93.7876 1785 93.2107 1787.31 92.057C1789.62 90.8145 1791.48 89.217 1792.9 87.2645C1794.41 85.2232 1795.47 82.8714 1796.09 80.2089C1796.72 77.4576 1797.03 74.5732 1797.03 71.5557V24.1632C1797.03 21.1457 1796.72 18.3057 1796.09 15.6432C1795.47 12.9807 1794.41 10.6288 1792.9 8.5876C1791.48 6.54635 1789.62 4.94885 1787.31 3.7951C1785 2.5526 1782.16 1.93135 1778.79 1.93135C1775.42 1.93135 1772.58 2.5526 1770.27 3.7951C1767.96 4.94885 1766.1 6.54635 1764.68 8.5876C1763.26 10.6288 1762.24 12.9807 1761.62 15.6432C1760.99 18.3057 1760.68 21.1457 1760.68 24.1632V71.5557Z"
-            fill="#343230" />
-          <path
-            d="M1835.51 94.187H1833.64L1809.01 2.59697V94.4532H1807.68V1.26572H1810.08L1834.57 92.7226L1859.34 1.26572H1861.6V94.4532H1860.27V2.59697L1835.51 94.187Z"
-            fill="#343230" />
-        </svg>
+        <img src="icons/laptop warning.png" alt="опасно иконка" class="laptop-warning">
+        <img src="icons/moble warning.png" alt="опасно иконка" class="mobile-warning">
       </div>
       <div class="container">
         <div class="row">
@@ -1760,10 +1574,17 @@
                   УЗНАЙТЕ О СОВРЕМЕННЫХ ТРЕНДАХ ГАСТРОПРОТЕКЦИИ
                 </button>
               </div>
-            </div>
+              
+              </div>
+                
           </div>
+          
         </div>
+        <button class="mechanism-button mobile">
+          УЗНАЙТЕ О СОВРЕМЕННЫsdasdasdaХ ТРЕНДАХ ГАСТРОПРОТЕКЦИИ
+        </button>
       </div>
+      
     </section>
     <section class="recomendWhy">
       <div class="container">
@@ -1799,36 +1620,43 @@
               <span class="aboutCapsule-block__text-title">В 1 капсуле Гастрарекс<sup>®</sup> <span class="span_orange">НЕО</span>
               содержится</span> <span class="aboutCapsule-block__text-quantity">300 мг</span>
               метилметионинсульфония хлорида (витамина U)<br><br><br>
-              <span class="span_orange">Усовершенствованная капсула без диоксида титана с ментолом</span> для улучшения вкусовых ощущений
+              <p><span class="span_orange">Усовершенствованная капсула без диоксида титана с ментолом</span> для улучшения вкусовых ощущений</p>
             </div>
             <div class="aboutCapsule-block__img">
               <img src="img/tablet box.png" alt="таблетки" class="aboutCapsule-block__img-box">
               <img src="img/two tablets.png" alt="две таблетки" class="aboutCapsule-block__img-tablets">
+              <img src="img/box tablet.png" alt="упаковка с таблетками" class="aboutCapsule-block__img-tablets-mobile">
+              <img src="icons/road mobile.png" alt="дорожка" class="mobile-road">
+            </div>
+            <p class="mobile"><span class="span_orange">Усовершенствованная капсула без диоксида титана с ментолом</span> для улучшения вкусовых ощущений</p>
+          </div>
+          <div class="light-wrapper">
+            <div class="aboutCapsule-wrapper">
+              <div class="aboutCapsule-item">
+                <img src="icons/u.svg" alt="иконка">
+                <p>300 мг витамина U в 1 капсуле</p>
+              </div>
+              <div class="aboutCapsule-item">
+                <img src="icons/o shield.svg" alt="иконка">
+                <p>Капсула кислотоустойчивая,
+                  c защитой действующего вещества</p>
+              </div>
+              <div class="aboutCapsule-item">
+                <img src="icons/leaf.svg" alt="иконка">
+                <p>5 мг ментола</p>
+              </div>
+              <div class="aboutCapsule-item">
+                <img src="icons/To.svg" alt="иконка">
+                <p>Не содержит диоксид титана</p>
+              </div>
+              <div class="aboutCapsule-item">
+                <img src="icons/dice.svg" alt="иконка">
+                <p>30 капсул в 1 упаковке</p>
+              </div>
+              <button class="button button_over-mobile">УЗНАЙТЕ О СОВРЕМЕННЫХ ТРЕНДАХ ГАСТРОПРОТЕКЦИИ</button>
             </div>
           </div>
-          <div class="aboutCapsule-wrapper">
-            <div class="aboutCapsule-item">
-              <img src="icons/u.svg" alt="иконка">
-              <p>300 мг витамина U в 1 капсуле</p>
-            </div>
-            <div class="aboutCapsule-item">
-              <img src="icons/o shield.svg" alt="иконка">
-              <p>Капсула кислотоустойчивая,
-                с защитой действующего вещества</p>
-            </div>
-            <div class="aboutCapsule-item">
-              <img src="icons/leaf.svg" alt="иконка">
-              <p>5 мг ментола</p>
-            </div>
-            <div class="aboutCapsule-item">
-              <img src="icons/To.svg" alt="иконка">
-              <p>Не содержит диоксид титана</p>
-            </div>
-            <div class="aboutCapsule-item">
-              <img src="icons/dice.svg" alt="иконка">
-              <p>30 капсул в 1 упаковке</p>
-            </div>
-          </div>
+          
         </div>
       </div>
     </section>
@@ -1882,6 +1710,7 @@
       </div>
     </section>
   </section>
+  
   <script src="js/script.js"></script>
 </body>
 
