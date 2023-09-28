@@ -44,8 +44,24 @@
         margin-bottom: 0;
     }
    }
+   .perspectives__wrapper {
+    flex-direction: row-reverse;
+    .perspectives__block-first__item-text {
+        width: 224%;
+    }
+    .perspectives__block-second__item-text {
+        width: 224%;
+    }
+   }
 }
 @media (max-width: 1200px) {
+    .baseDirections__wrapper {
+        justify-content: center;
+        gap: 30px;
+        .baseDirections__item {
+            margin-bottom: 0;
+        }
+    }
     .mechanism-button {
         width: 65%;
         /* margin-top: 183px; */
@@ -118,6 +134,7 @@
 }
 
 @media (max-width: 991px) {
+    
     .scheme-wrapper {
         flex-direction: column;
         width: 100%;
@@ -194,7 +211,11 @@
 
 
 @media (max-width: 767px){
-    
+    .perspectives__wrapper {
+        .shadow-line {
+            display: none;
+        }
+    }
     .aboutCapsule-block__img-box {
         width: 120%;
     }
@@ -824,6 +845,7 @@
     .perspectives__block-first__item {
         gap: 8px;
         flex-direction: column;
+        
     }
     .perspectives__block-first__item-img {
         width: 32px;
@@ -867,6 +889,7 @@
             }
         }
     }
+    
     .blue-wrapper {
         border-radius: 20px;
     }
@@ -1252,7 +1275,18 @@
             padding-left: 0;
         }
     }
-    
+    .perspectives__block-second__item {
+        width: 100%;
+    }
+    .perspectives__block-first__item {
+        width: 100%;
+    }
+    .perspectives__wrapper .perspectives__block-first__item-text {
+        width: 100%;
+    }
+    .perspectives__wrapper .perspectives__block-second__item-text {
+        width: 100%;
+    }
 }
 
 @media (max-width: 424px) {
