@@ -1,13 +1,15 @@
 .pop-articles {
-    width: 100vw;
-    height: 8161px;
-    background: rgba(22, 21, 21, 0.77);
+       width: 100%;
+    height: 100vh;
+    background: rgba(22,21,21,.77);
     overflow: hidden;
-    position: absolute;
-    z-index: 5;
-    padding-top: 130px;
+    position: fixed;
+    top: 0;
+    z-index: 29;
+    justify-content: center;
+    align-items: center;
     .skroll-wrapper {
-        height: 790px;
+        height: 87%;
         margin: 0 auto;
         display: flex;
         justify-content: center;
@@ -15,7 +17,35 @@
         position: relative;
         border-radius: 16px;
         background: #fff;
-        width: 1280px;
+        width: 75%;
+        .warning {
+            height: 100px;
+            position: absolute;
+            width: 100%;
+            z-index: 50;
+            bottom:0;
+            img.laptop-warning {
+                bottom: -13px;
+                width: 100%;
+                height: 100%;
+                border-radius: 0  0 20px 20px;
+                z-index: 2;
+                padding: 18px 19px;
+                background: rgba(255, 255, 255, 0.80);
+                backdrop-filter: blur(4px);
+            }
+            img.mobile-warning {
+                height: 100%;
+                bottom: -13px;
+                width: 100%;
+                border-radius: 0  0 20px 20px;
+                z-index: 2;
+                padding: 18px 19px;
+                display: none;
+                background: rgba(255, 255, 255, 0.80);
+                backdrop-filter: blur(4px);
+            }
+        }
     }
     .list {
         margin: 0;
@@ -37,16 +67,18 @@
     }
     .close-modal {
         z-index: 1000;
-        position: fixed;
+        position: absolute;
         border-radius: 800px;
-        background:  #01C8C8;
+        background: #01c8c8;
         display: flex;
         justify-content: center;
-        align-items:center;
+        align-items: center;
         width: 90px;
         height: 90px;
-        right: 63px;
-        top: 60px;
+        right: -15%;
+        top: -5%;
+        box-shadow: 0 10px 30px 0 rgba(0,71,89,.4);
+        padding-top: 2px;
         :hover {
             cursor: pointer;
         }
@@ -57,8 +89,8 @@
         }
     }
     &__wrapper {
-        width: 1280px;
-        height: 772px;
+        width: 100%;
+        height: 98%;
         overflow: scroll;
         overflow-x: hidden;
         margin: 0 auto;
@@ -73,27 +105,13 @@
             background-color: #A3A3AA;
           }
         
-        .warning {
-            height: 772px;
-            position: absolute;
-            width: 100%;
-            svg {
-                position: fixed;
-                bottom: 100px;
-                width: auto;
-                border-radius: 0  0 20px 20px;
-                z-index: 2;
-                padding: 18px 19px;
-                background: rgba(255, 255, 255, 0.80);
-                backdrop-filter: blur(4px);
-            }
-        }
+        
     }
     &__white-wrapper {
         background: #FFF;
         border-radius: 20px;
         box-shadow: 0px 1px 18px 25px rgba(0, 0, 0, 0.07);
-        width: 1280px;
+        width: 100%;
         padding: 60px 80px;
     }
     .title {
@@ -103,6 +121,7 @@
     .helpfullArticles__card-content__item {
         display: flex;
         justify-content: center;
+        border: none;
         align-items: center;
         gap: 30px;
         margin-bottom: 60px;
@@ -281,6 +300,50 @@
             }
         }
     }
+    #ten,#thirteen {
+        margin-bottom: 50px;
+        .pop-articles__text-block__wrapper {
+            margin-bottom: 40px;
+            align-items: center;
+            p {
+                width: 50%;
+            }
+            gap: 40px;
+        }
+        .pop-articles__text-block__wrapper-img {
+            width: 50%;
+            background: #fff;
+            border-radius: 13px;
+            
+            display: flex;
+            flex-direction: column;
+            gap: 34px;
+            height: 100%;
+            p {
+                color: #343230;
+                font-size: 24px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: 130%;
+                padding: 0px 42px 33px 62px;
+                width: 80%;
+            }
+            img {
+                padding: 36px 45px 0px 0px;
+            }
+        }
+        .listOfLiterature {
+            margin-bottom: 50px;
+            .title {
+                font-size: 24px;
+                margin-bottom: 20px;
+            }
+            ol{
+                padding-left: 12px;
+            }
+        }
+    }
+    
     &__border-text {
         margin-top: 20px;
         border-radius: 20px;
@@ -312,6 +375,8 @@
     .diagram-line {
         width: 100%;
         margin: 0 auto;
+        position: relative;
+        padding-bottom: 60px;
         p {
             margin-bottom: 30px;
             text-align: center;
@@ -325,9 +390,13 @@
             width: 80%;
         }
         .list {
-            width: 74%;
+            width: 55%;
+            position: absolute;
+            bottom: 0px;
+            right: -172px;
             li {
                 justify-content: flex-start;
+                align-items:flex-start;
                 p {
                     width: 60%;
                     text-align: inherit;
@@ -336,6 +405,8 @@
                     font-style: normal;
                     font-weight: 400;
                     line-height: 130%; /* 23.4px */
+                    margin: 0;
+                    padding: 0;
                 }
                 img {
                     width: 40px;
@@ -347,4 +418,14 @@
         }
     }
 }
-
+#ModernTrends {
+    .helpfullArticles__card-content__item {
+        border: none;
+        padding: 0;
+        justify-content: unset;
+        gap: 60px;
+        &:nth-child(3) {
+            margin-bottom: 0;
+        }
+    }
+}

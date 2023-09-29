@@ -18,10 +18,17 @@ const buttonsKnowMore = document.querySelectorAll('#knowMore'),
       knowMoreButtons = document.querySelectorAll('.more'),
       sliderLine = document.querySelector('.slider-line'),
       slideField = document.querySelector('.inner'),
-      slidesWrapper = document.querySelector('.goalsPrescription__wrapper');
+      slidesWrapper = document.querySelector('.goalsPrescription__wrapper'),
+      closeArticlesButtons = document.querySelectorAll('#articles-close'),
+      btnDrozdov = document.querySelector('#btnFirstArticle'),
+      btnShulpekova = document.querySelector('#btnSecondArticle'),
+      btnHlynov = document.querySelector('#btnThirdArticle'),
+      popArticleShulpekova = document.querySelector('#Shylpekova'),
+      popArticleDrozdov = document.querySelector('#ModernTrends'),
+      popArticleHlynov = document.querySelector('#ModernWays');
       let wrapWidth = window.getComputedStyle(slidesWrapper).width;
       slideField.style.width = 100 +'%';
-    
+
       slideField.style.display = 'flex';
       slideField.style.transition = '0.5s all';
       slidesWrapper.style.overflow = 'hidden';
@@ -30,6 +37,7 @@ const buttonsKnowMore = document.querySelectorAll('#knowMore'),
         var val = sliderLine.value;
         sliderLine.style.backgroundSize = sliderLine.value + '% 100%';
       });
+      console.log(btnShulpekova);
 function openPopUp() {
     buttonsKnowMore.forEach((btn)=>{
         btn.addEventListener('click', ()=> {
@@ -119,6 +127,54 @@ function toggleDisplay(element) {
     }
 }
 
+function openArticles() {
+    let btns = [btnDrozdov,btnHlynov,btnShulpekova];
+    btns.forEach((btn)=>{
+        btn.addEventListener('click', function() {
+            if (btn === btnDrozdov) {
+                popArticleDrozdov.style.display = 'flex';
+                document.querySelector('body').style.overflow ='hidden';
+            }
+            if (btn === btnHlynov) {
+                popArticleHlynov.style.display = 'flex';
+                document.querySelector('body').style.overflow ='hidden';
+            }
+            if (btn === btnShulpekova){
+                popArticleShulpekova.style.display = 'flex';
+                document.querySelector('body').style.overflow ='hidden';
+            }
+        });
+    })
+}
+
+function closeArticles() {
+    let popups = [popArticleDrozdov,popArticleHlynov,popArticleShulpekova];
+    closeArticlesButtons.forEach((btn)=>{
+        btn.addEventListener('click', ()=> {
+            popups.forEach((pop)=>{
+                pop.style.display = 'none';
+                document.querySelector('body').style.overflow = '';
+            });
+        });
+    });
+    popups.forEach((popup) => {
+        popup.addEventListener('click', (event) => {
+          if (event.target === popup) {
+            popup.style.display = 'none';
+            document.querySelector('body').style.overflow = '';
+          }
+        });
+      });
+      document.addEventListener('keydown', (event) => {
+        if (event.key === 'Escape') {
+          popups.forEach((popup) => {
+            popup.style.display = 'none';
+            document.querySelector('body').style.overflow = '';
+          });
+        }
+      });
+}
+
 const observer = new IntersectionObserver(addActiveClass, { threshold: 0.1 });
 const blocks = [identityBlock, videoCastsBlock, articlesBlock];
 blocks.forEach(block => observer.observe(block));
@@ -129,3 +185,5 @@ openPopUp();
 closePopUp();
 revealArticle();
 openMore();
+openArticles();
+closeArticles();
