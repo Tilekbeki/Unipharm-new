@@ -1,97 +1,27 @@
 @font-face {
-    font-family: 'Ubuntu';
-    src: url('./Ubuntu/Ubuntu-Bold.ttf') format('truetype');
-    font-weight: bold;
-  }
-@font-face {
-    font-family: 'Ubuntu';
-    src: url('./Ubuntu/Ubuntu-BoldItalic.ttf') format('truetype');
-    font-weight: bold;
-    font-style: italic;
-}
-@font-face {
-    font-family: 'Ubuntu';
-    src: url('./Ubuntu/Ubuntu-Italic.ttf') format('truetype');
-    font-weight: 300;
-    font-style: italic;
-}
-
-@font-face {
-    font-family: 'Ubuntu';
-    src: url('./Ubuntu/Ubuntu-Light.ttf') format('truetype');
-    font-weight: 300;
-    font-style: normal;
-  }
-@font-face {
-    font-family: 'Ubuntu';
-    src: url('./Ubuntu/Ubuntu-LightItalic.ttf') format('truetype');
-    font-weight: 300;
-    font-style: italic;
-}
-@font-face {
-    font-family: 'Ubuntu';
-    src: url('./Ubuntu/Ubuntu-Medium.ttf') format('truetype');
-    font-weight: 500;
-    font-style: normal;
-}
-@font-face {
-    font-family: 'Ubuntu';
-    src: url('./Ubuntu/Ubuntu-MediumItalic.ttf') format('truetype');
-    font-weight: 500;
-    font-style: italic;
-}
-@font-face {
-    font-family: 'Ubuntu';
-    src: url('./Ubuntu/Ubuntu-Regular.ttf') format('truetype');
+    font-family: 'Gilroy';
+    src: url('gilroy/Gilroy-Regular.ttf') format('truetype');
     font-weight: normal;
-}
-
-
-@font-face {
-    font-family: 'Montserrat';
-    src: url('./Montserrat/Montserrat-Bold.ttf') format('truetype');
-    font-weight: bold;
-  }
-@font-face {
-    font-family: 'Montserrat';
-    src: url('./Montserrat/Montserrat-BoldItalic.ttf') format('truetype');
-    font-weight: bold;
-    font-style: italic;
-}
-@font-face {
-    font-family: 'Montserrat';
-    src: url('./Montserrat/Montserrat-Italic.ttf') format('truetype');
-    font-weight: 300;
-    font-style: italic;
-}
-
-@font-face {
-    font-family: 'Montserrat';
-    src: url('./Montserrat/Montserrat-Light.ttf') format('truetype');
-    font-weight: 300;
-    font-style: normal;
-  }
-@font-face {
-    font-family: 'Montserrat';
-    src: url('./Montserrat/Montserrat-LightItalic.ttf') format('truetype');
-    font-weight: 300;
-    font-style: italic;
-}
-@font-face {
-    font-family: 'Montserrat';
-    src: url('./Montserrat/Montserrat-Medium.ttf') format('truetype');
-    font-weight: 500;
     font-style: normal;
 }
+
 @font-face {
-    font-family: 'Montserrat';
-    src: url('./Montserrat/Montserrat-MediumItalic.ttf') format('truetype');
-    font-weight: 500;
+    font-family: 'Gilroy';
+    src: url('gilroy/Gilroy-ExtraboldItalic.ttf') format('truetype');
+    font-weight: 700;
     font-style: italic;
 }
+
 @font-face {
-    font-family: 'Montserrat';
-    src: url('./Montserrat/Montserrat-Regular.ttf') format('truetype');
-    font-weight: normal;
+    font-family: 'Gilroy';
+    src: url('gilroy/Gilroy-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
 }
 
+@font-face {
+    font-family: 'Gilroy';
+    src: url('gilroy/Gilroy-Medium.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+}
