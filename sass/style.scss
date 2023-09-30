@@ -5,7 +5,7 @@
     margin: 0;
     box-sizing: border-box;
     font-family: Gilroy;
-    // border: 1px solid red;
+    border: 1px solid red;
 }
 html {
     height: 100%;
@@ -18,6 +18,7 @@ main {
 body {
     position: relative;
     height: 100%;
+    overflow-x: hidden;
     
 }
 .trends__bg-second {

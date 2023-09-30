@@ -194,6 +194,7 @@
 @media (max-width: 991px) {
     .menu__wrapper {
         gap: 10px;
+        width: 100vw;
     }
     
     .scheme-wrapper {
@@ -499,6 +500,23 @@
 
 
 @media (max-width:575px){
+    .pop-articles {
+        width: 102vw;
+        height: 102vh;
+        background: rgba(22,21,21,.77);
+        overflow: hidden;
+        position: fixed;
+        top: 50%;
+        transform: translateY(-50%);
+        z-index: 29;
+        left: -1px;
+        justify-content: center;
+        align-items: center;
+        -webkit-backface-visibility: hidden;
+    }
+    .newDownload {
+        width: 89vw;
+    }
     #ModernTrends .helpfullArticles__card-content__item{
         gap: 20px;
         font-size: 14px;
