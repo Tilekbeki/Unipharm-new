@@ -9,9 +9,9 @@
   <link rel="stylesheet" href="css/bootstrap-reboot.min.css">
   <link rel="stylesheet" href="css/style.min.css">
   <link rel="stylesheet" href="fonts/fonts.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/CDNSFree2/Plyr/plyr.css" />
   <meta name="viewport"
       content="width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=0;"/>
-  <link href="https://vjs.zencdn.net/8.5.2/video-js.css" rel="stylesheet" />
   <title>Гастрарекс Unipharm</title>
 </head>
 
@@ -851,7 +851,9 @@
             <div class="videoCasts__wrapper">
               <div class="videoCasts__item">
                 <div class="videoCasts__item-video">
-                  <img src="img/Ролик с Козловым.jpg" alt="обложка">
+                  <video controls data-poster="img/Ролик с Козловым.jpg" class="vid1">
+                    <source src="videos\Tiësto - The Business.mp4" type="video/mp4"/>
+                  </video>
               </div>
                 <div class="videoCasts__item-info">
                   <div class="videoCasts__item-info__title">Тема:</div>
@@ -1825,9 +1827,9 @@
         </div>
       </div>
     </section>
-    
   </section>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/hammer.js/2.0.8/hammer.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/plyr/3.6.7/plyr.min.js"></script>
+  <script src="js/videos.js"></script>
   <script src="js/script.js"></script>
 </body>
 
