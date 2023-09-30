@@ -9,20 +9,29 @@
   <link rel="stylesheet" href="css/bootstrap-reboot.min.css">
   <link rel="stylesheet" href="css/style.min.css">
   <link rel="stylesheet" href="fonts/fonts.css">
-  <link rel="stylesheet" href="css/animate.min.css">
-  <link href="css/video-js.css" rel="stylesheet" />
-  <link rel="stylesheet" href="css/videojs-seek-buttons.css">
   <link href="https://vjs.zencdn.net/8.5.2/video-js.css" rel="stylesheet" />
   <title>Гастрарекс Unipharm</title>
 </head>
 
 <body>
   <main>
+    <div class="menu-mobile">
+      <ul>
+        <li><a href="#identity">UНИКАЛЬНЫЙ ВИТАМИН</a></li>
+        <li><a href="#videoCasts">ВИДЕОПОДКАСТЫ</a></li>
+        <li><a href="#articles">СТАТЬИ</a></li>
+      </ul>
+    </div>
     <nav class="menu">
       <div class="container">
         <div class="row">
+          
           <div class="menu__wrapper">
             <button class="button"><a href="#modern">СОВРЕМЕННЫЕ ТРЕНДЫ ГАСТРОПРОТЕКЦИИ</a></button>
+            <div class="burger-menu">
+              <img src="icons/burger-menu.png" alt="бургер меню" class="mobile-open">
+              <img src="icons/close-mobile icon.png" alt="закрывашка меню" class="mobile-close">
+            </div>
             <ul>
               <li><a href="#identity">UНИКАЛЬНЫЙ ВИТАМИН</a></li>
               <li><a href="#videoCasts">ВИДЕОПОДКАСТЫ</a></li>
@@ -80,6 +89,7 @@
                   профессор кафедры поликлинической
                   терапии МГМСУ им. А. И. Евдокимова. Президент Научного общества гастроэнтерологов России (НОГР).</div>
               </div>
+              <a href="pdf/1.pdf" class="newDownload"><button>КЛИНИЧЕСКИЕ РЕКОМЕНДАЦИИ МИНЗДРАВА ПО HELICOBACTER PYLORI</button></a>
             </div>
           </div>
         </div>
@@ -603,49 +613,53 @@
             </div>
           </div>
           <div class="methabolismRole__wrapper">
-            <div class="methabolismRole__schemes">
-              <img src="icons/scheme.png" alt="схема">
-            </div>
-            <div class="methabolismRole-datas">
-              <div class="methabolismRole-datas__row">
-                <div class="methabolismRole-datas__row-title">Процесс метилирования</div>
-                <div class="methabolismRole-datas__row-text"><span>Влияние на клетки слизистой оболочки (СО) ЖКТ,
-                    способствуя:</span><br>
-                  <span>-</span> повышению защитной функции СО ЖКТ<br>
-                  <span>-</span> выработке муцина<br>
-                  <span>-</span> активированию процессов восстановления клеток СО ЖКТ
-                </div>
-                <div class="methabolismRole-datas__row-text"><span>Влияние на кислотность
-                    и диспептические проявления, способствуя:</span><br>
-                  <span>-</span> регуляции секреции соляной кислоты<br>
-                  <span>-</span> уменьшению тяжести в животе, изжоги, вздутия живота, нарушения моторики желудка и
-                  кишечника
-                </div>
+            <div class="inner-2">
+              <div class="methabolismRole__schemes">
+                <img src="icons/scheme.png" alt="схема">
               </div>
-              <div class="methabolismRole-datas__row">
-                <div class="methabolismRole-datas__row-title">Липотропное действие</div>
-                <div class="methabolismRole-datas__row-text"><span>Влияние на клетки печени,
-                    способствуя:</span><br><span>-</span> снижению уровня общего холестерина</div>
-              </div>
-              <div class="methabolismRole-datas__row">
-                <div class="methabolismRole-datas__row-title">Антиоксидантная активность</div>
-                <div class="methabolismRole-datas__row-text"><span>Способствуя защите СО желудка от действий
-                    этанола</span></div>
-              </div>
-              <div class="methabolismRole-datas__row">
-                <div class="methabolismRole-datas__row-title">СН3</div>
-                <div class="methabolismRole-datas__row-text">Реакция трансметилирования
-                  <span>Обезвреживание</span><br>
-                  <span>-</span> токсичных метаболитов и лекарственных средств
+              <div class="methabolismRole-datas">
+                <div class="methabolismRole-datas__row">
+                  <div class="methabolismRole-datas__row-title">Процесс метилирования</div>
+                  <div class="methabolismRole-datas__row-text"><img src="icons/arrow small.svg" alt="стрелка" class="arrow-small"><span>Влияние на клетки слизистой оболочки (СО) ЖКТ,
+                      способствуя:</span><br>
+                    <span class="minus">-</span> повышению защитной функции СО ЖКТ<br>
+                    <span class="minus">-</span> выработке муцина<br>
+                    <span class="minus">-</span> активированию процессов восстановления клеток СО ЖКТ
+                  </div>
+                  <div class="methabolismRole-datas__row-text"><img src="icons/arrow small.svg" alt="стрелка" class="arrow-small"><span>Влияние на кислотность
+                      и диспептические проявления, способствуя:</span><br>
+                    <span class="minus">-</span> регуляции секреции соляной кислоты<br>
+                    <span class="minus">-</span> уменьшению тяжести в животе, изжоги, вздутия живота, нарушения моторики желудка и
+                    кишечника
+                  </div>
                 </div>
-                <div class="methabolismRole-datas__row-text">
-                  <span>Синтез</span><br>
-                  <span>-</span> адреналина, холина, креатина, картитина и др.
+                <div class="methabolismRole-datas__row">
+                  <div class="methabolismRole-datas__row-title">Липотропное действие</div>
+                  <div class="methabolismRole-datas__row-text"><img src="icons/arrow small.svg" alt="стрелка" class="arrow-small"><span>Влияние на клетки печени,
+                      способствуя:</span><br><span class="minus">-</span> снижению уровня общего холестерина</div>
                 </div>
+                <div class="methabolismRole-datas__row">
+                  <div class="methabolismRole-datas__row-title">Антиоксидантная активность</div>
+                  <div class="methabolismRole-datas__row-text"><img src="icons/arrow small.svg" alt="стрелка" class="arrow-small"><span>Способствуя защите СО желудка от действий
+                      этанола</span></div>
+                </div>
+                <div class="methabolismRole-datas__row">
+                  <div class="methabolismRole-datas__row-title">СН3</div>
+                  <div class="methabolismRole-datas__row-text"><img src="icons/arrow small.svg" alt="стрелка" class="arrow-small">Реакция трансметилирования
+                    <span>Обезвреживание</span><br>
+                    <span class="minus">-</span> токсичных метаболитов и лекарственных средств
+                  </div>
+                  <div class="methabolismRole-datas__row-text">
+                    <img src="icons/arrow small.svg" alt="стрелка" class="arrow-small">
+                    <span>Синтез</span><br>
+                    <span  class="minus">-</span> адреналина, холина, креатина, картитина и др.
+                  </div>
+                </div>
+                
               </div>
-
             </div>
           </div>
+          <input type="range" min="0" max="100" value="0" class="slider-line-second">
         </div>
         <div class="listOfLiterature">
           <ol>
@@ -826,6 +840,7 @@
             <div class="videoCasts__person">
               <div class="videoCasts__person-img">
                 <img src="img/Naumov.png" alt="Спикер">
+                
               </div>
               <div class="videoCasts__person-text"><span class="span_blue-bold">Модератор и спикер-эксперт:</span> <span
                   class="span_black-bold">Антон Вячеславович Наумов</span><br>
@@ -1585,7 +1600,7 @@
             <h2>ГАСТРАРЕКС<sup>®</sup> <span style="color: #FEC84D;">НЕО</span></h2>
             <p>Гастропротектор с натуральными компонентами и комплексным действием 3 в 1 для активации защиты желудка
             </p>
-            <a href="#"><button>Инструкция</button></a>
+            <a href="pdf/1.pdf" download><button>Инструкция</button></a>
             <a href="#">УЗНАЙТЕ О СОВРЕМЕННЫХ ТРЕНДАХ ГАСТРОПРОТЕКЦИИ</a>
           </div>
         </div>
@@ -1810,7 +1825,7 @@
     </section>
     
   </section>
-  
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/hammer.js/2.0.8/hammer.min.js"></script>
   <script src="js/script.js"></script>
 </body>
 

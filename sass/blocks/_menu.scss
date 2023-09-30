@@ -34,6 +34,7 @@
             text-transform: uppercase;
             text-decoration: none;
             list-style: none;
+            gap: 30px;
             a {
             color: #fff;
             text-decoration: none;
@@ -52,4 +53,42 @@
         }
     }
     
+}
+.menu-mobile {
+    position: fixed;
+    height: 320px;
+    background: #008592;
+    width: 320px;
+    z-index: 6;
+    display: flex;
+    align-items:center;
+    padding: 23px;
+    left: -320px;
+    top: 41px;
+    transition: .6s all;
+    ul {
+        display: flex;
+        flex-direction: column;
+        margin: 0;
+        padding: 0;
+        gap: 32px;
+        list-style: none;
+        li {
+            a {
+                color: #FFF;
+                font-size: 16px;
+                font-style: normal;
+                font-weight: 700;
+                line-height: 105%; /* 16.8px */
+                text-transform: uppercase;
+                text-decoration: none;
+            }
+        }
+    }
+}
+.burger-menu {
+    display: none;
+    .mobile-close {
+        display: none;
+    }
 }

@@ -16,28 +16,20 @@ const buttonsKnowMore = document.querySelectorAll('#knowMore'),
       perspectivesBlock = document.querySelector('.perspectives'),
       dailyDoseBlock = document.querySelector('.dailyDose'),
       knowMoreButtons = document.querySelectorAll('.more'),
-      sliderLine = document.querySelector('.slider-line'),
-      slideField = document.querySelector('.inner'),
-      slidesWrapper = document.querySelector('.goalsPrescription__wrapper'),
       closeArticlesButtons = document.querySelectorAll('#articles-close'),
       btnDrozdov = document.querySelector('#btnFirstArticle'),
       btnShulpekova = document.querySelector('#btnSecondArticle'),
       btnHlynov = document.querySelector('#btnThirdArticle'),
       popArticleShulpekova = document.querySelector('#Shylpekova'),
       popArticleDrozdov = document.querySelector('#ModernTrends'),
-      popArticleHlynov = document.querySelector('#ModernWays');
-      let wrapWidth = window.getComputedStyle(slidesWrapper).width;
-      slideField.style.width = 100 +'%';
+      popArticleHlynov = document.querySelector('#ModernWays'),
+      burgerIcon = document.querySelector('.mobile-open'),
+      buregCloseIcon = document.querySelector('.mobile-close'),
+      burgerMenu = document.querySelector('.menu-mobile'),
+      manFirst = document.querySelector('.trends__text-block__person-img');
+     
 
-      slideField.style.display = 'flex';
-      slideField.style.transition = '0.5s all';
-      slidesWrapper.style.overflow = 'hidden';
-      sliderLine.addEventListener('input', ()=> {
-        slideField.style.transform = `translateX(-${sliderLine.value*6.61}px)`;
-        var val = sliderLine.value;
-        sliderLine.style.backgroundSize = sliderLine.value + '% 100%';
-      });
-      console.log(btnShulpekova);
+      
 function openPopUp() {
     buttonsKnowMore.forEach((btn)=>{
         btn.addEventListener('click', ()=> {
@@ -46,6 +38,7 @@ function openPopUp() {
             popUpLayer.classList.add('show-modal');
             popUpLayer.style.position = 'relative'
             mainLayer.style.display = 'none';
+            document.querySelector('body').style.overflow ='';
             window.scrollTo({top: 0});
         })
     });    
@@ -60,7 +53,7 @@ function closePopUp() {
             popUpLayer.classList.remove('show-modal');
             popUpLayer.style.position = 'absolute';
             mainLayer.style.display = 'block';
-            console.log('hehe')
+            console.log('hehe');
             
         });
     });
@@ -131,17 +124,21 @@ function openArticles() {
     let btns = [btnDrozdov,btnHlynov,btnShulpekova];
     btns.forEach((btn)=>{
         btn.addEventListener('click', function() {
+          console.log('это тут');
             if (btn === btnDrozdov) {
                 popArticleDrozdov.style.display = 'flex';
                 document.querySelector('body').style.overflow ='hidden';
+                console.log('это тут');
             }
             if (btn === btnHlynov) {
                 popArticleHlynov.style.display = 'flex';
                 document.querySelector('body').style.overflow ='hidden';
+                console.log('это тут');
             }
             if (btn === btnShulpekova){
                 popArticleShulpekova.style.display = 'flex';
                 document.querySelector('body').style.overflow ='hidden';
+                console.log('это тут');
             }
         });
     })
@@ -175,10 +172,86 @@ function closeArticles() {
       });
 }
 
+function swipeByButton(sliderLinee,slideFieldd,slidesWrapperr) {
+
+    const sliderLine = document.querySelector(sliderLinee),
+      slideField = document.querySelector(slideFieldd),
+      slidesWrapper = document.querySelector(slidesWrapperr);
+      let wrapWidth = slidesWrapper.getBoundingClientRect();
+      let innerWidth =  slideField.getBoundingClientRect();
+    
+
+
+    sliderLine.style.backgroundSize = sliderLine.value + '5% 100%';
+      slideField.style.display = 'flex';
+      slideField.style.transition = '0.5s all';
+      slidesWrapper.style.overflow = 'hidden';
+      sliderLine.addEventListener('input', ()=> {
+        let contentShift = (1145-wrapWidth.width)/100*(+sliderLine.value)*1.1;
+        slideField.style.transform = `translateX(-${contentShift}px)`;
+        console.log(slideField.style.transform);
+        sliderLine.style.backgroundSize = +sliderLine.value + '% 100%';
+      });
+
+    
+}
+
+function openBurgerMenu() {
+  burgerIcon.addEventListener('click', ()=>{
+    burgerMenu.style.left = '0px';
+    document.querySelector('.mobile-close').style.display = 'block';
+    document.querySelector('.mobile-open').style.display = 'none';
+  });
+  
+
+  
+
+  
+}
+
+function closeBurgerMenu() {
+  buregCloseIcon.addEventListener('click', ()=>{
+    burgerMenu.style.left = '-320px';
+    document.querySelector('.mobile-open').style.display = 'block';
+
+    document.querySelector('.mobile-close').style.display = 'none';
+
+  });
+}
+
+function showPerson(entries){
+  entries.forEach((entry)=>{
+    if (entry.isIntersecting) {
+      document.querySelector('.newDownload').style.display = 'none';
+    } else {
+      document.querySelector('.newDownload').style.display = 'block';
+    }
+  })
+}
+
+//наблюдатель для меню подсвечивания
 const observer = new IntersectionObserver(addActiveClass, { threshold: 0.1 });
 const blocks = [identityBlock, videoCastsBlock, articlesBlock];
 blocks.forEach(block => observer.observe(block));
 
+
+//наблюдатель за мужчиной
+const observerTwo = new IntersectionObserver(showPerson, {threshold: 0.1});
+
+observerTwo.observe(manFirst);
+
+
+//закрытие по нажатию на одно из пунктов
+const menusBurger = burgerMenu.querySelectorAll('li');
+menusBurger.forEach((item)=>{
+  item.addEventListener('click',()=>{
+    console.log(menusBurger);
+    document.querySelector('.mobile-open').style.display = 'block';
+
+    document.querySelector('.mobile-close').style.display = 'none';
+    burgerMenu.style.left = '-320px';
+  });
+});
 
 
 openPopUp();
@@ -187,3 +260,7 @@ revealArticle();
 openMore();
 openArticles();
 closeArticles();
+swipeByButton('.slider-line', '.inner','.goalsPrescription__wrapper' );
+swipeByButton('.slider-line-second', '.inner-2','.methabolismRole__wrapper' );
+openBurgerMenu();
+closeBurgerMenu();

@@ -11,8 +11,11 @@
     
 }
 @media (max-width: 1400px) {
-    .methabolismRole__wrapper {
-        overflow: scroll;
+    .slider-line[type=range] {
+        display: block;
+    }
+    .slider-line-second[type="range"] {
+        display: block;
     }
     .mechanism-button {
         width: 65%;
@@ -62,6 +65,29 @@
     img {
         margin-top: 6px;
     }
+   }
+   .pop-articles #ten .pop-articles__text-block__wrapper p, .pop-articles #thirteen .pop-articles__text-block__wrapper p {
+    width: 100%;
+   }
+   .pop-articles #ten .pop-articles__text-block__wrapper-img, .pop-articles #thirteen .pop-articles__text-block__wrapper-img{
+    width: 100%;
+   }
+   .pop-articles #two .pop-articles__text-block__wrapper {
+    flex-direction: column;
+   }
+   .pop-articles__text-block__wrapper{
+    p {
+        width: 100%;
+    }
+   }
+   .pop-articles #two .pop-articles__text-block__wrapper img {
+    width: 100%;
+   }
+   .pop-articles #four .pop-articles__text-block__wrapper p {
+    width: 100%;
+   }
+   .pop-articles #five .pop-articles__text-block__wrapper p {
+    width: 100%;
    }
 }
 @media (max-width: 1200px) {
@@ -141,9 +167,34 @@
    .mechanism__item-header__list {
     width: 100%;
    }
+   .pop-articles__border-text {
+    flex-direction: column;
+   }
+   .pop-articles .diagram-line {
+    padding: 0;
+   }
+   .pop-articles .diagram-line .list {
+    width: 100%;
+    position: relative;
+    right: 0;
+    li {
+        p {
+            width: 100%;
+        }
+    }
+   }
+   .pop-articles #ten .pop-articles__text-block__wrapper p, .pop-articles #thirteen .pop-articles__text-block__wrapper p{
+    width: 100%;
+   }
+   .pop-articles #ten .pop-articles__text-block__wrapper-img, .pop-articles #thirteen .pop-articles__text-block__wrapper-img{
+    width: 100%;
+   }
 }
 
 @media (max-width: 991px) {
+    .menu__wrapper {
+        gap: 10px;
+    }
     
     .scheme-wrapper {
         flex-direction: column;
@@ -215,6 +266,30 @@
                 left: 50%;
                 transform: translate(-50%);
         }
+    }
+    .methabolismRole__short-block__formula {
+        flex-direction: column;
+        text-align: center;
+        gap: 8px;
+        p {
+            margin: 0;
+            padding: 0;
+            font-size: 16px;
+        }
+    }
+    .methabolismRole__short-block__arrow {
+        img:nth-child(1) {
+            display: none;
+        }
+        img:nth-child(2) {
+            display: inline;
+        }
+    }
+    .methabolismRole__short-block__arrow {
+        text-align: center;
+    }
+    .pop-articles__border-text__content {
+        width: 100%;
     }
 }
     
@@ -389,6 +464,32 @@
             width: 100%;
         }
     }
+    .pop-articles #nine .diagram {
+        width: 100%;
+    }
+    .pop-articles #nine .diagram-circle {
+        img {
+            width: 100%;
+        }
+    }
+    .pop-articles #nine .pop-articles__border-text .subtitle {
+        font-size: 20px;
+    }
+    .pop-articles #nine .pop-articles__border-text{
+        padding: 20px;
+        p {
+            font-size: 18px;
+        }
+    }
+    .pop-articles #nine .pop-articles__border-text .subtitle span{
+        font-size: 18px;
+    }
+    .pop-articles__text-block {
+        padding: 40px 20px;
+    }
+    .burger-menu {
+        display: block;
+    }
 }
      
 
@@ -419,7 +520,7 @@
             font-size: 22px;
         }
         .subtitle {
-            font-size: 20px;
+            font-size: 16px;
         }
         
         .helpfullArticles__card-content__item-img {
@@ -888,7 +989,7 @@
         display: block;
         position: absolute;
         z-index: -1;
-        top: 74px;
+        top: 60px;
         right: -424px;
         img {
             width: 790px;
@@ -1120,6 +1221,9 @@
     .methabolismRole__short-block__arrow {
         img:nth-child(1) {
             display: none;
+        }
+        img:nth-child(2) {
+            display: inline;
         }
     }
     .methabolismRole__short-block__arrow {
@@ -1395,6 +1499,227 @@
     }
     .perspectives__wrapper .perspectives__block-second__item-text {
         width: 100%;
+    }
+    .dailyDose__short-block__first-card {
+        align-items:center;
+        justify-content: center;
+        gap: 0;
+    }
+    .dailyDose__short-block__second-card {
+        align-items:center;
+        justify-content: center;
+        gap: 0;
+    }
+    .dailyDose__short-block__first-card__title {
+        gap: 8px;
+        width: 100%;
+        align-items:center;
+    }
+    .dailyDose__short-block__second-card__title {
+        gap: 8px;
+        width: 100%;
+    }
+    .baseDirections__item-statistic__circle {
+        background-size: 96px 96px;
+    }
+    .baseDirections__item-statistic {
+        width: 96px;
+        height: 96px;
+    }
+    .baseDirections__item-statistic__circle-numbers {
+        font-size: 16px;
+    }
+    .baseDirections__item-text__title {
+        font-size: 18px;
+    }
+    .baseDirections__item-text__descr {
+        font-size: 14px;
+    }
+    .baseDirections__wrapper {
+        gap: 20px;
+        width: 100%;
+    }
+    .baseDirections__item {
+        width: unset;
+        gap: 12px;
+    }
+    .pop-articles {
+        .title {
+            margin-bottom: 20px;
+        }
+        .helpfullArticles__card-content__item {
+            margin-bottom: 10px;
+        }
+        .pop-articles__wrapper {
+            .pop-articles__white-wrapper {
+                padding: 32px 16px;
+                .title {
+                    text-align: center;
+                    margin-bottom: 20px;
+                }
+            }
+        }
+        .pop-articles__border-text {
+            padding: 32px 16px;
+            flex-direction: column;
+            .pop-articles__border-text__content {
+                width: 100%;
+            }
+            .pop-articles__border-text__title title {
+                text-align: center;
+            }
+            p {
+                br {
+                    display: none;
+                }
+            }
+            .list {
+                p {
+                    font-size: 14px;
+                }
+                img {
+                    width: 20px;
+                    height: 20px;
+                }
+            }
+        }
+    }
+    .pop-articles .blue-block__question{
+        width: 50px;
+        height: 50px;
+        border-radius: 13px;
+        img {
+            border-radius: 4px;
+            width: 34px;
+            height: 34px;
+        }
+    }
+    .helpfullArticles__card-content__item-text__name {
+        font-size: 22px;
+        margin-bottom: 5px;
+    }
+    .pop-articles .list {
+        font-size: 14px;
+        li {
+            p{
+                font-size: 14px;
+            }
+        }
+        img {
+            width: 20px;
+            height: 20px;
+        }
+    }
+    .pop-articles #nine .diagram-colum_1__number:nth-child(1){
+        font-size: 14px;
+        span {
+            font-size: 28px;
+        }
+    } 
+    .pop-articles #nine .diagram-colum_1__number:nth-child(2) {
+        font-size: 14px;
+        span {
+            font-size: 28px;
+        }
+    }
+    .pop-articles #nine .diagram-circle {
+        width: 100%;
+        img {
+            width: 100%;
+        }
+    }
+    .pop-articles .diagram {
+        width: 74%;
+    }
+    .pop-articles #nine .diagram-colum_2__number:nth-child(1){
+        font-size: 14px;
+        span {
+            font-size: 28px;
+        }
+    } 
+    .pop-articles #nine .diagram-colum_2__number:nth-child(2) {
+        font-size: 14px;
+        span {
+            font-size: 28px;
+        }
+    }
+    .pop-articles__border-text {
+        margin-top: 0;
+    }
+    .pop-articles #nine .pop-articles__border-text .subtitle span {
+        font-size: 18px;
+    }
+    .pop-articles .diagram-line p {
+        margin-bottom: 15px;
+    }
+    .pop-articles .diagram-line .list {
+        width: 100%;
+        position: relative;
+        right: 0;
+        li {
+            p {
+                width: 100%;
+                font-size: 16px;
+            }
+        }
+        
+    }
+    .pop-articles .diagram-line {
+        padding: 0;
+    }
+    .pop-articles #ten .pop-articles__text-block__wrapper p, .pop-articles #thirteen .pop-articles__text-block__wrapper p {
+        width: 100%;
+    }
+    .pop-articles #ten .pop-articles__text-block__wrapper-img, .pop-articles #thirteen .pop-articles__text-block__wrapper-img {
+        width: 100%;
+        p {
+            color: #343230;
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 130%;
+            padding: 0 16px 32px 16px;
+        }
+    }
+    .pop-articles #ten .pop-articles__text-block__wrapper, .pop-articles #thirteen .pop-articles__text-block__wrapper{
+        margin-bottom: 20px;
+    }
+    .pop-articles #ten .listOfLiterature .title, .pop-articles #thirteen .listOfLiterature .title{
+        font-size: 22px;
+    }
+    .pop-articles .helpfullArticles__card-content__item {
+        border-radius: 20px;
+        border: 1px solid #01c8c8;
+        background: #fff;
+        padding: 32px 16px;
+        margin-bottom: 10px;
+        gap: 20px;
+    }
+    .pop-articles .pop-articles__border-text .pop-articles__border-text__content {
+        font-size: 14px;
+    }
+    .pop-articles #two .pop-articles__text-block__wrapper {
+        flex-direction: column;
+        img {
+            width: 100%;
+        }
+    }
+    .pop-articles #four .pop-articles__text-block__wrapper{
+        p {
+            width: 100%;
+        }
+    }
+    .pop-articles #five .pop-articles__text-block__wrapper p {
+        width: 100%;
+    }
+    .methabolismRole-datas__row-title {
+        font-size: 14px;
+    }
+    .methabolismRole-datas__row-text {
+        font-size: 14px;
+        span {
+            font-size: 14px;
+        }
     }
 }
 
