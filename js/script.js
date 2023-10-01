@@ -212,20 +212,20 @@ function swipeByButton(sliderLinee,slideFieldd,slidesWrapperr, object) {
       slideField.addEventListener('touchend', function(event) {
         endX = event.changedTouches[0].pageX;
         let diffX = endX - startX;
-        // console.log(diffX)
-        // let contentShift = (1145-wrapWidth.width)/100*n*100;
+        console.log(diffX)
+        let contentShift = (1145-wrapWidth.width)/100*n*100;
         
-        // if (diffX <0) {
-        //   slideField.style.transform = `translateX(-${contentShift}px)`;
-        //   console.log('transleted');
-        //   sliderLine.value = 100;
-        //   sliderLine.style.backgroundSize = sliderLine.value + '% 100%';
-        // }
-        // if (diffX>=0) {
-        //   slideField.style.transform = ``;
-        //   sliderLine.value = 0;
-        //   sliderLine.style.backgroundSize = sliderLine.value + '% 100%';
-        // }
+        if (diffX <0) {
+          slideField.style.transform = `translateX(-${contentShift}px)`;
+          console.log('transleted');
+          sliderLine.value = 100;
+          sliderLine.style.backgroundSize = sliderLine.value + '% 100%';
+        }
+        if (diffX>=0) {
+          slideField.style.transform = ``;
+          sliderLine.value = 0;
+          sliderLine.style.backgroundSize = sliderLine.value + '% 100%';
+        }
       });
       console.log((1145-wrapWidth.width)/100*n*100);
       console.log('сверху разница')
