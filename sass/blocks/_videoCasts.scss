@@ -53,6 +53,7 @@
             video {
                 width: 550px;
                 height: 10%;
+                border-radius: 20px;
             }
             .backwardBtn {
                 position: absolute;
@@ -99,4 +100,15 @@
         justify-content: space-between;
         flex-wrap: wrap;
     }
+}
+.plyr.plyr--stopped .plyr__controls { display: none }
+.plyr__control .plyr__control--overlaid { display: none;}
+.plyr--video {
+    border-radius: 10px;
+}
+.plyr--full-ui.plyr--video .plyr__control--overlaid {
+    display: none;
+}
+.plyr--full-ui.plyr--video .plyr__control--overlaid {
+    display: none;
 }

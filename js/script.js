@@ -172,7 +172,23 @@ function closeArticles() {
       });
 }
 
-function swipeByButton(sliderLinee,slideFieldd,slidesWrapperr) {
+function swipeByButton(sliderLinee,slideFieldd,slidesWrapperr, object) {
+  let n;
+  if(object=='scale'){
+    if (window.innerWidth < 1200) {
+      n=0.3;
+    }
+    if (window.innerWidth < 767) {
+      n=0.8;
+    }
+    if (window.innerWidth < 575) {
+      n=0.3;
+    }
+  }
+  if(object=='scheme'){
+    console.log('scheme');
+    n=1.1
+  }
 
     const sliderLine = document.querySelector(sliderLinee),
       slideField = document.querySelector(slideFieldd),
@@ -181,15 +197,45 @@ function swipeByButton(sliderLinee,slideFieldd,slidesWrapperr) {
       let innerWidth =  slideField.getBoundingClientRect();
     
 
+      let startX, endX;
+      slideField.addEventListener('touchmove',function(event){
+        console.log(event.touches[0].pageX);
+        slideField.style.transform = `translateX(-${event.touches[0].pageX}px)`;
 
+      })
+      slideField.addEventListener('touchstart', function(event) {
+        startX = event.touches[0].pageX;
+      });
+      
+      slideField.addEventListener('touchend', function(event) {
+        endX = event.changedTouches[0].pageX;
+        let diffX = endX - startX;
+        console.log(diffX)
+        let contentShift = (1145-wrapWidth.width)/100*n*100;
+        
+        if (diffX <0) {
+          slideField.style.transform = `translateX(-${contentShift}px)`;
+          console.log('transleted');
+          sliderLine.value = 100;
+          sliderLine.style.backgroundSize = sliderLine.value + '% 100%';
+        }
+        if (diffX>=0) {
+          slideField.style.transform = ``;
+          sliderLine.value = 0;
+          sliderLine.style.backgroundSize = sliderLine.value + '% 100%';
+        }
+      });
+      console.log((1145-wrapWidth.width)/100*n*100);
+      console.log('сверху разница')
     sliderLine.style.backgroundSize = sliderLine.value + '5% 100%';
       slideField.style.display = 'flex';
       slideField.style.transition = '0.5s all';
       slidesWrapper.style.overflow = 'hidden';
       sliderLine.addEventListener('input', ()=> {
-        let contentShift = (1145-wrapWidth.width)/100*(+sliderLine.value)*1.1;
+        let contentShift = (1145-wrapWidth.width)/100*(+sliderLine.value)*n;
         slideField.style.transform = `translateX(-${contentShift}px)`;
         console.log(slideField.style.transform);
+        console.log(n)
         sliderLine.style.backgroundSize = +sliderLine.value + '% 100%';
       });
 
@@ -260,7 +306,7 @@ revealArticle();
 openMore();
 openArticles();
 closeArticles();
-swipeByButton('.slider-line', '.inner','.goalsPrescription__wrapper' );
-swipeByButton('.slider-line-second', '.inner-2','.methabolismRole__wrapper' );
+swipeByButton('.slider-line', '.inner','.goalsPrescription__wrapper', 'scale');
+swipeByButton('.slider-line-second', '.inner-2','.methabolismRole__wrapper', 'scheme');
 openBurgerMenu();
 closeBurgerMenu();

@@ -91,6 +91,12 @@
    }
 }
 @media (max-width: 1200px) {
+    .scheme {
+        .button_over {
+            left: 50%;
+            transform: translate(-50%);
+        }
+    }
     .baseDirections__wrapper {
         justify-content: center;
         gap: 30px;
@@ -151,9 +157,6 @@
    }
    .tablets-left, .tablets-right {
     display: none;
-   }
-   .methabolismRole__wrapper {
-    overflow: scroll;
    }
    .mechanism__item {
     width: 60%;
@@ -1742,6 +1745,9 @@
         span {
             font-size: 14px;
         }
+    }
+    .mechanism-button a {
+        font-size: 14px;
     }
 }
 

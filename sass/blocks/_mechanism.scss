@@ -60,12 +60,6 @@
         }
     }
     &-button {
-        color: #FFF;
-        font-size: 24px;
-        font-style: normal;
-        font-weight: 700;
-        line-height: 130%; /* 31.2px */
-        text-transform: uppercase;
         width: 764px;
         padding: 30px;
         position: absolute;
@@ -75,6 +69,15 @@
         border-radius: 8px;
         background: #F7941D;
         box-shadow: 0px 10px 41px 0px rgba(131, 52, 2, 0.39);
+        a {
+            color: #FFF;
+            font-size: 24px;
+            font-style: normal;
+            font-weight: 700;
+            line-height: 130%; /* 31.2px */
+            text-transform: uppercase;
+            text-decoration: none;
+        }
     }
     .mobile {
         display: none;
