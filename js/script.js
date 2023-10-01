@@ -198,11 +198,13 @@ function swipeByButton(sliderLinee,slideFieldd,slidesWrapperr, object) {
     
 
       let startX, endX;
-      slideField.addEventListener('touchmove',function(event){
-        console.log(event.touches[0].pageX);
-        slideField.style.transform = `translateX(-${event.touches[0].pageX}px)`;
+      slideField.addEventListener('touchmove', function(event) {
+        let diffX = event.touches[0].pageX - startX;
+        slideField.style.transform = `translateX(-${diffX}px)`;
+      }); 
 
-      })
+      
+
       slideField.addEventListener('touchstart', function(event) {
         startX = event.touches[0].pageX;
       });
@@ -210,24 +212,24 @@ function swipeByButton(sliderLinee,slideFieldd,slidesWrapperr, object) {
       slideField.addEventListener('touchend', function(event) {
         endX = event.changedTouches[0].pageX;
         let diffX = endX - startX;
-        console.log(diffX)
-        let contentShift = (1145-wrapWidth.width)/100*n*100;
+        // console.log(diffX)
+        // let contentShift = (1145-wrapWidth.width)/100*n*100;
         
-        if (diffX <0) {
-          slideField.style.transform = `translateX(-${contentShift}px)`;
-          console.log('transleted');
-          sliderLine.value = 100;
-          sliderLine.style.backgroundSize = sliderLine.value + '% 100%';
-        }
-        if (diffX>=0) {
-          slideField.style.transform = ``;
-          sliderLine.value = 0;
-          sliderLine.style.backgroundSize = sliderLine.value + '% 100%';
-        }
+        // if (diffX <0) {
+        //   slideField.style.transform = `translateX(-${contentShift}px)`;
+        //   console.log('transleted');
+        //   sliderLine.value = 100;
+        //   sliderLine.style.backgroundSize = sliderLine.value + '% 100%';
+        // }
+        // if (diffX>=0) {
+        //   slideField.style.transform = ``;
+        //   sliderLine.value = 0;
+        //   sliderLine.style.backgroundSize = sliderLine.value + '% 100%';
+        // }
       });
       console.log((1145-wrapWidth.width)/100*n*100);
       console.log('сверху разница')
-    sliderLine.style.backgroundSize = sliderLine.value + '5% 100%';
+    // sliderLine.style.backgroundSize = sliderLine.value + '5% 100%';
       slideField.style.display = 'flex';
       slideField.style.transition = '0.5s all';
       slidesWrapper.style.overflow = 'hidden';

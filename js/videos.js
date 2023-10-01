@@ -21,9 +21,9 @@ var controls =
 
 
 const playerFirst = new Plyr('.vid1',{controls});
-const playerSecond = new Plyr('.vid2',{controls});
-const playerThird = new Plyr('.vid3',{controls});
-const playerFourth = new Plyr('.vid4',{controls});
+// const playerSecond = new Plyr('.vid2',{controls});
+// const playerThird = new Plyr('.vid3',{controls});
+// const playerFourth = new Plyr('.vid4',{controls});
 const playerButtons = document.querySelectorAll('.plyr__control--overlaid');
 
 playerButtons.forEach((btn)=>{
