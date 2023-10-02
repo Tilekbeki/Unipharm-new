@@ -36,10 +36,9 @@ function openPopUp() {
             popUpLayer.style.zIndex = '999';
             // popUpLayer.style.opacity = '1';
             popUpLayer.classList.add('show-modal');
-            popUpLayer.style.position = 'relative'
-            mainLayer.style.display = 'none';
+            popUpLayer.style.position = 'fixed';
+            // mainLayer.style.display = 'none';
             document.querySelector('body').style.overflow ='';
-            window.scrollTo({top: 0});
         })
     });    
 }
@@ -51,7 +50,7 @@ function closePopUp() {
             popUpLayer.style.zIndex = '-1';
             // popUpLayer.style.opacity = '1';
             popUpLayer.classList.remove('show-modal');
-            popUpLayer.style.position = 'absolute';
+            popUpLayer.style.position = 'fixed';
             mainLayer.style.display = 'block';
             console.log('hehe');
             
@@ -267,6 +266,44 @@ function closeBurgerMenu() {
   });
 }
 
+
+
+// Получаем ссылки на блоки и меню
+const menusA = document.querySelector('.menu__wrapper');
+// Функция для прокрутки страницы к блоку с отступом от меню
+function scrollToBlock(block) {
+  window.scrollTo({
+    top: block.offsetTop - menusA.offsetHeight-20,
+    behavior: "smooth",
+  }); // отступ от меню
+  console.log(-block.offsetHeight);
+}
+let blockes = [identityBlock,videoCastsBlock,articlesBlock]
+// Обработчики кликов на ссылки в меню
+menus.forEach((li)=>{
+  const hrefValue = li.querySelector('a').getAttribute('href');
+  li.querySelector('a').addEventListener('click', (e)=>{
+    e.preventDefault();
+    if (hrefValue == '#identity') {
+      scrollToBlock(identityBlock);
+      console.log('identity');
+
+    }
+    if (hrefValue == '#videoCasts') {
+      scrollToBlock(videoCastsBlock);
+      console.log('videoCasts');
+    }
+    if (hrefValue == '#articles') {
+      scrollToBlock(articlesBlock);
+      console.log('articles');
+    }
+  });
+});
+
+
+
+
+
 function showPerson(entries){
   entries.forEach((entry)=>{
     if (entry.isIntersecting) {
@@ -298,6 +335,27 @@ menusBurger.forEach((item)=>{
 
     document.querySelector('.mobile-close').style.display = 'none';
     burgerMenu.style.left = '-320px';
+  });
+});
+
+
+menusBurger.forEach((li)=>{
+  const hrefValue = li.querySelector('a').getAttribute('href');
+  li.querySelector('a').addEventListener('click', (e)=>{
+    e.preventDefault();
+    if (hrefValue == '#identity') {
+      scrollToBlock(identityBlock);
+      console.log('identity');
+
+    }
+    if (hrefValue == '#videoCasts') {
+      scrollToBlock(videoCastsBlock);
+      console.log('videoCasts');
+    }
+    if (hrefValue == '#articles') {
+      scrollToBlock(articlesBlock);
+      console.log('articles');
+    }
   });
 });
 

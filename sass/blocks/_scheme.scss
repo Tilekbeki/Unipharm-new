@@ -32,4 +32,8 @@
             letter-spacing: 0.3px;
         }
     }
+    .button_over {
+        left: 50%;
+        transform: translate(-50%);
+    }
 }
